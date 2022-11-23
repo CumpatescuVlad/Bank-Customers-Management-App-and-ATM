@@ -1,0 +1,17 @@
+E:\CODE REPOS\BankApp\EmployeePortal\AccountOperations\bin\Debug\AccountOperations.dll
+E:\CODE REPOS\BankApp\EmployeePortal\AccountOperations\bin\Debug\AccountOperations.pdb
+E:\CODE REPOS\BankApp\EmployeePortal\AccountOperations\bin\Debug\EmployeePortal.exe
+E:\CODE REPOS\BankApp\EmployeePortal\AccountOperations\bin\Debug\Syncfusion.DocIO.Base.dll
+E:\CODE REPOS\BankApp\EmployeePortal\AccountOperations\bin\Debug\Syncfusion.Compression.Base.dll
+E:\CODE REPOS\BankApp\EmployeePortal\AccountOperations\bin\Debug\Syncfusion.OfficeChart.Base.dll
+E:\CODE REPOS\BankApp\EmployeePortal\AccountOperations\bin\Debug\Syncfusion.Licensing.dll
+E:\CODE REPOS\BankApp\EmployeePortal\AccountOperations\bin\Debug\EmployeePortal.pdb
+E:\CODE REPOS\BankApp\EmployeePortal\AccountOperations\bin\Debug\EmployeePortal.exe.config
+E:\CODE REPOS\BankApp\EmployeePortal\AccountOperations\bin\Debug\Syncfusion.DocIO.Base.xml
+E:\CODE REPOS\BankApp\EmployeePortal\AccountOperations\bin\Debug\Syncfusion.Compression.Base.xml
+E:\CODE REPOS\BankApp\EmployeePortal\AccountOperations\bin\Debug\Syncfusion.OfficeChart.Base.xml
+E:\CODE REPOS\BankApp\EmployeePortal\AccountOperations\obj\Debug\AccountOperations.csproj.AssemblyReference.cache
+E:\CODE REPOS\BankApp\EmployeePortal\AccountOperations\obj\Debug\AccountOperations.csproj.CoreCompileInputs.cache
+E:\CODE REPOS\BankApp\EmployeePortal\AccountOperations\obj\Debug\AccountOperations.csproj.CopyComplete
+E:\CODE REPOS\BankApp\EmployeePortal\AccountOperations\obj\Debug\AccountOperations.dll
+E:\CODE REPOS\BankApp\EmployeePortal\AccountOperations\obj\Debug\AccountOperations.pdb
