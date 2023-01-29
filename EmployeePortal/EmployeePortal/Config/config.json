@@ -1,0 +1,6 @@
+{
+  "Config": {
+    "ConnectionString": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Bank;User ID=Vlad;Password=Apicultor__69;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
+  }
+
+}

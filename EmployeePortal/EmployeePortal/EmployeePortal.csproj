@@ -40,6 +40,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\AccountOperations\bin\Debug\AccountOperations.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Syncfusion.Compression.Base, Version=20.3460.0.50, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <HintPath>..\packages\Syncfusion.Compression.Base.20.3.0.50\lib\net46\Syncfusion.Compression.Base.dll</HintPath>
     </Reference>
@@ -67,30 +70,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddCompanyTab.cs">
+    <Compile Include="DTOs\EmployeeCredentialsDTO.cs" />
+    <Compile Include="PresentationLayer\AddCompanyTab.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AddCompanyTab.Designer.cs">
+    <Compile Include="PresentationLayer\AddCompanyTab.Designer.cs">
       <DependentUpon>AddCompanyTab.cs</DependentUpon>
     </Compile>
-    <Compile Include="Credentials.cs" />
-    <Compile Include="Errors.cs" />
-    <Compile Include="UIComponents\AccountsDataUI\DeleteAccount.cs">
+    <Compile Include="Config\Config.cs" />
+    <Compile Include="DataAccesLayer\ModifyData.cs" />
+    <Compile Include="DataAccesLayer\ReadData.cs" />
+    <Compile Include="Modeles\UpdateDataModel.cs" />
+    <Compile Include="src\QuerryStrings.cs" />
+    <Compile Include="PresentationLayer\AccountsDataUI\DeleteAccount.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UIComponents\AccountsDataUI\DeleteAccount.Designer.cs">
+    <Compile Include="PresentationLayer\AccountsDataUI\DeleteAccount.Designer.cs">
       <DependentUpon>DeleteAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="UIComponents\CreditCardUI\CreateCreditCardTab.cs">
+    <Compile Include="PresentationLayer\CreditCardUI\CreateCreditCardTab.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UIComponents\CreditCardUI\CreateCreditCardTab.Designer.cs">
+    <Compile Include="PresentationLayer\CreditCardUI\CreateCreditCardTab.Designer.cs">
       <DependentUpon>CreateCreditCardTab.cs</DependentUpon>
     </Compile>
-    <Compile Include="UIComponents\CustomersDataUI\AddCustomerTab.cs">
+    <Compile Include="PresentationLayer\CustomersDataUI\AddCustomerTab.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UIComponents\CustomersDataUI\AddCustomerTab.Designer.cs">
+    <Compile Include="PresentationLayer\CustomersDataUI\AddCustomerTab.Designer.cs">
       <DependentUpon>AddCustomerTab.cs</DependentUpon>
     </Compile>
     <Compile Include="App_functionality\AuthentificationApp\AuthentificationWindow.cs">
@@ -99,32 +106,30 @@
     <Compile Include="App_functionality\AuthentificationApp\AuthentificationWindow.Designer.cs">
       <DependentUpon>AuthentificationWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="UIComponents\AccountsDataUI\CreateAccountTab.cs">
+    <Compile Include="PresentationLayer\AccountsDataUI\CreateAccountTab.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UIComponents\AccountsDataUI\CreateAccountTab.Designer.cs">
+    <Compile Include="PresentationLayer\AccountsDataUI\CreateAccountTab.Designer.cs">
       <DependentUpon>CreateAccountTab.cs</DependentUpon>
     </Compile>
-    <Compile Include="UIComponents\AccountsDataUI\DisplayAccounts.cs">
+    <Compile Include="PresentationLayer\AccountsDataUI\DisplayAccounts.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UIComponents\AccountsDataUI\DisplayAccounts.Designer.cs">
+    <Compile Include="PresentationLayer\AccountsDataUI\DisplayAccounts.Designer.cs">
       <DependentUpon>DisplayAccounts.cs</DependentUpon>
     </Compile>
-    <Compile Include="UIComponents\AccountsDataUI\ManageAccountsTab.cs">
+    <Compile Include="PresentationLayer\AccountsDataUI\ManageAccountsTab.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UIComponents\AccountsDataUI\ManageAccountsTab.Designer.cs">
+    <Compile Include="PresentationLayer\AccountsDataUI\ManageAccountsTab.Designer.cs">
       <DependentUpon>ManageAccountsTab.cs</DependentUpon>
     </Compile>
     <Compile Include="App_functionality\Temp.cs" />
-    <Compile Include="App_functionality\GenerateSecurityElements.cs" />
-    <Compile Include="CustomerDataManagement\CustomerDataManagement.cs" />
-    <Compile Include="CustomerDataManagement\CustomerDataQuerries.cs" />
-    <Compile Include="UIComponents\CustomersDataUI\DeleteCustomerTab.cs">
+    <Compile Include="src\GenerateSecurityElements.cs" />
+    <Compile Include="PresentationLayer\CustomersDataUI\DeleteCustomerTab.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UIComponents\CustomersDataUI\DeleteCustomerTab.Designer.cs">
+    <Compile Include="PresentationLayer\CustomersDataUI\DeleteCustomerTab.Designer.cs">
       <DependentUpon>DeleteCustomerTab.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
@@ -133,67 +138,67 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="UIComponents\AccountsDataUI\GenerateStatementTab.cs">
+    <Compile Include="PresentationLayer\AccountsDataUI\GenerateStatementTab.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UIComponents\AccountsDataUI\GenerateStatementTab.Designer.cs">
+    <Compile Include="PresentationLayer\AccountsDataUI\GenerateStatementTab.Designer.cs">
       <DependentUpon>GenerateStatementTab.cs</DependentUpon>
     </Compile>
-    <Compile Include="UIComponents\CustomersDataUI\ManageCustomerData.cs">
+    <Compile Include="PresentationLayer\CustomersDataUI\ManageCustomerData.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UIComponents\CustomersDataUI\ManageCustomerData.Designer.cs">
+    <Compile Include="PresentationLayer\CustomersDataUI\ManageCustomerData.Designer.cs">
       <DependentUpon>ManageCustomerData.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="App_functionality\AuthentificationApp\ReadEmployeeData.cs" />
-    <Compile Include="UIComponents\AccountsDataUI\TransactionsLog.cs">
+    <Compile Include="PresentationLayer\AccountsDataUI\TransactionsLog.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UIComponents\AccountsDataUI\TransactionsLog.Designer.cs">
+    <Compile Include="PresentationLayer\AccountsDataUI\TransactionsLog.Designer.cs">
       <DependentUpon>TransactionsLog.cs</DependentUpon>
     </Compile>
-    <Compile Include="UIComponents\CustomersDataUI\UpdateDataPanel.cs">
+    <Compile Include="PresentationLayer\CustomersDataUI\UpdateDataPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UIComponents\CustomersDataUI\UpdateDataPanel.Designer.cs">
+    <Compile Include="PresentationLayer\CustomersDataUI\UpdateDataPanel.Designer.cs">
       <DependentUpon>UpdateDataPanel.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddCompanyTab.resx">
+    <EmbeddedResource Include="PresentationLayer\AddCompanyTab.resx">
       <DependentUpon>AddCompanyTab.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UIComponents\AccountsDataUI\DeleteAccount.resx">
+    <EmbeddedResource Include="PresentationLayer\AccountsDataUI\DeleteAccount.resx">
       <DependentUpon>DeleteAccount.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UIComponents\CreditCardUI\CreateCreditCardTab.resx">
+    <EmbeddedResource Include="PresentationLayer\CreditCardUI\CreateCreditCardTab.resx">
       <DependentUpon>CreateCreditCardTab.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UIComponents\CustomersDataUI\AddCustomerTab.resx">
+    <EmbeddedResource Include="PresentationLayer\CustomersDataUI\AddCustomerTab.resx">
       <DependentUpon>AddCustomerTab.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App_functionality\AuthentificationApp\AuthentificationWindow.resx">
       <DependentUpon>AuthentificationWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UIComponents\AccountsDataUI\CreateAccountTab.resx">
+    <EmbeddedResource Include="PresentationLayer\AccountsDataUI\CreateAccountTab.resx">
       <DependentUpon>CreateAccountTab.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UIComponents\CustomersDataUI\DeleteCustomerTab.resx">
+    <EmbeddedResource Include="PresentationLayer\CustomersDataUI\DeleteCustomerTab.resx">
       <DependentUpon>DeleteCustomerTab.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UIComponents\AccountsDataUI\DisplayAccounts.resx">
+    <EmbeddedResource Include="PresentationLayer\AccountsDataUI\DisplayAccounts.resx">
       <DependentUpon>DisplayAccounts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UIComponents\AccountsDataUI\GenerateStatementTab.resx">
+    <EmbeddedResource Include="PresentationLayer\AccountsDataUI\GenerateStatementTab.resx">
       <DependentUpon>GenerateStatementTab.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UIComponents\AccountsDataUI\ManageAccountsTab.resx">
+    <EmbeddedResource Include="PresentationLayer\AccountsDataUI\ManageAccountsTab.resx">
       <DependentUpon>ManageAccountsTab.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UIComponents\CustomersDataUI\ManageCustomerData.resx">
+    <EmbeddedResource Include="PresentationLayer\CustomersDataUI\ManageCustomerData.resx">
       <DependentUpon>ManageCustomerData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -205,12 +210,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UIComponents\AccountsDataUI\TransactionsLog.resx">
+    <EmbeddedResource Include="PresentationLayer\AccountsDataUI\TransactionsLog.resx">
       <DependentUpon>TransactionsLog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UIComponents\CustomersDataUI\UpdateDataPanel.resx">
+    <EmbeddedResource Include="PresentationLayer\CustomersDataUI\UpdateDataPanel.resx">
       <DependentUpon>UpdateDataPanel.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Config\config.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -225,5 +231,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
