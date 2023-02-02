@@ -1,11 +1,13 @@
-﻿using System;
+﻿using EmployeePortal.DataAccesLayer;
+using EmployeePortal.src;
+using System;
 using System.Windows.Forms;
 
 namespace EmployeePortal
 {
     public partial class DeleteCustomerTab : UserControl
     {
-        private readonly CustomerDataManagement data = new CustomerDataManagement();
+        private readonly ModifyData modifyData = new ModifyData();
         public DeleteCustomerTab()
         {
             InitializeComponent();
@@ -14,22 +16,21 @@ namespace EmployeePortal
 
         private void deleteBtn_Click(object sender, EventArgs e)
         {
-            if (Errors.BoxIsEmpty(customerName.Text) is true)
+            if (String.IsNullOrEmpty(customerName.Text))
             {
                 return;
             }
-            if (Errors.IsNumber(customerName) is true)
+            if (Imput.IsNumber(customerName))
             {
                 MessageBox.Show("Name Cannot Contain Numbers.");
 
                 return;
             }
 
-            #region DeleteCustomer
-            data.DeleteCustomer(customerName.Text);
-            customerDeleted.Text = "Customer Sucessfully deleted";
+            
+            customerDeleted.Text = $"{modifyData.DeleteCustomer(customerName.Text)}";
+
             customerName.Clear();
-            #endregion
 
 
         }

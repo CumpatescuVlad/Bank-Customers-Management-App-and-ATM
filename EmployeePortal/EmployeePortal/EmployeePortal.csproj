@@ -71,10 +71,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DTOs\AccountDTO.cs" />
+    <Compile Include="DTOs\CustomerDataDTO.cs" />
     <Compile Include="DTOs\EmployeeCredentialsDTO.cs" />
     <Compile Include="DTOs\TransactionsDTO.cs" />
     <Compile Include="Modeles\AccountBase.cs" />
     <Compile Include="Modeles\CreateAccountModel.cs" />
+    <Compile Include="Modeles\CustomerModel.cs" />
     <Compile Include="Modeles\DeleteAccountModel.cs" />
     <Compile Include="Modeles\TransactionModel.cs" />
     <Compile Include="PresentationLayer\AddCompanyTab.cs">
@@ -87,18 +89,13 @@
     <Compile Include="DataAccesLayer\ModifyData.cs" />
     <Compile Include="DataAccesLayer\ReadData.cs" />
     <Compile Include="Modeles\UpdateDataModel.cs" />
+    <Compile Include="src\Imput.cs" />
     <Compile Include="src\QuerryStrings.cs" />
     <Compile Include="PresentationLayer\AccountsDataUI\DeleteAccount.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="PresentationLayer\AccountsDataUI\DeleteAccount.Designer.cs">
       <DependentUpon>DeleteAccount.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PresentationLayer\CreditCardUI\CreateCreditCardTab.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PresentationLayer\CreditCardUI\CreateCreditCardTab.Designer.cs">
-      <DependentUpon>CreateCreditCardTab.cs</DependentUpon>
     </Compile>
     <Compile Include="PresentationLayer\CustomersDataUI\AddCustomerTab.cs">
       <SubType>UserControl</SubType>
@@ -175,9 +172,6 @@
     <EmbeddedResource Include="PresentationLayer\AccountsDataUI\DeleteAccount.resx">
       <DependentUpon>DeleteAccount.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentationLayer\CreditCardUI\CreateCreditCardTab.resx">
-      <DependentUpon>CreateCreditCardTab.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\CustomersDataUI\AddCustomerTab.resx">
       <DependentUpon>AddCustomerTab.cs</DependentUpon>
     </EmbeddedResource>
@@ -235,8 +229,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

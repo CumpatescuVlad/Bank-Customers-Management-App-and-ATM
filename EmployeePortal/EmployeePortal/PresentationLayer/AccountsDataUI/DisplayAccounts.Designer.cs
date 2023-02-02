@@ -31,12 +31,17 @@
             this.searchCustomersAccount = new System.Windows.Forms.Button();
             this.customerNameBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.displayOwnerName = new System.Windows.Forms.Label();
+            this.displayIBAN = new System.Windows.Forms.Label();
+            this.displayAccountNumber = new System.Windows.Forms.Label();
+            this.displayAccountBallance = new System.Windows.Forms.Label();
+            this.displayAccountName = new System.Windows.Forms.Label();
+            this.errorLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // searchCustomersAccount
@@ -69,25 +74,15 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Customer Name";
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(0, 52);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(666, 141);
-            this.richTextBox1.TabIndex = 3;
-            this.richTextBox1.Text = "";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label2.Location = new System.Drawing.Point(4, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 20);
+            this.label2.Size = new System.Drawing.Size(118, 20);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Name";
+            this.label2.Text = "Account Owner";
             // 
             // label3
             // 
@@ -129,16 +124,82 @@
             this.label6.TabIndex = 9;
             this.label6.Text = "Account Name";
             // 
+            // displayOwnerName
+            // 
+            this.displayOwnerName.AutoSize = true;
+            this.displayOwnerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.displayOwnerName.Location = new System.Drawing.Point(4, 61);
+            this.displayOwnerName.Name = "displayOwnerName";
+            this.displayOwnerName.Size = new System.Drawing.Size(148, 20);
+            this.displayOwnerName.TabIndex = 10;
+            this.displayOwnerName.Text = "DisplayOwnerName";
+            // 
+            // displayIBAN
+            // 
+            this.displayIBAN.AutoSize = true;
+            this.displayIBAN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.displayIBAN.Location = new System.Drawing.Point(147, 61);
+            this.displayIBAN.Name = "displayIBAN";
+            this.displayIBAN.Size = new System.Drawing.Size(157, 20);
+            this.displayIBAN.TabIndex = 11;
+            this.displayIBAN.Text = "DisplayAccountIBAN";
+            // 
+            // displayAccountNumber
+            // 
+            this.displayAccountNumber.AutoSize = true;
+            this.displayAccountNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.displayAccountNumber.Location = new System.Drawing.Point(336, 61);
+            this.displayAccountNumber.Name = "displayAccountNumber";
+            this.displayAccountNumber.Size = new System.Drawing.Size(124, 20);
+            this.displayAccountNumber.TabIndex = 12;
+            this.displayAccountNumber.Text = "AccountNumber";
+            // 
+            // displayAccountBallance
+            // 
+            this.displayAccountBallance.AutoSize = true;
+            this.displayAccountBallance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.displayAccountBallance.Location = new System.Drawing.Point(470, 61);
+            this.displayAccountBallance.Name = "displayAccountBallance";
+            this.displayAccountBallance.Size = new System.Drawing.Size(65, 20);
+            this.displayAccountBallance.TabIndex = 13;
+            this.displayAccountBallance.Text = "Amount";
+            // 
+            // displayAccountName
+            // 
+            this.displayAccountName.AutoSize = true;
+            this.displayAccountName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.displayAccountName.Location = new System.Drawing.Point(555, 61);
+            this.displayAccountName.Name = "displayAccountName";
+            this.displayAccountName.Size = new System.Drawing.Size(114, 20);
+            this.displayAccountName.TabIndex = 14;
+            this.displayAccountName.Text = "Account Name";
+            // 
+            // errorLabel
+            // 
+            this.errorLabel.AutoSize = true;
+            this.errorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.errorLabel.ForeColor = System.Drawing.Color.Red;
+            this.errorLabel.Location = new System.Drawing.Point(270, 131);
+            this.errorLabel.Name = "errorLabel";
+            this.errorLabel.Size = new System.Drawing.Size(65, 20);
+            this.errorLabel.TabIndex = 15;
+            this.errorLabel.Text = "ErrorLbl";
+            // 
             // DisplayAccounts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.errorLabel);
+            this.Controls.Add(this.displayAccountName);
+            this.Controls.Add(this.displayAccountBallance);
+            this.Controls.Add(this.displayAccountNumber);
+            this.Controls.Add(this.displayIBAN);
+            this.Controls.Add(this.displayOwnerName);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.customerNameBox);
             this.Controls.Add(this.searchCustomersAccount);
@@ -154,11 +215,16 @@
         private System.Windows.Forms.Button searchCustomersAccount;
         private System.Windows.Forms.TextBox customerNameBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label displayOwnerName;
+        private System.Windows.Forms.Label displayIBAN;
+        private System.Windows.Forms.Label displayAccountNumber;
+        private System.Windows.Forms.Label displayAccountBallance;
+        private System.Windows.Forms.Label displayAccountName;
+        private System.Windows.Forms.Label errorLabel;
     }
 }

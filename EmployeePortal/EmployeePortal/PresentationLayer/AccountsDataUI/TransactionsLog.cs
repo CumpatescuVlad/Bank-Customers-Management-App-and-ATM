@@ -1,4 +1,6 @@
-﻿using AccountOperations;
+﻿using EmployeePortal.Modeles;
+using EmployeePortal.DataAccesLayer;
+using EmployeePortal.src;
 using System;
 using System.Windows.Forms;
 
@@ -6,7 +8,7 @@ namespace EmployeePortal
 {
     public partial class TransactionsLog : UserControl
     {
-        private readonly AccountManagement manage = new AccountManagement();
+        private readonly ReadData readData = new ReadData();
 
 
         public TransactionsLog()
@@ -18,28 +20,37 @@ namespace EmployeePortal
 
         private void searchTransactionsLog_Click(object sender, EventArgs e)
         {
-
-            if (Errors.BoxIsEmpty(accountNumberBox.Text) is true || Errors.BoxIsEmpty(customerFullNameBox.Text) is true)
+            if (String.IsNullOrEmpty(accountNumberBox.Text)|| String.IsNullOrEmpty(customerFullNameBox.Text))
             {
                 return;
             }
-            else if (Errors.IsNumber(customerFullNameBox) is true)
+
+            else if (Imput.IsNumber(customerFullNameBox))
             {
                 MessageBox.Show("Name Cannot Contain Numbers.");
 
                 return;
             }
 
-            richTextBox1.Text = manage.ShowDefaultTransactions(customerFullNameBox.Text, accountNumberBox.Text);
+            var transactionsModel = new TransactionModel() 
+            {
+                AccountOwnerName= customerFullNameBox.Text,
+                AccountNumber= accountNumberBox.Text,
+                Order ="Date",
+            };
 
-            if (String.IsNullOrEmpty(richTextBox1.Text))
+            var transactions = readData.ReadTransactions(transactionsModel);
+
+            richTextBox1.Text +=$"{transactions.AccountOwnerName} {transactions.AccountNumber} {transactions.AccountName} {transactions.Amount} {transactions.Date}";
+
+            if (transactions is null)
             {
                 MessageBox.Show("Customer Not Found!");
+
                 return;
 
             }
-            manage.ShowTransactionsOrdered(customerFullNameBox.Text, accountNumberBox.Text, "Amount Desc");
-            manage.ShowTransactionsOrdered(customerFullNameBox.Text, accountNumberBox.Text, "Date Asc");
+           
             ShowElements();
 
 

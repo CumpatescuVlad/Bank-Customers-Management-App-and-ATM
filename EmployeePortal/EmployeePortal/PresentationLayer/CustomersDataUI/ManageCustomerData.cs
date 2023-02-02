@@ -1,4 +1,6 @@
-﻿using System;
+﻿using EmployeePortal.DataAccesLayer;
+using EmployeePortal.src;
+using System;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
@@ -6,7 +8,7 @@ namespace EmployeePortal
 {
     public partial class ManageCustomerData : UserControl
     {
-        private readonly CustomerDataQuerries data = new CustomerDataQuerries();
+        private readonly ReadData readData = new ReadData();
 
         public ManageCustomerData()
         {
@@ -27,27 +29,28 @@ namespace EmployeePortal
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (Errors.BoxIsEmpty(fullNamebox.Text) is true)
+            if (String.IsNullOrEmpty(fullNamebox.Text))
             {
                 return;
             }
-            if (Errors.IsNumber(fullNamebox) is true)
+            else if (Imput.IsNumber(fullNamebox))
             {
                 MessageBox.Show("Name Cannot Contain Numbers.");
 
                 return;
             }
 
-            DisplayCustomer(fullNamebox.Text);
+            var customerData = readData.ReadCustomer(fullNamebox.Text);
 
-            if (String.IsNullOrEmpty(richTextBox1.Text))
+            richTextBox1.Text = $"{customerData.CustomerName}----{customerData.CustomerPhoneNumber}----{customerData.CustomerPassword}";
+
+            if (customerData is null)
             {
                 richTextBox1.Text = "Customer Not Found.";
                 fullNamebox.Clear();
+
                 return;
             }
-
-            Temp.CreateFile("NewCustomerFullName.txt", fullNamebox.Text);
 
             fullNamebox.Clear();
 
@@ -55,26 +58,6 @@ namespace EmployeePortal
 
 
         }
-        public void DisplayCustomer(string customerName)
-        {
-            var searchConnection = new SqlConnection(data.ConnectionString);
-
-            var displayCustomerCommand = new SqlCommand($"{data.ReadCustomerDataString(customerName)}", searchConnection);
-
-            searchConnection.Open();
-
-            var readCustomer = displayCustomerCommand.ExecuteReader();
-
-            while (readCustomer.Read())
-            {
-                richTextBox1.Text =
-                 $"{readCustomer.GetValue(0)}\t{readCustomer.GetValue(1)}\t{readCustomer.GetValue(2)}\t\t{readCustomer.GetValue(3)}";
-
-                Temp.CreateFile("OldCustomerFullName.txt", $"{readCustomer.GetValue(0)}");
-            }
-
-            searchConnection.Close();
-
-        }
+        
     }
 }

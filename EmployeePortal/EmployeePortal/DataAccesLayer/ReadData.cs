@@ -10,6 +10,43 @@ namespace EmployeePortal.DataAccesLayer
     public class ReadData
     {
         private readonly Config.Config _config = new Config.Config();
+
+        public CustomerDataDTO ReadCustomer(string customerName)
+        {
+            CustomerDataDTO customerData;
+            var conenction = new SqlConnection(_config.ConnectionString);
+            var readCommand = new SqlCommand(QuerryStrings.ReadAccount(customerName),conenction);
+
+            try
+            {
+                conenction.Open();
+                var reader = readCommand.ExecuteReader();
+                reader.Read();
+                customerData = new CustomerDataDTO(reader.GetString(0), reader.GetString(1), reader.GetString(3), reader.GetString(4));
+                reader.Close();
+
+                return customerData;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+                return null;
+               
+            }
+            finally 
+            { 
+                conenction.Close(); 
+            }
+
+           
+
+
+
+
+        }
+
         public EmployeeCredentialsDTO ReadEmployeeData()
         {
             EmployeeCredentialsDTO employeeCredentials;
@@ -47,7 +84,7 @@ namespace EmployeePortal.DataAccesLayer
                 var reader = readAccountCommand.ExecuteReader();
                 while (reader.Read())
                 {
-                    account = new AccountDTO(reader.GetString(0), reader.GetString(2), reader.GetString(3), reader.GetInt32(4));
+                    account = new AccountDTO(reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetInt32(3), reader.GetString(4));
 
                 }
                 connection.Close();

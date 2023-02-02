@@ -1,4 +1,7 @@
 ﻿using EmployeeInterface;
+using EmployeePortal.DataAccesLayer;
+using EmployeePortal.Modeles;
+using EmployeePortal.src;
 using System;
 using System.Data.SqlClient;
 using System.Windows.Forms;
@@ -7,9 +10,8 @@ namespace EmployeePortal
 {
     public partial class AddCustomerTab : UserControl
     {
-        private readonly GenerateSecurityElements element = new GenerateSecurityElements();
-        private readonly CustomerDataQuerries data = new CustomerDataQuerries();
-        private SqlConnection insertConnection = null;
+        private readonly ModifyData modifyData= new ModifyData();
+        
         public AddCustomerTab()
         {
             InitializeComponent();
@@ -17,46 +19,39 @@ namespace EmployeePortal
 
         private void addCustomerBtn_Click(object sender, EventArgs e)
         {
-            if (Errors.BoxIsEmpty(nameBox.Text) is true || Errors.BoxIsEmpty(emailBox.Text) is true || Errors.BoxIsEmpty(phoneNumBox.Text) is true)
+            if (String.IsNullOrEmpty(nameBox.Text)|| String.IsNullOrEmpty(emailBox.Text)|| String.IsNullOrEmpty(phoneNumBox.Text))
             {
                 return;
             }
 
-            if (Errors.IsNumber(nameBox) is true || Errors.IsNumber(phoneNumBox) is false)
+            else if (Imput.IsNumber(nameBox)|| Imput.IsNumber(phoneNumBox) is false)
             {
                 MessageBox.Show("Wrong Imput\nName Cannot Contain Numbers\nPhone Number Cannot Contain Letters.");
 
                 return;
             }
-            #region AddCustomer
-            InsertCustomerData();
-            succesName.Text = "Customer Sucessfully Added";
+
+            var customerModel = new CustomerModel() 
+            {
+                CustomerName= nameBox.Text,
+                CustomerEmail= emailBox.Text,
+                CustomerPhoneNumber= phoneNumBox.Text,
+            };
+            
+            succesName.Text = $"{modifyData.AddCustomer(customerModel)}";
+
+            if (String.IsNullOrEmpty(succesName.Text))
+            {
+                succesName.Text = "Error";
+            }
+
             nameBox.Clear();
             emailBox.Clear();
             phoneNumBox.Clear();
-            #endregion
+            
 
         }
 
-        private void InsertCustomerData()
-        {
-            string insertCustomerString = $@"Insert into Customers (CustomerFullName,CustomerPassword,CustomerEmail,
-             CustomerPhoneNumber,FirstInstall,CustomerAppPin) values
-             ('{nameBox.Text}','{element.GeneratePassword()}','{emailBox.Text}','{phoneNumBox.Text}','1',{element.GenerateAppPIN()})";
-
-
-            insertConnection = new SqlConnection(data.ConnectionString);
-
-            insertConnection.Open();
-
-            var insertCommand = new SqlCommand(insertCustomerString, insertConnection);
-
-            var adapter = new SqlDataAdapter { InsertCommand = insertCommand };
-
-            adapter.InsertCommand.ExecuteNonQuery();
-
-            insertConnection.Close();
-
-        }
+       
     }
 }

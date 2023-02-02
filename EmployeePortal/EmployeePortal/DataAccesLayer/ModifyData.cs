@@ -12,6 +12,34 @@ namespace EmployeePortal.DataAccesLayer
     {
         private readonly Config.Config _config = JsonConvert.DeserializeObject<Config.Config>(File.ReadAllText($@"{Environment.CurrentDirectory}\Config\config.json"));
 
+        public string AddCustomer(CustomerModel customerModel)
+        {
+            var connection = new SqlConnection(_config.ConnectionString);
+            var insertCustomerCommand = new SqlCommand(QuerryStrings.InsertCustomer(customerModel),connection);
+
+            try
+            {
+                connection.Open();
+
+                var insertAdapter = new SqlDataAdapter() { InsertCommand = insertCustomerCommand };
+
+                insertAdapter.InsertCommand.ExecuteNonQuery();
+
+                return $"Customer {customerModel.CustomerName} sucesfully inserted.";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+                return null;
+            }
+            finally 
+            { 
+                connection.Close(); 
+            }
+
+        }
+
         public string CreateBankAccount(CreateAccountModel accountModel)
         {
             var connection = new SqlConnection(_config.ConnectionString);

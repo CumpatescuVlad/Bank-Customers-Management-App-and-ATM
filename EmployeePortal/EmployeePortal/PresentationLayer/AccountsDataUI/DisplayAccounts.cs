@@ -1,4 +1,5 @@
 ﻿using AccountOperations;
+using EmployeePortal.DataAccesLayer;
 using System;
 using System.Windows.Forms;
 
@@ -6,28 +7,46 @@ namespace EmployeePortal
 {
     public partial class DisplayAccounts : UserControl
     {
-        private readonly AccountManagement manage = new AccountManagement();
+        private readonly ReadData readData = new ReadData();
         public DisplayAccounts()
         {
             InitializeComponent();
+            customerNameBox.GotFocus += CustomerNameBox_GotFocus;
+            displayOwnerName.Hide();
+            displayIBAN.Hide();
+            displayAccountNumber.Hide();
+            displayAccountBallance.Hide();
+            displayAccountName.Hide();
+            errorLabel.Hide();
+        }
 
+        private void CustomerNameBox_GotFocus(object sender, EventArgs e)
+        {
+            errorLabel.Hide();
         }
 
         private void searchCustomersAccount_Click(object sender, EventArgs e)
         {
-
-            if (Errors.BoxIsEmpty(customerNameBox.Text) is true)
+            if (String.IsNullOrEmpty(customerNameBox.Text))
             {
                 return;
             }
 
-            richTextBox1.Text = manage.DisplayAccounts(customerNameBox.Text);
+            var accounts = readData.ReadAccounts(customerNameBox.Text);
 
-            if (String.IsNullOrEmpty(richTextBox1.Text))
+            displayOwnerName.Text += accounts.AccountOwnerName;
+            displayIBAN.Text += accounts.AccountIBAN;
+            displayAccountNumber.Text+= accounts.AccountNumber;
+            displayAccountBallance.Text+= accounts.AccountBallance.ToString();
+            displayAccountName.Text += accounts.AccountName;
+
+            if (accounts is null)
             {
-                richTextBox1.Text = "Customer Not Found.";
+                errorLabel.Show();
+                errorLabel.Text = "Customer Not Found.";
                 customerNameBox.Clear();
             }
+
             customerNameBox.Clear();
 
         }
