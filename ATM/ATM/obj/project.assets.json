@@ -2761,11 +2761,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\CODE REPOS\\BankApp\\ATM\\ATM\\ATM\\ATM.csproj",
+      "projectUniqueName": "E:\\CODE REPOS\\BankApp\\ATM\\ATM\\ATM.csproj",
       "projectName": "ATM",
-      "projectPath": "E:\\CODE REPOS\\BankApp\\ATM\\ATM\\ATM\\ATM.csproj",
+      "projectPath": "E:\\CODE REPOS\\BankApp\\ATM\\ATM\\ATM.csproj",
       "packagesPath": "C:\\Users\\VLAD\\.nuget\\packages\\",
-      "outputPath": "E:\\CODE REPOS\\BankApp\\ATM\\ATM\\ATM\\obj\\",
+      "outputPath": "E:\\CODE REPOS\\BankApp\\ATM\\ATM\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2826,7 +2826,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
