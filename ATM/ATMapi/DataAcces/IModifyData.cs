@@ -8,5 +8,6 @@ namespace ATMapi.DataAcces
         HttpStatusCode Deposit(DepositModel depositModel);
         HttpStatusCode InsertTransaction(TransactionModel transactionModel);
         HttpStatusCode Withdraw(WithdrawModel withdrawModel);
+        
     }
 }

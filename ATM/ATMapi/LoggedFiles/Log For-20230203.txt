@@ -1,0 +1,23 @@
+2023-02-03 03:18:26.421 +02:00 [INF] Now listening on: https://localhost:7004
+2023-02-03 03:18:26.466 +02:00 [INF] Now listening on: http://localhost:5161
+2023-02-03 03:18:26.469 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-03 03:18:26.470 +02:00 [INF] Hosting environment: Development
+2023-02-03 03:18:26.471 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATMapi
+2023-02-03 03:23:32.486 +02:00 [INF] Now listening on: https://localhost:7004
+2023-02-03 03:23:32.572 +02:00 [INF] Now listening on: http://localhost:5161
+2023-02-03 03:23:32.575 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-03 03:23:32.577 +02:00 [INF] Hosting environment: Development
+2023-02-03 03:23:32.582 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATMapi
+2023-02-03 03:24:04.842 +02:00 [ERR] Invalid column name 'CustomerName'.
+2023-02-03 03:26:12.655 +02:00 [INF] Now listening on: https://localhost:7004
+2023-02-03 03:26:12.712 +02:00 [INF] Now listening on: http://localhost:5161
+2023-02-03 03:26:12.716 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-03 03:26:12.718 +02:00 [INF] Hosting environment: Development
+2023-02-03 03:26:12.719 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATMapi
+2023-02-03 03:26:38.831 +02:00 [ERR] Invalid column name 'CustomerName'.
+2023-02-03 03:27:21.581 +02:00 [INF] Now listening on: https://localhost:7004
+2023-02-03 03:27:21.668 +02:00 [INF] Now listening on: http://localhost:5161
+2023-02-03 03:27:21.671 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-03 03:27:21.673 +02:00 [INF] Hosting environment: Development
+2023-02-03 03:27:21.674 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATMapi
+2023-02-03 03:27:37.144 +02:00 [ERR] Invalid column name 'CustomerName'.

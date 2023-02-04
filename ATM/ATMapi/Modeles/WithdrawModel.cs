@@ -1,6 +1,6 @@
 ﻿namespace ATMapi.Modeles
 {
-    public class WithdrawModel:DepositModel
+    public class WithdrawModel : DepositModel
     {
 
     }

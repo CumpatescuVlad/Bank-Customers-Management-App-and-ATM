@@ -5,39 +5,39 @@ using Newtonsoft.Json;
 
 namespace ATMapi.Services
 {
-    public class SoldAccountService
+    public class SoldAccountService : ISoldAccountService
     {
-        private readonly ILogger<SoldAccountService> _logger;
+
         private readonly IGenerateRecipts _generateRecipt;
         private readonly IReadData _readData;
 
-        public SoldAccountService(ILogger<SoldAccountService> logger,IGenerateRecipts generateRecipt,IReadData readData)
+        public SoldAccountService(IGenerateRecipts generateRecipt, IReadData readData)
         {
-            _logger = logger;
-            _generateRecipt= generateRecipt;
+            _generateRecipt = generateRecipt;
             _readData = readData;
         }
 
-        public string SoldAccount(SoldModel soldModel)
+        public string SoldAccount(string customerName, string accountNumber)
         {
-            var accountInfo = _readData.ReadAccountInfo(soldModel.CustomerName,soldModel.AccountNumber);
-           
-            if (accountInfo is not null&&soldModel.DoYouWantRecipt=="No")
+            var accountInfo = _readData.ReadAccountInfo(customerName, accountNumber);
+
+            if (accountInfo is not null)
             {
                 return JsonConvert.SerializeObject(accountInfo);
-            }
-            else if (accountInfo is not null&&soldModel.DoYouWantRecipt=="Yes")
-            {
-                return JsonConvert.SerializeObject(_generateRecipt.GenerateSoldRecipt());
+
             }
             else
             {
                 return null;
             }
-            
 
         }
+        public string CreateSoldRecipt(SoldModel soldModel)
+        {
+            var soldRecipt = _generateRecipt.GenerateSoldRecipt(soldModel.AccountNumber, soldModel.AccountIBAN, soldModel.Ballance);
 
+            return JsonConvert.SerializeObject(soldRecipt);
+        }
 
 
     }

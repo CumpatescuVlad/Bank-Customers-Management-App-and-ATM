@@ -1,6 +1,5 @@
 ﻿using ATMapi.Config;
 using ATMapi.DTOs;
-using ATMapi.Modeles;
 using ATMapi.src;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Options;
@@ -19,28 +18,35 @@ namespace ATMapi.DataAcces
             _connection = new SqlConnection(_config.ConnectionString);
         }
 
-        public SoldDTO ReadAccountInfo(string customerName,string accountNumber)
+        public SoldDTO ReadAccountInfo(string customerName, string accountNumber)
         {
             SoldDTO soldDTO;
-            var readInfoCommand = new SqlCommand(QuerryStrings.SelectAccountInfo(customerName,accountNumber), _connection);
+            var readAccountInfoCommand = new SqlCommand(QuerryStrings.SelectAccountInfo(customerName, accountNumber), _connection);
 
             try
             {
                 _connection.Open();
 
-                var reader = readInfoCommand.ExecuteReader();
+                var reader = readAccountInfoCommand.ExecuteReader();
 
                 reader.Read();
-                soldDTO = new SoldDTO(reader.GetString(0), reader.GetString(1), reader.GetInt32(2), DateTime.Now.ToString("yyyy-MM-dd"));
+                soldDTO = new SoldDTO(reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetInt32(3), DateTime.Now.ToString("yyyy-MM-dd"));
                 reader.Close();
 
                 return soldDTO;
 
             }
+            catch (InvalidOperationException invalidEx)
+            {
+                _logger.LogError(invalidEx.Message);
+                _logger.LogError(invalidEx.GetType().ToString());
+
+                return new SoldDTO("Not Found", "Not Found", "Not Found", null, DateTime.Now.ToString("yyyy-MM-dd"));
+            }
             catch (Exception ex)
             {
                 _logger.LogError(ex.Message);
-
+                _logger.LogError(ex.GetType().ToString());
                 return null;
             }
             finally

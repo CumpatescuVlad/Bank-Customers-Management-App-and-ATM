@@ -18,7 +18,7 @@ namespace ATM
             reciptMessageEnglish1.Hide();
             anotherTransactionsEnglish1.Hide();
         }
-        
+
         #region UIBehaviour
 
         private void depositBtn_Click(object sender, EventArgs e)
@@ -110,7 +110,7 @@ namespace ATM
 
         }
         #endregion
-       
+
         private void soldBtn_Click(object sender, EventArgs e)
         {
             HideElements($"Account Sold\n\n\n\nAvailabble Cash\n{atm.Sold(temp.ReadFile("AccountIBAN.txt"))}");

@@ -1,12 +1,11 @@
-﻿using ATMapi.DTOs;
-using ATMapi.Modeles;
+﻿using ATMapi.Modeles;
 
 namespace ATMapi.src
 {
     public interface IGenerateRecipts
     {
-        string GenerateDepositRecipt(DepositModel depositModel);
-        string GenerateSoldRecipt(SoldDTO soldDTO);
-        string GenerateWithdrawRecipt(WithdrawModel withdrawModel);
+        string GenerateDepositRecipt(string accountIBAN, int amount);
+        string GenerateSoldRecipt(string accountNumber, string accountIBAN, int ballance);
+        string GenerateWithdrawRecipt(string accountNumber,int amount);
     }
 }
