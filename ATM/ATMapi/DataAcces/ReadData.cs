@@ -3,6 +3,7 @@ using ATMapi.DTOs;
 using ATMapi.src;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Options;
+using System.Net;
 
 namespace ATMapi.DataAcces
 {
@@ -53,6 +54,44 @@ namespace ATMapi.DataAcces
             {
                 _connection.Close();
             }
+
+        }
+
+        public HttpStatusCode ReadCustomer(string customerName)
+        {
+            var readCustomerName = new SqlCommand(QuerryStrings.SelectCustomer(customerName), _connection);
+
+            try
+            {
+                _connection.Open();
+                var reader = readCustomerName.ExecuteReader();
+
+                reader.Read();
+                reader.GetString(0);
+                reader.Close();
+
+                return HttpStatusCode.OK;
+            }
+            catch (InvalidOperationException invalidEx)
+            {
+                _logger.LogError(invalidEx.Message);
+
+                return HttpStatusCode.NotFound;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                _logger.LogError(ex.GetType().ToString());
+                _logger.LogWarning(ex.StackTrace);
+
+                return HttpStatusCode.InternalServerError;
+            }
+            finally 
+            {
+                _connection.Close(); 
+            }
+
+
 
         }
     }

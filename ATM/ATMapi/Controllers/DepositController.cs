@@ -1,8 +1,8 @@
 ﻿using ATMapi.Filters;
 using ATMapi.Modeles;
 using ATMapi.Services;
-using System.Net;
 using Microsoft.AspNetCore.Mvc;
+using System.Net;
 
 namespace ATMapi.Controllers
 {
@@ -22,15 +22,15 @@ namespace ATMapi.Controllers
 
         [ServiceFilter(typeof(ModelFilter))]
 
-        public IActionResult NewDeposit(TransactionModel transactionModel)
+        public IActionResult NewDeposit(DepositModel depositmodel)
         {
-            var depositStatusCode =  _depositService.DepositBallance(transactionModel);
+            var depositStatusCode = _depositService.DepositBallance(depositmodel);
 
             if (depositStatusCode is HttpStatusCode.InternalServerError)
             {
                 return StatusCode(500);
             }
-            else if(depositStatusCode is HttpStatusCode.NotFound)
+            else if (depositStatusCode is HttpStatusCode.NotFound)
             {
                 return NotFound();
 
@@ -45,7 +45,7 @@ namespace ATMapi.Controllers
 
         [Route("ATM/Deposit/Recipt")]
 
-        public IActionResult DepositRecipt([FromQuery]string accountIBAN,int amount)
+        public IActionResult DepositRecipt([FromQuery] string accountIBAN, int amount)
         {
             string depositRecipt = _depositService.CreateDepositRecipt(accountIBAN, amount);
 

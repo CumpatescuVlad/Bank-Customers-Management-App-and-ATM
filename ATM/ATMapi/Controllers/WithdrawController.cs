@@ -1,8 +1,8 @@
 ﻿using ATMapi.Filters;
 using ATMapi.Modeles;
 using ATMapi.Services;
-using System.Net;
 using Microsoft.AspNetCore.Mvc;
+using System.Net;
 
 namespace ATMapi.Controllers
 {
@@ -22,9 +22,9 @@ namespace ATMapi.Controllers
 
         [Route("API/Withdraw")]
 
-        public IActionResult Withdraw(TransactionModel transactionModel)
+        public IActionResult Withdraw(WithdrawModel withdrawModel)
         {
-            var withdrawStatusCode = _withdrawService.WithdrawBallance(transactionModel);
+            var withdrawStatusCode = _withdrawService.WithdrawBallance(withdrawModel);
 
             if (withdrawStatusCode is HttpStatusCode.Created)
             {
@@ -38,13 +38,14 @@ namespace ATMapi.Controllers
 
             return StatusCode(500);
         }
+
         [HttpPost]
 
         [ServiceFilter(typeof(ModelFilter))]
 
         [Route("API/Withdraw/Recipt")]
 
-        public IActionResult CreateWithdrawRecipt([FromQuery] string accountNumber,int amount)
+        public IActionResult CreateWithdrawRecipt([FromQuery] string accountNumber, int amount)
         {
             string withdrawRecipt = _withdrawService.CreateWithdrawRecipt(accountNumber, amount);
 

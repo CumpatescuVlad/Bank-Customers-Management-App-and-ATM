@@ -63,11 +63,14 @@ namespace ATMapi.DataAcces
             try
             {
                 _connection.Open();
+
                 var adpter = new SqlDataAdapter() { InsertCommand = insertBallanceCommand };
-                
+
+                adpter.InsertCommand.ExecuteNonQuery();
+
                 return HttpStatusCode.Continue;
             }
-            catch(InvalidOperationException invalidEx)
+            catch (InvalidOperationException invalidEx)
             {
                 _logger.LogError(invalidEx.Message);
 
@@ -103,7 +106,7 @@ namespace ATMapi.DataAcces
 
                 return HttpStatusCode.Created;
             }
-            catch(InvalidOperationException invalidEx)
+            catch (InvalidOperationException invalidEx)
             {
                 _logger.LogError(invalidEx.Message);
 

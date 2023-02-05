@@ -16,7 +16,5 @@ namespace ATMapi.Modeles
         [Required(ErrorMessage = "Amount Cannot Be Null.")]
         public int? Amount { get; set; }
 
-        [Required(ErrorMessage = "Date Time Cannot Be Null.")]
-        public string? DateTime { get; set; }
     }
 }

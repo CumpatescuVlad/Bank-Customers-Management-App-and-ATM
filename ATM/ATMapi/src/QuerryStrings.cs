@@ -6,6 +6,8 @@ namespace ATMapi.src
     {
         public static string SelectAccountInfo(string customerName, string accountNumber) => $"Select CustomerFullName,AccountNumber,AccountIBAN,Ballance From Accounts Where CustomerFullName='{customerName}' AND AccountNumber='{accountNumber}'";
 
+        public static string SelectCustomer(string customerName) => $"Select CustomerFullName From Accounts Where CustomerFullName='{customerName}'";
+
         public static string UpdateBallance(DepositModel? depositModel, WithdrawModel? withdrawModel, string typeOfTransaction)
         {
             string querryString;
@@ -30,11 +32,11 @@ namespace ATMapi.src
 
             if (transactionModel.TypeOfTransaction == "Deposit")
             {
-                querryString = $"Insert Into Transactions (CustomerFullName,TypeOfTransaction,AccountUsed,Amount,Recipient,TransactionDate) Values('{transactionModel.AccountOwnerName}','Deposit','{transactionModel.AccountIBAN}','{transactionModel.Amount}','{transactionModel.Recipient}','{DateTime.Now:yyyy-MM-dd}')";
+                querryString = $"Insert Into Transactions (CustomerFullName,TypeOfTransaction,AccountUsed,Amount,Recipient,TransactionDate) Values('{transactionModel.AccountOwnerName}','Deposit','{transactionModel.AccountIBAN}','{transactionModel.Amount}','{transactionModel.AccountOwnerName}','{DateTime.Now:yyyy-MM-dd}')";
             }
             else
             {
-                querryString = $"Insert Into Transactions (CustomerFullName,TypeOfTransaction,AccountUsed,Amount,Recipient,TransactionDate) Values('{transactionModel.AccountOwnerName}','Withdraw','{transactionModel.AccountIBAN}','{transactionModel.Amount}','{transactionModel.Recipient}','{DateTime.Now:yyyy-MM-dd}')";
+                querryString = $"Insert Into Transactions (CustomerFullName,TypeOfTransaction,AccountUsed,Amount,Recipient,TransactionDate) Values('{transactionModel.AccountOwnerName}','Withdraw','{transactionModel.AccountIBAN}','{transactionModel.Amount}','{transactionModel.AccountOwnerName}','{DateTime.Now:yyyy-MM-dd}')";
             }
 
             return querryString;

@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ATM", "ATM\ATM.csproj", "{984D58AC-ED36-44D2-842C-15FD64426503}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ATMapi", "ATMapi\ATMapi.csproj", "{E9E323A8-D3EC-45E8-814B-C3B8F9C37BF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATMapi", "ATMapi\ATMapi.csproj", "{E9E323A8-D3EC-45E8-814B-C3B8F9C37BF3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9B36C4FA-9980-4A12-A602-13B7D17D7339}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATM-App", "ATM-App\ATM-App.csproj", "{91C411CE-C5F6-44A6-874D-52ACE03F17CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +18,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{984D58AC-ED36-44D2-842C-15FD64426503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{984D58AC-ED36-44D2-842C-15FD64426503}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{984D58AC-ED36-44D2-842C-15FD64426503}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{984D58AC-ED36-44D2-842C-15FD64426503}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E9E323A8-D3EC-45E8-814B-C3B8F9C37BF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E9E323A8-D3EC-45E8-814B-C3B8F9C37BF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9E323A8-D3EC-45E8-814B-C3B8F9C37BF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9E323A8-D3EC-45E8-814B-C3B8F9C37BF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91C411CE-C5F6-44A6-874D-52ACE03F17CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91C411CE-C5F6-44A6-874D-52ACE03F17CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91C411CE-C5F6-44A6-874D-52ACE03F17CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91C411CE-C5F6-44A6-874D-52ACE03F17CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

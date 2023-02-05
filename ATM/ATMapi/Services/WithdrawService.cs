@@ -11,26 +11,41 @@ namespace ATMapi.Services
     {
         private readonly IModifyData _modifyData;
         private readonly IGenerateRecipts _generateRecipts;
+        private readonly IReadData _readData;
 
-        public WithdrawService(IModifyData modifyData, IGenerateRecipts generateRecipts)
+        public WithdrawService(IModifyData modifyData, IGenerateRecipts generateRecipts, IReadData readData)
         {
             _modifyData = modifyData;
             _generateRecipts = generateRecipts;
+            _readData = readData;
         }
 
-        public HttpStatusCode WithdrawBallance(TransactionModel transactionModel)
+        public HttpStatusCode WithdrawBallance(WithdrawModel withdrawModel)
         {
-            var withdrawModel = new WithdrawModel()
+            var transactionModel = new TransactionModel()
             {
-                AccountOwnerName = transactionModel.AccountOwnerName,
-                AccountIBAN = transactionModel.AccountIBAN,
-                AccountNumber = transactionModel.AccountNumber,
-                Amount = transactionModel.Amount,
-                DateTime = transactionModel.DateTime,
+                AccountOwnerName = withdrawModel.AccountOwnerName,
+                AccountIBAN = withdrawModel.AccountIBAN,
+                AccountNumber = withdrawModel.AccountNumber,
+                Amount = withdrawModel.Amount,
+                TypeOfTransaction = "Withdraw",
+
             };
+
+            var customerExists = _readData.ReadCustomer(transactionModel.AccountOwnerName);
+
+            if (customerExists is HttpStatusCode.NotFound)
+            {
+                return HttpStatusCode.NotFound;
+            }
+            else if (customerExists is HttpStatusCode.InternalServerError)
+            {
+                return HttpStatusCode.InternalServerError;
+            }
+
             var withdrawBallance = _modifyData.Withdraw(withdrawModel);
 
-            if (withdrawBallance is HttpStatusCode.Created)
+            if (withdrawBallance is HttpStatusCode.Continue)
             {
                 var registerTransaction = _modifyData.InsertTransaction(transactionModel);
 

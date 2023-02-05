@@ -6,6 +6,6 @@ namespace ATMapi.Services
     public interface IWithdrawService
     {
         string CreateWithdrawRecipt(string accountNumber, int amount);
-        HttpStatusCode WithdrawBallance(TransactionModel transactionModel);
+        HttpStatusCode WithdrawBallance(WithdrawModel withdrawModel);
     }
 }

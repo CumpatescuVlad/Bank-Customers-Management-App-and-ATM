@@ -1,6 +1,4 @@
-﻿using ATMapi.Modeles;
-
-namespace ATMapi.src
+﻿namespace ATMapi.src
 {
     public class GenerateRecipts : IGenerateRecipts
     {
@@ -22,7 +20,7 @@ namespace ATMapi.src
             return soldRecipt;
         }
 
-        public string GenerateWithdrawRecipt(string accountNumber,int amount)
+        public string GenerateWithdrawRecipt(string accountNumber, int amount)
         {
             string withdrawRecipt = "BANCA ROMANA\nWelcome!\n";
             withdrawRecipt += $"*******************************\nWithdraw Cash\nTID:        000{random.Next(1000, 9000)}  MID:      {random.Next(100000, 900000)}\n";
@@ -37,7 +35,7 @@ namespace ATMapi.src
             return withdrawRecipt;
         }
 
-        public string GenerateDepositRecipt(string accountIBAN,int amount)
+        public string GenerateDepositRecipt(string accountIBAN, int amount)
         {
             string depositRecipt = "BANCA ROMANA\nWelcome!\n";
             depositRecipt += $"*******************************\nDeposit Cash\nTID:      {random.Next(1000, 9000)}  MID:      {random.Next(100000, 900000)}\n";

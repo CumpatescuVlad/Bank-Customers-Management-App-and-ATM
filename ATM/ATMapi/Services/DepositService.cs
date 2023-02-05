@@ -10,23 +10,37 @@ namespace ATMapi.Services
     {
         private readonly IModifyData _modifyData;
         private readonly IGenerateRecipts _generateRecipts;
+        private readonly IReadData _readData;
 
-        public DepositService(IModifyData modifyData, IGenerateRecipts generateRecipts)
+        public DepositService(IModifyData modifyData, IGenerateRecipts generateRecipts, IReadData readData)
         {
             _modifyData = modifyData;
             _generateRecipts = generateRecipts;
+            _readData = readData;
         }
 
-        public HttpStatusCode DepositBallance(TransactionModel transactionModel)
+        public HttpStatusCode DepositBallance(DepositModel depositModel)
         {
-            var depositModel = new DepositModel() 
+            var transactionModel = new TransactionModel() 
             {
-                AccountOwnerName = transactionModel.AccountOwnerName,
-                AccountIBAN= transactionModel.AccountIBAN,
-                AccountNumber= transactionModel.AccountNumber,
-                Amount= transactionModel.Amount,
-                DateTime = transactionModel.DateTime,
+                AccountOwnerName = depositModel.AccountOwnerName,
+                AccountIBAN = depositModel.AccountIBAN,
+                AccountNumber = depositModel.AccountNumber,
+                Amount = depositModel.Amount,
+                TypeOfTransaction = "Deposit",
             };
+
+            var customerExists = _readData.ReadCustomer(transactionModel.AccountOwnerName);
+
+            if (customerExists is HttpStatusCode.NotFound)
+            {
+                return HttpStatusCode.NotFound;
+            }
+            else if (customerExists is HttpStatusCode.InternalServerError)
+            {
+                return HttpStatusCode.InternalServerError;
+
+            }
 
             var depositBallance = _modifyData.Deposit(depositModel);
 
@@ -41,9 +55,9 @@ namespace ATMapi.Services
 
         }
 
-        public string CreateDepositRecipt(string accountIBAN,int amount)
+        public string CreateDepositRecipt(string accountIBAN, int amount)
         {
-            string depositRecipt = _generateRecipts.GenerateDepositRecipt(accountIBAN,amount);
+            string depositRecipt = _generateRecipts.GenerateDepositRecipt(accountIBAN, amount);
 
             return JsonConvert.SerializeObject(depositRecipt);
 

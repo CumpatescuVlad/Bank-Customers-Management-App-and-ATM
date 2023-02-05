@@ -23,7 +23,7 @@ builder.Services.AddScoped<IReadData, ReadData>();
 builder.Services.AddScoped<IModifyData, ModifyData>();
 builder.Services.AddScoped<IGenerateRecipts, GenerateRecipts>();
 builder.Services.AddScoped<ISoldAccountService, SoldAccountService>();
-builder.Services.AddScoped<IDepositService,DepositService>();
+builder.Services.AddScoped<IDepositService, DepositService>();
 builder.Services.AddScoped<IWithdrawService, WithdrawService>();
 var app = builder.Build();
 
