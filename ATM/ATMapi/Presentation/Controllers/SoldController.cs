@@ -1,9 +1,9 @@
-﻿using ATMapi.Filters;
-using ATMapi.Modeles;
+﻿using ATMapi.BusinessLogic.Filters;
+using ATMapi.BusinessLogic.Modeles;
 using ATMapi.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ATMapi.Controllers
+namespace ATMapi.Presentation.Controllers
 {
     [ApiController]
     public class SoldController : ControllerBase
@@ -37,15 +37,15 @@ namespace ATMapi.Controllers
 
         }
 
-        [HttpPost]
+        [HttpGet]
 
         [ServiceFilter(typeof(ModelFilter))]
 
-        [Route("/ATM/Recipt/Sold")]
+        [Route("/ATM/Recipt/Sold/{accountNumber}/{accountIBAN}/{ballance}")]
 
-        public IActionResult SoldRecipt(SoldModel soldModel)
+        public IActionResult SoldRecipt(string accountNumber,string accountIBAN,int ballance)
         {
-            string accountInfo = _soldService.CreateSoldRecipt(soldModel);
+            string accountInfo = _soldService.CreateSoldRecipt(accountNumber,accountIBAN,ballance);
 
             if (accountInfo is not null)
             {

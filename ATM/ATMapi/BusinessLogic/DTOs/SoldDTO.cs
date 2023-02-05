@@ -1,4 +1,4 @@
-﻿namespace ATMapi.DTOs
+﻿namespace ATMapi.BusinessLogic.DTOs
 {
     public class SoldDTO
     {

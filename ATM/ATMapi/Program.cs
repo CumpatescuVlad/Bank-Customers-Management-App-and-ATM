@@ -1,8 +1,8 @@
+using ATMapi.BusinessLogic.Filters;
 using ATMapi.Config;
 using ATMapi.DataAcces;
-using ATMapi.Filters;
+using ATMapi.PersistenceLayer;
 using ATMapi.Services;
-using ATMapi.src;
 using Microsoft.AspNetCore.Mvc;
 using Serilog;
 
@@ -25,6 +25,7 @@ builder.Services.AddScoped<IGenerateRecipts, GenerateRecipts>();
 builder.Services.AddScoped<ISoldAccountService, SoldAccountService>();
 builder.Services.AddScoped<IDepositService, DepositService>();
 builder.Services.AddScoped<IWithdrawService, WithdrawService>();
+builder.Services.AddScoped<IDataValidationService, DataValidationService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

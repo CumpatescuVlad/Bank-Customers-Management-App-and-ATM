@@ -1,6 +1,6 @@
-﻿using ATMapi.DataAcces;
-using ATMapi.Modeles;
-using ATMapi.src;
+﻿using ATMapi.BusinessLogic.Modeles;
+using ATMapi.DataAcces;
+using ATMapi.PersistenceLayer;
 using Newtonsoft.Json;
 using System.Net;
 
@@ -10,18 +10,18 @@ namespace ATMapi.Services
     {
         private readonly IModifyData _modifyData;
         private readonly IGenerateRecipts _generateRecipts;
-        private readonly IReadData _readData;
 
-        public DepositService(IModifyData modifyData, IGenerateRecipts generateRecipts, IReadData readData)
+
+        public DepositService(IModifyData modifyData, IGenerateRecipts generateRecipts)
         {
             _modifyData = modifyData;
             _generateRecipts = generateRecipts;
-            _readData = readData;
+
         }
 
         public HttpStatusCode DepositBallance(DepositModel depositModel)
         {
-            var transactionModel = new TransactionModel() 
+            var transactionModel = new TransactionModel()
             {
                 AccountOwnerName = depositModel.AccountOwnerName,
                 AccountIBAN = depositModel.AccountIBAN,
@@ -29,18 +29,6 @@ namespace ATMapi.Services
                 Amount = depositModel.Amount,
                 TypeOfTransaction = "Deposit",
             };
-
-            var customerExists = _readData.ReadCustomer(transactionModel.AccountOwnerName);
-
-            if (customerExists is HttpStatusCode.NotFound)
-            {
-                return HttpStatusCode.NotFound;
-            }
-            else if (customerExists is HttpStatusCode.InternalServerError)
-            {
-                return HttpStatusCode.InternalServerError;
-
-            }
 
             var depositBallance = _modifyData.Deposit(depositModel);
 

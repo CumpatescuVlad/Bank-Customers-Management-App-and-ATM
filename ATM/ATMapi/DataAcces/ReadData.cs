@@ -1,6 +1,6 @@
-﻿using ATMapi.Config;
-using ATMapi.DTOs;
-using ATMapi.src;
+﻿using ATMapi.BusinessLogic.DTOs;
+using ATMapi.Config;
+using ATMapi.PersistenceLayer;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Options;
 using System.Net;
@@ -86,9 +86,9 @@ namespace ATMapi.DataAcces
 
                 return HttpStatusCode.InternalServerError;
             }
-            finally 
+            finally
             {
-                _connection.Close(); 
+                _connection.Close();
             }
 
 

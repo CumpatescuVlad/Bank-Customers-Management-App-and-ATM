@@ -1,4 +1,4 @@
-﻿namespace ATMapi.src
+﻿namespace ATMapi.PersistenceLayer
 {
     public class GenerateRecipts : IGenerateRecipts
     {

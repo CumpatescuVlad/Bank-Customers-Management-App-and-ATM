@@ -1,10 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ATMapi.Modeles
+namespace ATMapi.BusinessLogic.Modeles
 {
     public class TransactionModel : DepositModel
     {
-        [Required(ErrorMessage ="Type of transaction must be specified")]
+        [Required(ErrorMessage = "Type of transaction must be specified")]
         public string? TypeOfTransaction { get; set; }
 
     }

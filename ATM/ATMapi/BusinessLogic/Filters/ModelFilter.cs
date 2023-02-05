@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace ATMapi.Filters
+namespace ATMapi.BusinessLogic.Filters
 {
     public class ModelFilter : IActionFilter
     {

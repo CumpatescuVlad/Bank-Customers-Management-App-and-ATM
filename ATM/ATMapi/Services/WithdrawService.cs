@@ -1,6 +1,6 @@
-﻿using ATMapi.DataAcces;
-using ATMapi.Modeles;
-using ATMapi.src;
+﻿using ATMapi.BusinessLogic.Modeles;
+using ATMapi.DataAcces;
+using ATMapi.PersistenceLayer;
 using Newtonsoft.Json;
 using System.Net;
 
@@ -31,17 +31,6 @@ namespace ATMapi.Services
                 TypeOfTransaction = "Withdraw",
 
             };
-
-            var customerExists = _readData.ReadCustomer(transactionModel.AccountOwnerName);
-
-            if (customerExists is HttpStatusCode.NotFound)
-            {
-                return HttpStatusCode.NotFound;
-            }
-            else if (customerExists is HttpStatusCode.InternalServerError)
-            {
-                return HttpStatusCode.InternalServerError;
-            }
 
             var withdrawBallance = _modifyData.Withdraw(withdrawModel);
 

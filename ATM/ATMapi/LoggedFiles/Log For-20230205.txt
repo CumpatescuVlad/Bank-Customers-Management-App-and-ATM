@@ -32,3 +32,37 @@
 2023-02-05 02:39:03.606 +02:00 [INF] Hosting environment: Development
 2023-02-05 02:39:03.607 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATMapi
 2023-02-05 02:40:37.891 +02:00 [ERR] Invalid attempt to read when no data is present.
+2023-02-05 20:18:53.326 +02:00 [INF] Now listening on: https://localhost:7004
+2023-02-05 20:18:53.363 +02:00 [INF] Now listening on: http://localhost:5161
+2023-02-05 20:18:53.366 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-05 20:18:53.369 +02:00 [INF] Hosting environment: Development
+2023-02-05 20:18:53.370 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATMapi
+2023-02-05 20:19:34.138 +02:00 [ERR] Invalid attempt to read when no data is present.
+2023-02-05 20:36:03.080 +02:00 [INF] Now listening on: https://localhost:7004
+2023-02-05 20:36:03.122 +02:00 [INF] Now listening on: http://localhost:5161
+2023-02-05 20:36:03.125 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-05 20:36:03.126 +02:00 [INF] Hosting environment: Development
+2023-02-05 20:36:03.127 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATMapi
+2023-02-05 20:36:41.853 +02:00 [ERR] Invalid attempt to read when no data is present.
+2023-02-05 21:55:15.704 +02:00 [INF] Now listening on: https://localhost:7004
+2023-02-05 21:55:15.751 +02:00 [INF] Now listening on: http://localhost:5161
+2023-02-05 21:55:15.754 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-05 21:55:15.755 +02:00 [INF] Hosting environment: Development
+2023-02-05 21:55:15.757 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATMapi
+2023-02-05 21:56:08.350 +02:00 [ERR] Invalid attempt to read when no data is present.
+2023-02-05 22:29:19.269 +02:00 [INF] Now listening on: https://localhost:7004
+2023-02-05 22:29:19.303 +02:00 [INF] Now listening on: http://localhost:5161
+2023-02-05 22:29:19.307 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-05 22:29:19.308 +02:00 [INF] Hosting environment: Development
+2023-02-05 22:29:19.308 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATMapi
+2023-02-05 22:31:13.419 +02:00 [ERR] Invalid attempt to read when no data is present.
+2023-02-05 22:35:28.679 +02:00 [INF] Now listening on: https://localhost:7004
+2023-02-05 22:35:28.714 +02:00 [INF] Now listening on: http://localhost:5161
+2023-02-05 22:35:28.717 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-05 22:35:28.719 +02:00 [INF] Hosting environment: Development
+2023-02-05 22:35:28.720 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATMapi
+2023-02-05 22:45:43.159 +02:00 [INF] Now listening on: https://localhost:7004
+2023-02-05 22:45:43.199 +02:00 [INF] Now listening on: http://localhost:5161
+2023-02-05 22:45:43.201 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-05 22:45:43.202 +02:00 [INF] Hosting environment: Development
+2023-02-05 22:45:43.203 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATMapi

@@ -1,4 +1,4 @@
-﻿using ATMapi.Modeles;
+﻿using ATMapi.BusinessLogic.Modeles;
 using System.Net;
 
 namespace ATMapi.DataAcces

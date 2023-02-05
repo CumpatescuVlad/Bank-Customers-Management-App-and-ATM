@@ -1,4 +1,4 @@
-﻿using ATMapi.DTOs;
+﻿using ATMapi.BusinessLogic.DTOs;
 using System.Net;
 
 namespace ATMapi.DataAcces

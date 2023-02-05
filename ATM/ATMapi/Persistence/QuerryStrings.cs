@@ -1,6 +1,6 @@
-﻿using ATMapi.Modeles;
+﻿using ATMapi.BusinessLogic.Modeles;
 
-namespace ATMapi.src
+namespace ATMapi.PersistenceLayer
 {
     public class QuerryStrings
     {

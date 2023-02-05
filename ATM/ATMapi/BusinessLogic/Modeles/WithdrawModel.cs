@@ -1,4 +1,4 @@
-﻿namespace ATMapi.Modeles
+﻿namespace ATMapi.BusinessLogic.Modeles
 {
     public class WithdrawModel : DepositModel
     {

@@ -1,6 +1,6 @@
-﻿using ATMapi.Config;
-using ATMapi.Modeles;
-using ATMapi.src;
+﻿using ATMapi.BusinessLogic.Modeles;
+using ATMapi.Config;
+using ATMapi.PersistenceLayer;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Options;
 using System.Net;
@@ -105,13 +105,6 @@ namespace ATMapi.DataAcces
                 adpter.InsertCommand.ExecuteNonQuery();
 
                 return HttpStatusCode.Created;
-            }
-            catch (InvalidOperationException invalidEx)
-            {
-                _logger.LogError(invalidEx.Message);
-
-                return HttpStatusCode.NotFound;
-
             }
             catch (Exception ex)
             {
