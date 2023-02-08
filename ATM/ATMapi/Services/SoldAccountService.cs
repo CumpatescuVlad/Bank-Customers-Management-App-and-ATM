@@ -1,5 +1,4 @@
-﻿using ATMapi.BusinessLogic.Modeles;
-using ATMapi.DataAcces;
+﻿using ATMapi.DataAcces;
 using ATMapi.PersistenceLayer;
 using Newtonsoft.Json;
 
@@ -32,7 +31,7 @@ namespace ATMapi.Services
             }
 
         }
-        public string CreateSoldRecipt(string accountNumber,string accountIBAN,int ballance)
+        public string CreateSoldRecipt(string accountNumber, string accountIBAN, int ballance)
         {
             var soldRecipt = _generateRecipt.GenerateSoldRecipt(accountNumber, accountIBAN, ballance);
 

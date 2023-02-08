@@ -6,6 +6,8 @@ namespace ATMapi.PersistenceLayer
     {
         public static string SelectAccountInfo(string customerName, string accountNumber) => $"Select CustomerFullName,AccountNumber,AccountIBAN,Ballance From Accounts Where CustomerFullName='{customerName}' AND AccountNumber='{accountNumber}'";
 
+        public static string SelectCustomerPin(string customerName) => $"Select ATMPin From ATMTable Where CustomerFullName='{customerName}'";
+
         public static string SelectCustomer(string customerName) => $"Select CustomerFullName From Accounts Where CustomerFullName='{customerName}'";
 
         public static string UpdateBallance(DepositModel? depositModel, WithdrawModel? withdrawModel, string typeOfTransaction)

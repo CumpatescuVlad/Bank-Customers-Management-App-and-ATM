@@ -26,6 +26,7 @@ builder.Services.AddScoped<ISoldAccountService, SoldAccountService>();
 builder.Services.AddScoped<IDepositService, DepositService>();
 builder.Services.AddScoped<IWithdrawService, WithdrawService>();
 builder.Services.AddScoped<IDataValidationService, DataValidationService>();
+builder.Services.AddScoped<IAuthorizationService, AuthorizationService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

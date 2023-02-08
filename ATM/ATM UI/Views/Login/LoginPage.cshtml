@@ -1,0 +1,23 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model LoginModel
+@{
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+<div style="margin-left:auto;margin-right:auto;text-align:center;">
+<form method="post" asp-action="LogIN">
+        <label style="font-size:28px;background-color:aliceblue"><b>Enter Name And PIN Below</b></label>
+    <br />
+    <br />
+        <input asp-for="@Model.CustomerName" placeholder="Enter your Name" style="font-size:24px;border:solid;border-color:turquoise"/>
+    <br />
+    <br />
+        <input asp-for="@Model.CustomerPIN" placeholder="Enter your Pin" style="font-size:24px;border:solid;border-color:turquoise" />
+    <br />
+    <br />
+        <input type="submit" placeholder="LOG IN" style="font-size:22px;border:solid;border-color:turquoise" />
+
+</form>
+</div>
+

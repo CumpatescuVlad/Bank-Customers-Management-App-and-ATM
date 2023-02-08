@@ -1,0 +1,12 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+<div>
+    <a asp-controller="Operations" asp-action="Sold" asp-route-customerName="CumpatescuVlad" style="font-size:24px">SOLD</a>
+    <a asp-controller="Operations" asp-action="Deposit" style="font-size:24px;">Deposit</a>
+    <a asp-controller="Operations" asp-action="Withdraw" style="font-size:24px;">Withdraw</a>
+</div>

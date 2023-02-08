@@ -57,6 +57,43 @@ namespace ATMapi.DataAcces
 
         }
 
+        public PinDTO ReadCustomerATMPin(string customerName)
+        {
+            var readCustomerPinCommand = new SqlCommand(QuerryStrings.SelectCustomerPin(customerName), _connection);
+            PinDTO pinDTO;
+            try
+            {
+                _connection.Open();
+
+                var reader = readCustomerPinCommand.ExecuteReader();
+
+                reader.Read();
+                pinDTO = new PinDTO(reader.GetInt32(0));
+                reader.Close();
+
+                return pinDTO;
+            }
+            catch (InvalidOperationException invalidEx)
+            {
+                _logger.LogError(invalidEx.Message);
+
+                return new PinDTO(0);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                _logger.LogError(ex.GetType().ToString());
+
+                return null;
+            }
+            finally
+            {
+                _connection.Close();
+            }
+
+
+        }
+
         public HttpStatusCode ReadCustomer(string customerName)
         {
             var readCustomerName = new SqlCommand(QuerryStrings.SelectCustomer(customerName), _connection);
@@ -90,8 +127,6 @@ namespace ATMapi.DataAcces
             {
                 _connection.Close();
             }
-
-
 
         }
     }

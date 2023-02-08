@@ -1,0 +1,19 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model DepositModel
+@{
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+
+<div>
+    <form method="post" asp-action="DepositBallance">
+        <label style="font-size:24px;text-align:center;background-color:aliceblue">Enter Amount To Deposit</label>
+        <br />
+        <br />
+        <input asp-for="@Model.Amount" placeholder="Enter Amount Here." style="background-color:aliceblue;border:solid;border-color:turquoise"/>
+        <br />
+        <br />
+        <input type="submit"  placeholder="Deposit" style="background-color:aliceblue;border:solid;border-color:turquoise" />
+    </form>
+</div>

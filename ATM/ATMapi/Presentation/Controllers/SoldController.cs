@@ -1,5 +1,4 @@
 ﻿using ATMapi.BusinessLogic.Filters;
-using ATMapi.BusinessLogic.Modeles;
 using ATMapi.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -43,9 +42,9 @@ namespace ATMapi.Presentation.Controllers
 
         [Route("/ATM/Recipt/Sold/{accountNumber}/{accountIBAN}/{ballance}")]
 
-        public IActionResult SoldRecipt(string accountNumber,string accountIBAN,int ballance)
+        public IActionResult SoldRecipt(string accountNumber, string accountIBAN, int ballance)
         {
-            string accountInfo = _soldService.CreateSoldRecipt(accountNumber,accountIBAN,ballance);
+            string accountInfo = _soldService.CreateSoldRecipt(accountNumber, accountIBAN, ballance);
 
             if (accountInfo is not null)
             {

@@ -7,5 +7,6 @@ namespace ATMapi.DataAcces
     {
         SoldDTO ReadAccountInfo(string customerName, string accountNumber);
         HttpStatusCode ReadCustomer(string customerName);
+        PinDTO ReadCustomerATMPin(string customerName);
     }
 }

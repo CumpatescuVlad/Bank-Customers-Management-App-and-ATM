@@ -1,0 +1,226 @@
+2023-02-08 02:13:24.316 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 02:13:24.352 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 02:13:24.356 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 02:13:24.357 +02:00 [INF] Hosting environment: Development
+2023-02-08 02:13:24.359 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 02:16:18.617 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 02:16:18.668 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 02:16:18.671 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 02:16:18.674 +02:00 [INF] Hosting environment: Development
+2023-02-08 02:16:18.675 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 02:17:03.224 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 02:17:03.271 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 02:17:03.274 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 02:17:03.275 +02:00 [INF] Hosting environment: Development
+2023-02-08 02:17:03.277 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 02:17:28.363 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 02:17:28.395 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 02:17:28.398 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 02:17:28.398 +02:00 [INF] Hosting environment: Development
+2023-02-08 02:17:28.399 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 02:18:03.419 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 02:18:03.466 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 02:18:03.468 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 02:18:03.469 +02:00 [INF] Hosting environment: Development
+2023-02-08 02:18:03.470 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 02:18:45.870 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 02:18:45.908 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 02:18:45.910 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 02:18:45.911 +02:00 [INF] Hosting environment: Development
+2023-02-08 02:18:45.912 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 02:21:17.683 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 02:21:17.719 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 02:21:17.722 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 02:21:17.723 +02:00 [INF] Hosting environment: Development
+2023-02-08 02:21:17.724 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 02:21:34.649 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 02:21:34.684 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 02:21:34.688 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 02:21:34.689 +02:00 [INF] Hosting environment: Development
+2023-02-08 02:21:34.690 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 02:22:26.928 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 02:22:26.958 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 02:22:26.961 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 02:22:26.962 +02:00 [INF] Hosting environment: Development
+2023-02-08 02:22:26.963 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 02:23:52.619 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 02:23:52.651 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 02:23:52.654 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 02:23:52.655 +02:00 [INF] Hosting environment: Development
+2023-02-08 02:23:52.655 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 02:24:10.773 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 02:24:10.807 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 02:24:10.810 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 02:24:10.811 +02:00 [INF] Hosting environment: Development
+2023-02-08 02:24:10.812 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 02:25:40.702 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 02:25:40.734 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 02:25:40.736 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 02:25:40.737 +02:00 [INF] Hosting environment: Development
+2023-02-08 02:25:40.738 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 02:39:45.266 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 02:39:45.296 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 02:39:45.298 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 02:39:45.300 +02:00 [INF] Hosting environment: Development
+2023-02-08 02:39:45.301 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 02:39:46.775 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The following sections have been defined but have not been rendered by the page at '/Views/Shared/_LoginLayout.cshtml': 'Styles'. To ignore an unrendered section call IgnoreSection("sectionName").
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.EnsureRenderedBodyOrSections()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-02-08 02:41:20.311 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 02:41:20.344 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 02:41:20.347 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 02:41:20.349 +02:00 [INF] Hosting environment: Development
+2023-02-08 02:41:20.349 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 02:43:54.151 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 02:43:54.183 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 02:43:54.186 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 02:43:54.187 +02:00 [INF] Hosting environment: Development
+2023-02-08 02:43:54.189 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 02:46:26.903 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 02:46:26.933 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 02:46:26.936 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 02:46:26.938 +02:00 [INF] Hosting environment: Development
+2023-02-08 02:46:26.939 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 02:47:30.930 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 02:47:30.987 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 02:47:30.989 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 02:47:30.990 +02:00 [INF] Hosting environment: Development
+2023-02-08 02:47:30.991 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 02:48:15.931 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 02:48:15.963 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 02:48:15.966 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 02:48:15.966 +02:00 [INF] Hosting environment: Development
+2023-02-08 02:48:15.967 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 02:48:41.229 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 02:48:41.259 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 02:48:41.262 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 02:48:41.263 +02:00 [INF] Hosting environment: Development
+2023-02-08 02:48:41.264 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 02:48:57.125 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 02:48:57.164 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 02:48:57.167 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 02:48:57.168 +02:00 [INF] Hosting environment: Development
+2023-02-08 02:48:57.169 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 02:49:12.768 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 02:49:12.804 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 02:49:12.807 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 02:49:12.809 +02:00 [INF] Hosting environment: Development
+2023-02-08 02:49:12.810 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 02:49:33.324 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 02:49:33.356 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 02:49:33.360 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 02:49:33.362 +02:00 [INF] Hosting environment: Development
+2023-02-08 02:49:33.362 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 02:51:59.718 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 02:51:59.759 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 02:51:59.761 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 02:51:59.763 +02:00 [INF] Hosting environment: Development
+2023-02-08 02:51:59.764 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 02:52:52.447 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 02:52:52.482 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 02:52:52.485 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 02:52:52.486 +02:00 [INF] Hosting environment: Development
+2023-02-08 02:52:52.488 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 02:55:28.782 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 02:55:28.835 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 02:55:28.838 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 02:55:28.840 +02:00 [INF] Hosting environment: Development
+2023-02-08 02:55:28.843 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 02:56:47.439 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 02:56:47.467 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 02:56:47.470 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 02:56:47.471 +02:00 [INF] Hosting environment: Development
+2023-02-08 02:56:47.472 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 02:57:46.800 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 02:57:46.841 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 02:57:46.844 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 02:57:46.845 +02:00 [INF] Hosting environment: Development
+2023-02-08 02:57:46.846 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 02:58:26.366 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 02:58:26.412 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 02:58:26.414 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 02:58:26.415 +02:00 [INF] Hosting environment: Development
+2023-02-08 02:58:26.416 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 02:59:32.047 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 02:59:32.078 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 02:59:32.081 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 02:59:32.082 +02:00 [INF] Hosting environment: Development
+2023-02-08 02:59:32.083 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 03:02:16.363 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 03:02:16.395 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 03:02:16.398 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 03:02:16.398 +02:00 [INF] Hosting environment: Development
+2023-02-08 03:02:16.399 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 03:04:44.474 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 03:04:44.509 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 03:04:44.511 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 03:04:44.512 +02:00 [INF] Hosting environment: Development
+2023-02-08 03:04:44.513 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 03:08:21.551 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 03:08:21.582 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 03:08:21.585 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 03:08:21.587 +02:00 [INF] Hosting environment: Development
+2023-02-08 03:08:21.588 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 03:09:01.987 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 03:09:02.031 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 03:09:02.034 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 03:09:02.035 +02:00 [INF] Hosting environment: Development
+2023-02-08 03:09:02.036 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 03:10:23.460 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 03:10:23.510 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 03:10:23.512 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 03:10:23.514 +02:00 [INF] Hosting environment: Development
+2023-02-08 03:10:23.515 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 03:12:02.231 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 03:12:02.264 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 03:12:02.267 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 03:12:02.268 +02:00 [INF] Hosting environment: Development
+2023-02-08 03:12:02.269 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 03:12:20.128 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 03:12:20.156 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 03:12:20.158 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 03:12:20.159 +02:00 [INF] Hosting environment: Development
+2023-02-08 03:12:20.160 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 03:12:43.322 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 03:12:43.354 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 03:12:43.356 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 03:12:43.357 +02:00 [INF] Hosting environment: Development
+2023-02-08 03:12:43.358 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 03:13:10.807 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 03:13:10.835 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 03:13:10.837 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 03:13:10.839 +02:00 [INF] Hosting environment: Development
+2023-02-08 03:13:10.840 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 03:16:16.781 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 03:16:16.814 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 03:16:16.817 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 03:16:16.818 +02:00 [INF] Hosting environment: Development
+2023-02-08 03:16:16.819 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI
+2023-02-08 03:17:40.870 +02:00 [INF] Now listening on: https://localhost:7048
+2023-02-08 03:17:40.900 +02:00 [INF] Now listening on: http://localhost:5150
+2023-02-08 03:17:40.903 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-08 03:17:40.904 +02:00 [INF] Hosting environment: Development
+2023-02-08 03:17:40.905 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATM UI

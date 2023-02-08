@@ -1,0 +1,44 @@
+E:\CODE REPOS\BankApp\ATM\ATM UI\bin\Debug\net7.0\appsettings.Development.json
+E:\CODE REPOS\BankApp\ATM\ATM UI\bin\Debug\net7.0\appsettings.json
+E:\CODE REPOS\BankApp\ATM\ATM UI\bin\Debug\net7.0\ATM UI.staticwebassets.runtime.json
+E:\CODE REPOS\BankApp\ATM\ATM UI\bin\Debug\net7.0\ATM UI.exe
+E:\CODE REPOS\BankApp\ATM\ATM UI\bin\Debug\net7.0\ATM UI.deps.json
+E:\CODE REPOS\BankApp\ATM\ATM UI\bin\Debug\net7.0\ATM UI.runtimeconfig.json
+E:\CODE REPOS\BankApp\ATM\ATM UI\bin\Debug\net7.0\ATM UI.dll
+E:\CODE REPOS\BankApp\ATM\ATM UI\bin\Debug\net7.0\ATM UI.pdb
+E:\CODE REPOS\BankApp\ATM\ATM UI\obj\Debug\net7.0\ATM UI.csproj.AssemblyReference.cache
+E:\CODE REPOS\BankApp\ATM\ATM UI\obj\Debug\net7.0\ATM UI.GeneratedMSBuildEditorConfig.editorconfig
+E:\CODE REPOS\BankApp\ATM\ATM UI\obj\Debug\net7.0\ATM UI.AssemblyInfoInputs.cache
+E:\CODE REPOS\BankApp\ATM\ATM UI\obj\Debug\net7.0\ATM UI.AssemblyInfo.cs
+E:\CODE REPOS\BankApp\ATM\ATM UI\obj\Debug\net7.0\ATM UI.csproj.CoreCompileInputs.cache
+E:\CODE REPOS\BankApp\ATM\ATM UI\obj\Debug\net7.0\ATM UI.MvcApplicationPartsAssemblyInfo.cache
+E:\CODE REPOS\BankApp\ATM\ATM UI\obj\Debug\net7.0\ATM UI.RazorAssemblyInfo.cache
+E:\CODE REPOS\BankApp\ATM\ATM UI\obj\Debug\net7.0\ATM UI.RazorAssemblyInfo.cs
+E:\CODE REPOS\BankApp\ATM\ATM UI\obj\Debug\net7.0\staticwebassets\msbuild.ATM UI.Microsoft.AspNetCore.StaticWebAssets.props
+E:\CODE REPOS\BankApp\ATM\ATM UI\obj\Debug\net7.0\staticwebassets\msbuild.build.ATM UI.props
+E:\CODE REPOS\BankApp\ATM\ATM UI\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.ATM UI.props
+E:\CODE REPOS\BankApp\ATM\ATM UI\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.ATM UI.props
+E:\CODE REPOS\BankApp\ATM\ATM UI\obj\Debug\net7.0\staticwebassets.pack.json
+E:\CODE REPOS\BankApp\ATM\ATM UI\obj\Debug\net7.0\staticwebassets.build.json
+E:\CODE REPOS\BankApp\ATM\ATM UI\obj\Debug\net7.0\staticwebassets.development.json
+E:\CODE REPOS\BankApp\ATM\ATM UI\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\CODE REPOS\BankApp\ATM\ATM UI\obj\Debug\net7.0\scopedcss\bundle\ATM UI.styles.css
+E:\CODE REPOS\BankApp\ATM\ATM UI\obj\Debug\net7.0\scopedcss\projectbundle\ATM UI.bundle.scp.css
+E:\CODE REPOS\BankApp\ATM\ATM UI\obj\Debug\net7.0\ATM UI.dll
+E:\CODE REPOS\BankApp\ATM\ATM UI\obj\Debug\net7.0\refint\ATM UI.dll
+E:\CODE REPOS\BankApp\ATM\ATM UI\obj\Debug\net7.0\ATM UI.pdb
+E:\CODE REPOS\BankApp\ATM\ATM UI\obj\Debug\net7.0\ATM UI.genruntimeconfig.cache
+E:\CODE REPOS\BankApp\ATM\ATM UI\obj\Debug\net7.0\ref\ATM UI.dll
+E:\CODE REPOS\BankApp\ATM\ATM UI\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\CODE REPOS\BankApp\ATM\ATM UI\bin\Debug\net7.0\RestSharp.dll
+E:\CODE REPOS\BankApp\ATM\ATM UI\obj\Debug\net7.0\ATM UI.csproj.CopyComplete
+E:\CODE REPOS\BankApp\ATM\ATM UI\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+E:\CODE REPOS\BankApp\ATM\ATM UI\bin\Debug\net7.0\Serilog.dll
+E:\CODE REPOS\BankApp\ATM\ATM UI\bin\Debug\net7.0\Serilog.AspNetCore.dll
+E:\CODE REPOS\BankApp\ATM\ATM UI\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
+E:\CODE REPOS\BankApp\ATM\ATM UI\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
+E:\CODE REPOS\BankApp\ATM\ATM UI\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
+E:\CODE REPOS\BankApp\ATM\ATM UI\bin\Debug\net7.0\Serilog.Settings.Configuration.dll
+E:\CODE REPOS\BankApp\ATM\ATM UI\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+E:\CODE REPOS\BankApp\ATM\ATM UI\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
+E:\CODE REPOS\BankApp\ATM\ATM UI\bin\Debug\net7.0\Serilog.Sinks.File.dll

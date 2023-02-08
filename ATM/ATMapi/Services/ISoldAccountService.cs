@@ -1,10 +1,8 @@
-﻿using ATMapi.BusinessLogic.Modeles;
-
-namespace ATMapi.Services
+﻿namespace ATMapi.Services
 {
     public interface ISoldAccountService
     {
         string SoldAccount(string customerName, string accountNumber);
-        string CreateSoldRecipt(string accountNumber,string accountIBAN,int ballance);
+        string CreateSoldRecipt(string accountNumber, string accountIBAN, int ballance);
     }
 }
