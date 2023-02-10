@@ -27,6 +27,12 @@ builder.Services.AddScoped<IDepositService, DepositService>();
 builder.Services.AddScoped<IWithdrawService, WithdrawService>();
 builder.Services.AddScoped<IDataValidationService, DataValidationService>();
 builder.Services.AddScoped<IAuthorizationService, AuthorizationService>();
+builder.Services.AddCors(options=>{
+    options.AddDefaultPolicy(
+        b => b.AllowAnyHeader().
+        AllowAnyHeader().
+        AllowAnyOrigin());
+    });
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

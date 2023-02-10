@@ -22,7 +22,7 @@ namespace ATMapi.Presentation.Controllers
 
         [ServiceFilter(typeof(ModelFilter))]
 
-        [Route("API/Withdraw")]
+        [Route("ATM/Withdraw")]
 
         public IActionResult Withdraw(WithdrawModel withdrawModel)
         {

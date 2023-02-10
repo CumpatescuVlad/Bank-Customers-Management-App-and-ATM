@@ -1,12 +1,19 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-
+﻿@model SoldModel
 @{
     Layout = "~/Views/Shared/_LoginLayout.cshtml";
 }
-<div>
-    <a asp-controller="Operations" asp-action="Sold" asp-route-customerName="CumpatescuVlad" style="font-size:24px">SOLD</a>
-    <a asp-controller="Operations" asp-action="Deposit" style="font-size:24px;">Deposit</a>
-    <a asp-controller="Operations" asp-action="Withdraw" style="font-size:24px;">Withdraw</a>
+
+<script>
+    localStorage.setItem("CustomerName", "@Model.AccountOwnerName");
+    localStorage.setItem("AccountNumber", "@Model.AccountNumber");
+    localStorage.setItem("AccountIBAN", "@Model.AccountIBAN");
+    localStorage.setItem("Ballance", "@Model.Ballance");
+    localStorage.setItem("DateTime", "@Model.DateTime");
+</script>
+<div style="text-align:center;">
+   
+    <a asp-controller="Operations" asp-action="Sold" style="font-size:24px;text-decoration:none;background-color:aliceblue;">SOLD</a>
+    <a asp-controller="Operations" asp-action="Deposit" style="font-size:24px;width:20px;margin-left:200px;margin-top:-40px;text-decoration:none;background-color:aliceblue;">Deposit</a>
+    <br />
+    <a asp-controller="Operations" asp-action="Withdraw" style="font-size:24px;text-decoration:none;background-color:aliceblue;">Withdraw</a>
 </div>

@@ -5,7 +5,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Host.UseSerilog((ctx, lc) =>
 lc.WriteTo.Console().ReadFrom.Configuration(ctx.Configuration));
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

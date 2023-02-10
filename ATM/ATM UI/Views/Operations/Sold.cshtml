@@ -1,26 +1,28 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@model SoldModel
+﻿
 @{
     Layout = "~/Views/Shared/_LoginLayout.cshtml";
+    var dateTime = DateTime.Now.ToString("yyyy-MM-dd");
 }
 
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="~/js/ShowDataScript.js"></script>
+
 <div>
-    <h1 style="color:red;text-align:center">Availabble Bllance:@Model.Ballance</h1>
+    <h1 style="color:red;text-align:center">Availabble Bllance:<span id="ballance" style="color:black"></span> </h1>
     <br />
     <br />
     <br />
-    <p style="color:dodgerblue;text-align:right">Account Owner @Model.AccountOwnerName</p>
+    <p style="color:dodgerblue;text-align:left">Account Owner <span id="customerName" style="color:black"></span> </p>
     <br />
     <br />
-    <p style="color:dodgerblue;text-align:right">Account IBAN @Model.AccountIBAN</p>
+    <p style="color:dodgerblue;text-align:left">Account IBAN <span id="accountIBAN" style="color:black"></span> </p>
     <br />
     <br />
-    <p style="color:dodgerblue;text-align:right">Account Number @Model.AccountNumber</p>
+    <p style="color:dodgerblue;text-align:left">Account Number <span id="accountNumber" style="color:black"></span> </p>
     <br />
     <br />
-    <p style="color:dodgerblue;text-align:right">Date And Time @Model.DateTime</p>
+    <p style="color:dodgerblue;text-align:left">Date <span style="color:black"> @dateTime</span> </p>
 </div>
+
 
 

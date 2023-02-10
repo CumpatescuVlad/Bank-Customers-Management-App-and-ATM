@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QXQSCzotEfCPQCu5VrwH3rLrUR6Poye2e8/seAanKOs=",
+  "Hash": "O81VJzPJYZN4Pukc1Ioe2tJMY863FjZ7Y8Koet+ElaY=",
   "Source": "ATM UI",
   "BasePath": "_content/ATM UI",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "E:\\CODE REPOS\\BankApp\\ATM\\ATM UI\\wwwroot\\js\\ShowDataScript.js",
+      "SourceId": "ATM UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\CODE REPOS\\BankApp\\ATM\\ATM UI\\wwwroot\\",
+      "BasePath": "_content/ATM UI",
+      "RelativePath": "js/ShowDataScript.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\ShowDataScript.js"
     },
     {
       "Identity": "E:\\CODE REPOS\\BankApp\\ATM\\ATM UI\\wwwroot\\js\\site.js",

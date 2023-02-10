@@ -1,0 +1,65 @@
+2023-02-11 00:00:30.723 +02:00 [INF] Now listening on: https://localhost:7004
+2023-02-11 00:00:30.762 +02:00 [INF] Now listening on: http://localhost:5161
+2023-02-11 00:00:30.764 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-11 00:00:30.765 +02:00 [INF] Hosting environment: Development
+2023-02-11 00:00:30.766 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATMapi
+2023-02-11 00:02:43.791 +02:00 [INF] Now listening on: https://localhost:7004
+2023-02-11 00:02:43.832 +02:00 [INF] Now listening on: http://localhost:5161
+2023-02-11 00:02:43.836 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-11 00:02:43.837 +02:00 [INF] Hosting environment: Development
+2023-02-11 00:02:43.838 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATMapi
+2023-02-11 00:06:02.724 +02:00 [INF] Now listening on: https://localhost:7004
+2023-02-11 00:06:02.779 +02:00 [INF] Now listening on: http://localhost:5161
+2023-02-11 00:06:02.787 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-11 00:06:02.790 +02:00 [INF] Hosting environment: Development
+2023-02-11 00:06:02.791 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATMapi
+2023-02-11 00:06:37.212 +02:00 [INF] Now listening on: https://localhost:7004
+2023-02-11 00:06:37.256 +02:00 [INF] Now listening on: http://localhost:5161
+2023-02-11 00:06:37.258 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-11 00:06:37.259 +02:00 [INF] Hosting environment: Development
+2023-02-11 00:06:37.260 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATMapi
+2023-02-11 00:09:19.919 +02:00 [INF] Now listening on: https://localhost:7004
+2023-02-11 00:09:20.028 +02:00 [INF] Now listening on: http://localhost:5161
+2023-02-11 00:09:20.037 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-11 00:09:20.040 +02:00 [INF] Hosting environment: Development
+2023-02-11 00:09:20.048 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATMapi
+2023-02-11 00:10:46.495 +02:00 [INF] Now listening on: https://localhost:7004
+2023-02-11 00:10:46.529 +02:00 [INF] Now listening on: http://localhost:5161
+2023-02-11 00:10:46.531 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-11 00:10:46.532 +02:00 [INF] Hosting environment: Development
+2023-02-11 00:10:46.533 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATMapi
+2023-02-11 00:12:39.818 +02:00 [INF] Now listening on: https://localhost:7004
+2023-02-11 00:12:39.903 +02:00 [INF] Now listening on: http://localhost:5161
+2023-02-11 00:12:39.907 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-11 00:12:39.908 +02:00 [INF] Hosting environment: Development
+2023-02-11 00:12:39.910 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATMapi
+2023-02-11 00:57:08.020 +02:00 [INF] Now listening on: https://localhost:7004
+2023-02-11 00:57:08.078 +02:00 [INF] Now listening on: http://localhost:5161
+2023-02-11 00:57:08.081 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-11 00:57:08.082 +02:00 [INF] Hosting environment: Development
+2023-02-11 00:57:08.083 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATMapi
+2023-02-11 01:02:02.209 +02:00 [INF] Now listening on: https://localhost:7004
+2023-02-11 01:02:02.242 +02:00 [INF] Now listening on: http://localhost:5161
+2023-02-11 01:02:02.245 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-11 01:02:02.246 +02:00 [INF] Hosting environment: Development
+2023-02-11 01:02:02.247 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATMapi
+2023-02-11 01:18:23.093 +02:00 [INF] Now listening on: https://localhost:7004
+2023-02-11 01:18:23.126 +02:00 [INF] Now listening on: http://localhost:5161
+2023-02-11 01:18:23.129 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-11 01:18:23.130 +02:00 [INF] Hosting environment: Development
+2023-02-11 01:18:23.131 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATMapi
+2023-02-11 01:22:34.311 +02:00 [INF] Now listening on: https://localhost:7004
+2023-02-11 01:22:34.349 +02:00 [INF] Now listening on: http://localhost:5161
+2023-02-11 01:22:34.353 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-11 01:22:34.355 +02:00 [INF] Hosting environment: Development
+2023-02-11 01:22:34.356 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATMapi
+2023-02-11 01:24:17.393 +02:00 [INF] Now listening on: https://localhost:7004
+2023-02-11 01:24:17.436 +02:00 [INF] Now listening on: http://localhost:5161
+2023-02-11 01:24:17.439 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-11 01:24:17.441 +02:00 [INF] Hosting environment: Development
+2023-02-11 01:24:17.442 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATMapi
+2023-02-11 01:25:36.295 +02:00 [INF] Now listening on: https://localhost:7004
+2023-02-11 01:25:36.327 +02:00 [INF] Now listening on: http://localhost:5161
+2023-02-11 01:25:36.329 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-11 01:25:36.331 +02:00 [INF] Hosting environment: Development
+2023-02-11 01:25:36.332 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\ATM\ATMapi
