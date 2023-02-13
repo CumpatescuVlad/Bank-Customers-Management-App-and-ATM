@@ -1,6 +1,6 @@
-﻿using EmployeePortal.src;
+﻿using EmployeePortal.DataAccesLayer;
 using EmployeePortal.Modeles;
-using EmployeePortal.DataAccesLayer;
+using EmployeePortal.src;
 using System;
 using System.Windows.Forms;
 
@@ -29,13 +29,13 @@ namespace EmployeePortal
                 return;
             }
 
-            var deleteModel = new DeleteAccountModel() 
-            { 
-                AccountOwnerName= nameBox.Text,
-                AccountName= accountNameBox.Text,
-                AccountIBAN= accountIBANBox.Text,
+            var deleteModel = new DeleteAccountModel()
+            {
+                AccountOwnerName = nameBox.Text,
+                AccountName = accountNameBox.Text,
+                AccountIBAN = accountIBANBox.Text,
                 AccountNumber = numberBox.Text,
-                TypeOfAccount= typeOfAccount.Text,
+                TypeOfAccount = typeOfAccount.Text,
             };
 
             #region DeleteAccount

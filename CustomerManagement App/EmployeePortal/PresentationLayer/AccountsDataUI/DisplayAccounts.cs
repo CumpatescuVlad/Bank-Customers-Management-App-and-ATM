@@ -1,5 +1,4 @@
-﻿using AccountOperations;
-using EmployeePortal.DataAccesLayer;
+﻿using EmployeePortal.DataAccesLayer;
 using System;
 using System.Windows.Forms;
 
@@ -36,8 +35,8 @@ namespace EmployeePortal
 
             displayOwnerName.Text += accounts.AccountOwnerName;
             displayIBAN.Text += accounts.AccountIBAN;
-            displayAccountNumber.Text+= accounts.AccountNumber;
-            displayAccountBallance.Text+= accounts.AccountBallance.ToString();
+            displayAccountNumber.Text += accounts.AccountNumber;
+            displayAccountBallance.Text += accounts.AccountBallance.ToString();
             displayAccountName.Text += accounts.AccountName;
 
             if (accounts is null)

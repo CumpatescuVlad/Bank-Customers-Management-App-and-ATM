@@ -1,6 +1,5 @@
 ﻿using EmployeeInterface;
 using EmployeePortal.Modeles;
-using System.Xml.Linq;
 
 namespace EmployeePortal.src
 {
@@ -8,8 +7,8 @@ namespace EmployeePortal.src
     {
         public static string SelectCustomer(string customerName) => $@"Select  CustomerFullName , CustomerPassword ,  CustomerEmail , CustomerPhoneNumber  from Customers Where  CustomerFullName ='{customerName}'";
         public static string SelectTransactions(TransactionModel transactionModel) => $"Select AccountOwnerName , AccountNumber ,AccountIBAN, AccountName , Amount , Date From TransactionsTable Where AccountOwnerName='{transactionModel.AccountOwnerName}' And AccountNumber='{transactionModel.AccountNumber}' Order By {transactionModel.Order}";
-        public static string InsertCustomer(CustomerModel customerModel)=> $@"Insert into Customers (CustomerFullName,CustomerPassword,CustomerEmail, CustomerPhoneNumber,CustomerAppPin) values ('{customerModel.CustomerName}','{GenerateSecurityElements.GenerateElement("Password")}','{customerModel.CustomerEmail}','{customerModel.CustomerPhoneNumber}',{GenerateSecurityElements.GenerateElement("AppPin")})";
-            
+        public static string InsertCustomer(CustomerModel customerModel) => $@"Insert into Customers (CustomerFullName,CustomerPassword,CustomerEmail, CustomerPhoneNumber,CustomerAppPin) values ('{customerModel.CustomerName}','{GenerateSecurityElements.GenerateElement("Password")}','{customerModel.CustomerEmail}','{customerModel.CustomerPhoneNumber}',{GenerateSecurityElements.GenerateElement("AppPin")})";
+
         public static string InsertAccount(CreateAccountModel accountModel)
         {
             string querryString;

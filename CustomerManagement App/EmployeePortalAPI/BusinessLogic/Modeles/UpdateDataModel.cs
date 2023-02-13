@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace EmployeePortalAPI.BusinessLogic.Models
+namespace EmployeePortalAPI.BusinessLogic.Modeles
 {
     public class UpdateDataModel
     {

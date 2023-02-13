@@ -2,11 +2,11 @@
 {
     public class AccountDTO
     {
-        public AccountDTO(string accountOwnerName, string accountNumber, string accountIBAN, int accountBallance,string accountName)
+        public AccountDTO(string accountOwnerName, string accountNumber, string accountIBAN, int accountBallance, string accountName)
         {
             AccountOwnerName = accountOwnerName;
             AccountNumber = accountNumber;
-            AccountName= accountName;
+            AccountName = accountName;
             AccountIBAN = accountIBAN;
             AccountBallance = accountBallance;
         }

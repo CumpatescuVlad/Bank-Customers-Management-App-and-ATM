@@ -1,7 +1,6 @@
 ﻿using EmployeePortal.DataAccesLayer;
 using EmployeePortal.src;
 using System;
-using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace EmployeePortal
@@ -58,6 +57,6 @@ namespace EmployeePortal
 
 
         }
-        
+
     }
 }

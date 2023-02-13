@@ -4,37 +4,18 @@
     {
         public static string GenerateElement(string elementToGenerate)
         {
-              var random = new Random();
-              string securityElement;
-
-            switch (elementToGenerate)
+            var random = new Random();
+            string? securityElement = elementToGenerate switch
             {
-                case "IBAN":
-                    securityElement = $"RO{random.Next(40, 70)}BNRC{random.Next(2000, 4000)}{random.Next(6000, 8000)}{random.Next(1000, 3000)}000{random.Next(1, 9)}";
-                    break;
-                case "CardNumber":
-                    securityElement = $"{random.Next(1000, 2000)}{random.Next(3000, 4000)}{random.Next(5000, 6000)}{random.Next(6000, 8000)}";
-                    break;
-                case "AccountNumber":
-                    securityElement = $"#{random.Next(50, 80)}{random.Next(30, 60)}{random.Next(10, 70)}";
-                    break;
-                case "Password":
-                    securityElement = $"{random.Next(2000, 4000)}{random.Next(6000, 8000)}";
-                    break;
-                case "CVVCode":
-                    securityElement = $"{random.Next(100, 2000)}";
-                    break;
-                case "CardPIN":
-                    securityElement = $"{random.Next(5000, 9000)}";
-                    break;
-                case "AppPin":
-                    securityElement = $"{random.Next(1000, 5000)}";
-                    break;
-                default:
-                    securityElement = null;
-                    break;
-            }
-
+                "IBAN" => $"RO{random.Next(40, 70)}BNRC{random.Next(2000, 4000)}{random.Next(6000, 8000)}{random.Next(1000, 3000)}000{random.Next(1, 9)}",
+                "CardNumber" => $"{random.Next(1000, 2000)}{random.Next(3000, 4000)}{random.Next(5000, 6000)}{random.Next(6000, 8000)}",
+                "AccountNumber" => $"#{random.Next(50, 80)}{random.Next(30, 60)}{random.Next(10, 70)}",
+                "Password" => $"{random.Next(2000, 4000)}{random.Next(6000, 8000)}",
+                "CVVCode" => $"{random.Next(100, 2000)}",
+                "CardPIN" => $"{random.Next(5000, 9000)}",
+                "AppPin" => $"{random.Next(1000, 5000)}",
+                _ => null,
+            };
             return securityElement;
         }
 

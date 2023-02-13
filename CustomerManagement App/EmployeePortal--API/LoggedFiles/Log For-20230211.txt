@@ -1,0 +1,5 @@
+2023-02-11 19:58:44.814 +02:00 [INF] Now listening on: https://localhost:7232
+2023-02-11 19:58:44.852 +02:00 [INF] Now listening on: http://localhost:5189
+2023-02-11 19:58:44.855 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-11 19:58:44.856 +02:00 [INF] Hosting environment: Development
+2023-02-11 19:58:44.857 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\CustomerManagement App\EmployeePortalAPI

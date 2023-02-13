@@ -2,7 +2,7 @@
 {
     public class CustomerDataDTO
     {
-        public CustomerDataDTO(string customerName,string customerEmail, string customerPhoneNumber)
+        public CustomerDataDTO(string customerName, string customerEmail, string customerPhoneNumber)
         {
             CustomerName = customerName;
             CustomerEmail = customerEmail;
@@ -13,6 +13,6 @@
         public string CustomerEmail { get; set; }
         public string CustomerPhoneNumber { get; set; }
 
-       
+
     }
 }

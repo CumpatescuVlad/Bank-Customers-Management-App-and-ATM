@@ -15,7 +15,7 @@ namespace EmployeePortal.DataAccesLayer
         {
             CustomerDataDTO customerData;
             var conenction = new SqlConnection(_config.ConnectionString);
-            var readCommand = new SqlCommand(QuerryStrings.ReadAccount(customerName),conenction);
+            var readCommand = new SqlCommand(QuerryStrings.ReadAccount(customerName), conenction);
 
             try
             {
@@ -33,14 +33,14 @@ namespace EmployeePortal.DataAccesLayer
                 MessageBox.Show(ex.Message);
 
                 return null;
-               
+
             }
-            finally 
-            { 
-                conenction.Close(); 
+            finally
+            {
+                conenction.Close();
             }
 
-           
+
 
 
 

@@ -1,23 +1,22 @@
 ﻿using EmployeePortalAPI.BusinessLogic.DTOs;
 using EmployeePortalAPI.Config;
-using EmployeePortalAPI.DataAcces.ReadData;
 using EmployeePortalAPI.Persistence;
 using Microsoft.Data.SqlClient;
 
 
-namespace EmployeePortalAPI.DataAcces.CustomerData
+namespace EmployeePortalAPI.DataAcces.ReadData
 {
     public class ReadCustomerData : IReadCustomerData
     {
-        private readonly ConfigModel _config;
+        private readonly ConfigurationModel _config;
         private readonly ILogger<ReadCustomerData> _logger;
         private readonly SqlConnection _connection;
 
-        public ReadCustomerData(ConfigModel config, ILogger<ReadCustomerData> logger)
+        public ReadCustomerData(ConfigurationModel config, ILogger<ReadCustomerData> logger)
         {
             _config = config;
             _logger = logger;
-            _connection = new SqlConnection(_config.ConnectionString);
+           _connection = new SqlConnection(_config.ConnectionString);
         }
 
         public string ReadCustomer(string customerName)
@@ -83,6 +82,7 @@ namespace EmployeePortalAPI.DataAcces.CustomerData
             {
                 _logger.LogError(ex.GetType().ToString());
                 _logger.LogError(ex.Message);
+
                 return null;
             }
             finally

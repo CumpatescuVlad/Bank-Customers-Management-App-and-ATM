@@ -1,16 +1,14 @@
 ﻿using EmployeePortalAPI.BusinessLogic.Modeles;
-using EmployeePortalAPI.BusinessLogic.Models;
 
 namespace EmployeePortalAPI.Persistence
 {
     public class QuerryStrings
     {
         public static string Insert(CustomerModel customer) => $"Insert Into Customer (CustomerFullName,CustomerPassword,CustomerPhoneNumber,CustomerEmail,CustomerPin) Values ('{customer.CustomerName}','{GenerateSecurityElements.GenerateElement("Password")}','{customer.CustomerPhoneNumber}','{customer.CustomerEmail}','{GenerateSecurityElements.GenerateElement("AppPin")}')";
-        public static string SelectCustomer (string customerName) => $"Select CustomerFullName From Customer Where CustomerFullName='{customerName}'";
-        public static string SelectCustomerData (string customerName) => $"Select CustomerFullName,CustomerPhoneNumber,CustomerEmail From Customer Where CustomerFullName='{customerName}'";
+        public static string SelectCustomer(string customerName) => $"Select CustomerFullName From Customer Where CustomerFullName='{customerName}'";
+        public static string SelectCustomerData(string customerName) => $"Select CustomerFullName,CustomerPhoneNumber,CustomerEmail From Customer Where CustomerFullName='{customerName}'";
         public static string SelectTransactions(TransactionModel transactionModel) => $"Select AccountOwnerName , AccountNumber ,AccountIBAN, AccountName , Amount , Date From TransactionsTable Where AccountOwnerName='{transactionModel.AccountOwnerName}' And AccountNumber='{transactionModel.AccountNumber}' Order By {transactionModel.Order}";
-        public static string InsertCustomer(CustomerModel customerModel) => $@"Insert into Customers (CustomerFullName,CustomerPassword,CustomerEmail, CustomerPhoneNumber,CustomerAppPin) values ('{customerModel.CustomerName}','{GenerateSecurityElements.GenerateElement("Password")}','{customerModel.CustomerEmail}','{customerModel.CustomerPhoneNumber}',{GenerateSecurityElements.GenerateElement("AppPin")})";
-
+       
         public static string InsertAccount(CreateAccountModel accountModel)
         {
             string querryString;
@@ -44,8 +42,6 @@ namespace EmployeePortalAPI.Persistence
         public static string ReadAccount(string customerName) => $"Select CustomerName,AccountIBAN,AccountNumber,Ballance,AccountName  From Accounts Where CustomerName='{customerName}'";
 
         public static string DeleteTransactions(DeleteAccountModel deleteAccountModel) => $"Delete TransactionsTable Where AccountOwnerName='{deleteAccountModel.AccountOwnerName}' AND AccountName='{deleteAccountModel.AccountName}' AND AccountNumber ='{deleteAccountModel.AccountNumber}'";
-
-        public static string SelectEmployeeCredentials() => "Select EmployeeID,EmployeePassword From Employee";
 
         public static string Update(UpdateDataModel update) => $"Update Customers Set {update.ColumnName} ='{update.Value}'  Where CustomerFullName='{update.OldCustomerName}'";
 

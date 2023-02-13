@@ -15,7 +15,7 @@ namespace EmployeePortal.DataAccesLayer
         public string AddCustomer(CustomerModel customerModel)
         {
             var connection = new SqlConnection(_config.ConnectionString);
-            var insertCustomerCommand = new SqlCommand(QuerryStrings.InsertCustomer(customerModel),connection);
+            var insertCustomerCommand = new SqlCommand(QuerryStrings.InsertCustomer(customerModel), connection);
 
             try
             {
@@ -33,9 +33,9 @@ namespace EmployeePortal.DataAccesLayer
 
                 return null;
             }
-            finally 
-            { 
-                connection.Close(); 
+            finally
+            {
+                connection.Close();
             }
 
         }

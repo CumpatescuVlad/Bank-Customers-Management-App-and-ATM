@@ -27,7 +27,7 @@ namespace EmployeePortal
                 return;
             }
 
-            
+
             customerDeleted.Text = $"{modifyData.DeleteCustomer(customerName.Text)}";
 
             customerName.Clear();

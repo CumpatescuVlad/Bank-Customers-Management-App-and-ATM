@@ -1,5 +1,5 @@
-﻿using EmployeePortal.Modeles;
-using EmployeePortal.DataAccesLayer;
+﻿using EmployeePortal.DataAccesLayer;
+using EmployeePortal.Modeles;
 using EmployeePortal.src;
 using System;
 using System.Windows.Forms;
@@ -20,7 +20,7 @@ namespace EmployeePortal
 
         private void searchTransactionsLog_Click(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(accountNumberBox.Text)|| String.IsNullOrEmpty(customerFullNameBox.Text))
+            if (String.IsNullOrEmpty(accountNumberBox.Text) || String.IsNullOrEmpty(customerFullNameBox.Text))
             {
                 return;
             }
@@ -32,16 +32,16 @@ namespace EmployeePortal
                 return;
             }
 
-            var transactionsModel = new TransactionModel() 
+            var transactionsModel = new TransactionModel()
             {
-                AccountOwnerName= customerFullNameBox.Text,
-                AccountNumber= accountNumberBox.Text,
-                Order ="Date",
+                AccountOwnerName = customerFullNameBox.Text,
+                AccountNumber = accountNumberBox.Text,
+                Order = "Date",
             };
 
             var transactions = readData.ReadTransactions(transactionsModel);
 
-            richTextBox1.Text +=$"{transactions.AccountOwnerName} {transactions.AccountNumber} {transactions.AccountName} {transactions.Amount} {transactions.Date}";
+            richTextBox1.Text += $"{transactions.AccountOwnerName} {transactions.AccountNumber} {transactions.AccountName} {transactions.Amount} {transactions.Date}";
 
             if (transactions is null)
             {
@@ -50,7 +50,7 @@ namespace EmployeePortal
                 return;
 
             }
-           
+
             ShowElements();
 
 

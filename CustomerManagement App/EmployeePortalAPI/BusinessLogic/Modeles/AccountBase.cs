@@ -1,10 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace EmployeePortalAPI.BusinessLogic.Models
+namespace EmployeePortalAPI.BusinessLogic.Modeles
 {
     public class AccountBase
     {
-        [Required(ErrorMessage ="Account Owner Name cannot be null.")]
+        [Required(ErrorMessage = "Account Owner Name cannot be null.")]
         public string? AccountOwnerName { get; set; }
 
         [Required(ErrorMessage = "Account  Name cannot be null.")]

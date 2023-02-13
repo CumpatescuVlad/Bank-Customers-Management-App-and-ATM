@@ -4,12 +4,12 @@ namespace EmployeeInterface
 {
     public class GenerateSecurityElements
     {
-       
+
 
         public static string GenerateElement(string elementToGenerate)
         {
-              var random = new Random();
-              string securityElement;
+            var random = new Random();
+            string securityElement;
 
             switch (elementToGenerate)
             {

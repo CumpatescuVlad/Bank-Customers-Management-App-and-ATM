@@ -17,13 +17,13 @@ namespace EmployeePortal
         private void button1_Click(object sender, EventArgs e)
         {
             bool emptyImput = String.IsNullOrEmpty(customerNameBox.Text) || String.IsNullOrEmpty(accountNameBox.Text) || String.IsNullOrEmpty(accountInitialAmountBox.Text)
-                ||String.IsNullOrEmpty(accountIBANBox.Text)||String.IsNullOrEmpty(accountNumberBox.Text)||String.IsNullOrEmpty(typeOfAccountBox.Text);
+                || String.IsNullOrEmpty(accountIBANBox.Text) || String.IsNullOrEmpty(accountNumberBox.Text) || String.IsNullOrEmpty(typeOfAccountBox.Text);
 
             if (emptyImput)
             {
                 return;
             }
-            else if (Imput.IsNumber(customerNameBox)|| Imput.IsNumber(accountNameBox)||Imput.IsNumber(accountInitialAmountBox) is false)
+            else if (Imput.IsNumber(customerNameBox) || Imput.IsNumber(accountNameBox) || Imput.IsNumber(accountInitialAmountBox) is false)
             {
                 MessageBox.Show("Wrong Imput \nAccounts Amount Cannot Contain Letters\nNames cannot Contain Numbers.");
 
@@ -32,12 +32,12 @@ namespace EmployeePortal
             var accountModel = new CreateAccountModel()
             {
                 AccountOwnerName = customerNameBox.Text,
-                AccountNumber= accountNumberBox.Text,
+                AccountNumber = accountNumberBox.Text,
                 TypeOfAccount = typeOfAccountBox.Text,
-                AccountName= accountNameBox.Text,
+                AccountName = accountNameBox.Text,
                 AccountIBAN = accountIBANBox.Text,
-                Ballance =int.Parse(accountInitialAmountBox.Text),
-                
+                Ballance = int.Parse(accountInitialAmountBox.Text),
+
             };
 
             modifyData.CreateBankAccount(accountModel);

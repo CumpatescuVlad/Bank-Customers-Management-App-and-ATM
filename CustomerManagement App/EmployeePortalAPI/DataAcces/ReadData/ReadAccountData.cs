@@ -6,15 +6,15 @@ using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Options;
 
 
-namespace EmployeePortalAPI.DataAcces.CustomerData
+namespace EmployeePortalAPI.DataAcces.ReadData
 {
-    public class ReadAccountData
+    public class ReadAccountData : IReadAccountData
     {
         private readonly ILogger<ReadAccountData> _logger;
-        private readonly ConfigModel _configModel;
+        private readonly ConfigurationModel _configModel;
         private readonly SqlConnection _connection;
 
-        public ReadAccountData(ILogger<ReadAccountData> logger, IOptions<ConfigModel> config)
+        public ReadAccountData(ILogger<ReadAccountData> logger, IOptions<ConfigurationModel> config)
         {
             _logger = logger;
             _configModel = config.Value;
@@ -98,8 +98,6 @@ namespace EmployeePortalAPI.DataAcces.CustomerData
             {
                 _connection.Close();
             }
-
-
 
         }
 
