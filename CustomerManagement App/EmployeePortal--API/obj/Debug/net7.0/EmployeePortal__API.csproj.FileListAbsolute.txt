@@ -76,3 +76,7 @@ E:\CODE REPOS\BankApp\CustomerManagement App\EmployeePortal--API\obj\Debug\net7.
 E:\CODE REPOS\BankApp\CustomerManagement App\EmployeePortal--API\obj\Debug\net7.0\EmployeePortal__API.pdb
 E:\CODE REPOS\BankApp\CustomerManagement App\EmployeePortal--API\obj\Debug\net7.0\EmployeePortal__API.genruntimeconfig.cache
 E:\CODE REPOS\BankApp\CustomerManagement App\EmployeePortal--API\obj\Debug\net7.0\ref\EmployeePortal__API.dll
+E:\CODE REPOS\BankApp\CustomerManagement App\EmployeePortal--API\bin\Debug\net7.0\Syncfusion.Compression.Portable.dll
+E:\CODE REPOS\BankApp\CustomerManagement App\EmployeePortal--API\bin\Debug\net7.0\Syncfusion.DocIO.Portable.dll
+E:\CODE REPOS\BankApp\CustomerManagement App\EmployeePortal--API\bin\Debug\net7.0\Syncfusion.Licensing.dll
+E:\CODE REPOS\BankApp\CustomerManagement App\EmployeePortal--API\bin\Debug\net7.0\Syncfusion.OfficeChart.Portable.dll

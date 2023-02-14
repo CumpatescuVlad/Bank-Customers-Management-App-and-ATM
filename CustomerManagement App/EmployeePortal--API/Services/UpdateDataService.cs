@@ -25,5 +25,17 @@ namespace EmployeePortal__API.Services
             return HttpStatusCode.OK;
         }
 
+        public HttpStatusCode UpdateCardPinCode(string customerName)
+        {
+            var updatePinCodeRespone = _updateData.UpdateCreditCard(customerName);
+
+            if (updatePinCodeRespone is HttpStatusCode.InternalServerError)
+            {
+                return HttpStatusCode.InternalServerError;
+            }
+
+            return HttpStatusCode.OK;
+        }
+
     }
 }

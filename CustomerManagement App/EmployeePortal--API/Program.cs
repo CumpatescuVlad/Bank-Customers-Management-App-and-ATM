@@ -6,6 +6,7 @@ using EmployeePortal__API.DataAcces.ReadData;
 using EmployeePortal__API.Services;
 using EmployeePortal__API.BusinessLogic.Filters;
 using Serilog;
+using EmployeePortal__API.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,7 +29,8 @@ builder.Services.AddScoped<IDeleteData, DeleteData>();
 builder.Services.AddScoped<ICreateDataService, CreateDataService>();
 builder.Services.AddScoped<IDeleteDataService,DeleteDataService>();
 builder.Services.AddScoped<IUpdateDataService,UpdateDataService>();
-builder.Services.AddScoped<IMaintenanceService,MaintenanceService>();
+builder.Services.AddScoped<IFunctionsService,FunctionsService>();
+builder.Services.AddScoped<IGenerateStatement,GenerateStatement>();
 
 
 var app = builder.Build();

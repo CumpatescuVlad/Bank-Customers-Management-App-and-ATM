@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zZe7A3PQrIsZOZ8g5C+89a5jJXCd7JhAZL6ZVKYsXL4KyiNnhAZop1fHgaN7ovF6i6Zrmi09VmecGHSJg8Ubrg==",
+  "dgSpecHash": "7F4ELCzOaJ8gbcSmidOXN7LDlzf0LyhZovdqx/lj1Fd32sAxzVbVHPk6MQQwOToAyCiueB91l7uQIz1gUpz8/w==",
   "success": true,
   "projectFilePath": "E:\\CODE REPOS\\BankApp\\CustomerManagement App\\EmployeePortal--API\\EmployeePortal__API.csproj",
   "expectedPackageFiles": [
@@ -52,6 +52,10 @@
     "C:\\Users\\VLAD\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\VLAD\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
     "C:\\Users\\VLAD\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
+    "C:\\Users\\VLAD\\.nuget\\packages\\syncfusion.compression.net.core\\20.4.0.50\\syncfusion.compression.net.core.20.4.0.50.nupkg.sha512",
+    "C:\\Users\\VLAD\\.nuget\\packages\\syncfusion.docio.net.core\\20.4.0.50\\syncfusion.docio.net.core.20.4.0.50.nupkg.sha512",
+    "C:\\Users\\VLAD\\.nuget\\packages\\syncfusion.licensing\\20.4.0.50\\syncfusion.licensing.20.4.0.50.nupkg.sha512",
+    "C:\\Users\\VLAD\\.nuget\\packages\\syncfusion.officechart.net.core\\20.4.0.50\\syncfusion.officechart.net.core.20.4.0.50.nupkg.sha512",
     "C:\\Users\\VLAD\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.1\\system.configuration.configurationmanager.6.0.1.nupkg.sha512",
     "C:\\Users\\VLAD\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\VLAD\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",

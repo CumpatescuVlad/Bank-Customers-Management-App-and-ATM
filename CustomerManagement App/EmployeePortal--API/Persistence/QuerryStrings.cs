@@ -1,5 +1,4 @@
 ﻿using EmployeePortal__API.BusinessLogic.Modeles;
-using System.Diagnostics;
 
 namespace EmployeePortal__API.Persistence
 {

@@ -6,5 +6,6 @@ namespace EmployeePortal__API.Services
     public interface IUpdateDataService
     {
         HttpStatusCode UpdateCustomer(UpdateDataModel updateDataModel);
+        HttpStatusCode UpdateCardPinCode(string customerName);
     }
 }
