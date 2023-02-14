@@ -23,7 +23,7 @@ namespace ATMapi.Services
         {
             var transactionModel = new TransactionModel()
             {
-                AccountOwnerName = depositModel.AccountOwnerName,
+                CustomerName = depositModel.CustomerName,
                 AccountIBAN = depositModel.AccountIBAN,
                 AccountNumber = depositModel.AccountNumber,
                 Amount = depositModel.Amount,

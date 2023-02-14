@@ -19,10 +19,10 @@ namespace ATMapi.DataAcces
             _connection = new SqlConnection(_config.ConnectionString);
         }
 
-        public SoldDTO ReadAccountInfo(string customerName, string accountNumber)
+        public SoldDTO ReadAccountInfo(string customerName, string accountIBAN)
         {
             SoldDTO soldDTO;
-            var readAccountInfoCommand = new SqlCommand(QuerryStrings.SelectAccountInfo(customerName, accountNumber), _connection);
+            var readAccountInfoCommand = new SqlCommand(QuerryStrings.SelectAccountInfo(customerName, accountIBAN), _connection);
 
             try
             {
@@ -59,7 +59,7 @@ namespace ATMapi.DataAcces
 
         public PinDTO ReadCustomerATMPin(string customerName)
         {
-            var readCustomerPinCommand = new SqlCommand(QuerryStrings.SelectCustomerPin(customerName), _connection);
+            var readCustomerPinCommand = new SqlCommand(QuerryStrings.Select(customerName, "ATMPIN"), _connection);
             PinDTO pinDTO;
             try
             {
@@ -96,7 +96,7 @@ namespace ATMapi.DataAcces
 
         public HttpStatusCode ReadCustomer(string customerName)
         {
-            var readCustomerName = new SqlCommand(QuerryStrings.SelectCustomer(customerName), _connection);
+            var readCustomerName = new SqlCommand(QuerryStrings.Select(customerName,"CustomerName"), _connection);
 
             try
             {

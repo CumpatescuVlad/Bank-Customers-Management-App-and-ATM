@@ -24,7 +24,7 @@ namespace ATMapi.Services
         {
             var transactionModel = new TransactionModel()
             {
-                AccountOwnerName = withdrawModel.AccountOwnerName,
+                CustomerName = withdrawModel.CustomerName,
                 AccountIBAN = withdrawModel.AccountIBAN,
                 AccountNumber = withdrawModel.AccountNumber,
                 Amount = withdrawModel.Amount,

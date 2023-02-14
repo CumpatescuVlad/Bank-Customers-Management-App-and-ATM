@@ -5,7 +5,7 @@ namespace ATMapi.BusinessLogic.Modeles
     public class DepositModel
     {
         [Required(ErrorMessage = "Account Name Cannot Be Null.")]
-        public string? AccountOwnerName { get; set; }
+        public string? CustomerName { get; set; }
 
         [Required(ErrorMessage = "Account Number Cannot Be Null.")]
         public string? AccountNumber { get; set; }
