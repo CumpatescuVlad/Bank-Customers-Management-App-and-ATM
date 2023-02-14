@@ -22,21 +22,22 @@ namespace EmployeePortal__API.DataAcces.ModifyData.DeleteData
 
         public HttpStatusCode DeleteCustomer(string customerName)
         {
-            var deleteCustomerDataCommand = new SqlCommand(QuerryStrings.Delete(customerName, "Customer"), _connection);
-            var deleteAccountCommand = new SqlCommand(QuerryStrings.Delete(customerName, "Accounts"), _connection);
-            var deleteTransactionsCommand = new SqlCommand(QuerryStrings.Delete(customerName, "Transactions"), _connection);
+            var deleteCustomerDataCommand = new SqlCommand(QuerryStrings.Delete(customerName, "Customers"), _connection);
+            var deleteAccountCommand = new SqlCommand(QuerryStrings.Delete(customerName, "PersonalAccounts"), _connection);
+            var deleteATMTransactionsCommand = new SqlCommand(QuerryStrings.Delete(customerName, "ATMTransactions"), _connection);
+            var deleteIncomeTransfersCommand = new SqlCommand(QuerryStrings.Delete(customerName, "IncomingTransfers"), _connection);
+            var deleteOutcomeTransfersCommand = new SqlCommand(QuerryStrings.Delete(customerName, "OutcomingTransfers"), _connection);
             try
             {
                 _connection.Open();
-
                 var deleteAdapter = new SqlDataAdapter();
-                deleteAdapter.DeleteCommand = deleteCustomerDataCommand;
-                deleteAdapter.DeleteCommand.ExecuteNonQuery();
-                deleteAdapter.DeleteCommand = deleteAccountCommand;
-                deleteAdapter.DeleteCommand.ExecuteNonQuery();
-                deleteAdapter.DeleteCommand = deleteTransactionsCommand;
-                deleteAdapter.DeleteCommand.ExecuteNonQuery();
-                
+
+                deleteAdapter.DeleteCommand = deleteCustomerDataCommand; deleteAdapter.DeleteCommand.ExecuteNonQuery();
+                deleteAdapter.DeleteCommand = deleteAccountCommand; deleteAdapter.DeleteCommand.ExecuteNonQuery();
+                deleteAdapter.DeleteCommand = deleteATMTransactionsCommand; deleteAdapter.DeleteCommand.ExecuteNonQuery();
+                deleteAdapter.DeleteCommand = deleteIncomeTransfersCommand; deleteAdapter.DeleteCommand.ExecuteNonQuery();
+                deleteAdapter.DeleteCommand = deleteOutcomeTransfersCommand; deleteAdapter.DeleteCommand.ExecuteNonQuery();
+
 
                 return HttpStatusCode.OK;
             }
@@ -56,19 +57,19 @@ namespace EmployeePortal__API.DataAcces.ModifyData.DeleteData
         public HttpStatusCode DeleAccount(DeleteAccountModel deleteAccountModel)
         {
             var deleteAccountCommand = new SqlCommand(QuerryStrings.DeleteAccount(deleteAccountModel), _connection);
+            var deleteATMTransactionsCommand = new SqlCommand(QuerryStrings.Delete(deleteAccountModel.CustomerName,"ATMTransactions"), _connection);
+            var deleteIncomingTransfersCommand = new SqlCommand(QuerryStrings.Delete(deleteAccountModel.CustomerName,"IncomingTransfers"), _connection);
+            var deleteOutcomingTransfersCommand = new SqlCommand(QuerryStrings.Delete(deleteAccountModel.CustomerName,"OutcomingTransfers"), _connection);
 
-            var deleteTransactionsCommand = new SqlCommand(QuerryStrings.DeleteTransactions(deleteAccountModel), _connection);
             try
             {
                 _connection.Open();
-
                 var adapter = new SqlDataAdapter();
 
-                adapter.DeleteCommand = deleteAccountCommand;
-                adapter.DeleteCommand.ExecuteNonQuery();
-
-                adapter.DeleteCommand = deleteTransactionsCommand;
-                adapter.DeleteCommand.ExecuteNonQuery();
+                adapter.DeleteCommand = deleteAccountCommand; adapter.DeleteCommand.ExecuteNonQuery();
+                adapter.DeleteCommand = deleteATMTransactionsCommand; adapter.DeleteCommand.ExecuteNonQuery();
+                adapter.DeleteCommand = deleteIncomingTransfersCommand; adapter.DeleteCommand.ExecuteNonQuery();
+                adapter.DeleteCommand = deleteOutcomingTransfersCommand; adapter.DeleteCommand.ExecuteNonQuery();
 
                 return HttpStatusCode.OK;
             }

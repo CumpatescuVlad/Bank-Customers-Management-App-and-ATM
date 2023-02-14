@@ -1,4 +1,5 @@
 ﻿using EmployeePortal__API.BusinessLogic.DTOs;
+using EmployeePortal__API.BusinessLogic.DTOs.TransactionsDTOs;
 using EmployeePortal__API.BusinessLogic.Modeles;
 using EmployeePortal__API.Config;
 using EmployeePortal__API.Persistence;
@@ -21,26 +22,30 @@ namespace EmployeePortal__API.DataAcces.ReadData
 
         }
 
-        public AccountDTO ReadAccountInfo(string customerName)
+        public List<AccountDTO> ReadAccountInfo(string customerName)
         {
-            AccountDTO accountDTO;
-            var readAccountInfoCommand = new SqlCommand(QuerryStrings.ReadAccount(customerName), _connection);
+            var accountsList = new List<AccountDTO>();
+            var readAccountInfoCommand = new SqlCommand(QuerryStrings.Select(customerName,"AccountData"), _connection);
 
             try
             {
                 _connection.Open();
                 var reader = readAccountInfoCommand.ExecuteReader();
-                reader.Read();
-                accountDTO = new AccountDTO(reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetInt32(3), reader.GetString(4));
-                reader.Close();
+             
+                while (reader.Read())
+                {
+                    accountsList.Add(new AccountDTO(reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetInt32(3), reader.GetString(4)));
+                }
 
-                return accountDTO;
+                return accountsList;
             }
             catch (InvalidOperationException invalidEx)
             {
                 _logger.LogError(invalidEx.Message);
 
-                return new AccountDTO("No Owner Was Found", "No Account Number Was Found", "No IBAN Was Found", 0, "No Account Name Was Found");
+                accountsList.Add(new AccountDTO("No Owner Was Found", "No Account Number Was Found", "No IBAN Was Found", 0, "No Account Name Was Found"));
+
+                return accountsList;
             }
             catch (Exception ex)
             {
@@ -58,33 +63,58 @@ namespace EmployeePortal__API.DataAcces.ReadData
         }
 
 
-        public List<TransactionsDTO> ReadTransactions(TransactionModel transactionModel)
+        public TransactionsDTO ReadTransactions(string customerName)
         {
-            var transactionsList = new List<TransactionsDTO>();
+            TransactionsDTO transactionsDTO;
+            var atmTransactionsList = new List<ATMTransactionsDTO>();
+            var incomeTransactionsList = new List<IncomeTransactionsDTO>();
+            var outcomeTransactionsList = new List<OutcomeTransactionsDTO>();
             
-            var readTransactionsCommand = new SqlCommand(QuerryStrings.SelectTransactions(transactionModel), _connection);
-            
+            var readATMTransactionsCommand = new SqlCommand(QuerryStrings.SelectTransactions(customerName,"ATMTransactions"), _connection);
+            var readIncomeTransactionsCommand = new SqlCommand(QuerryStrings.SelectTransactions(customerName, "IncomingTransfers"),_connection);
+            var readOutcomeTransactionsCommand = new SqlCommand(QuerryStrings.SelectTransactions(customerName, "OutcomingTransfer"),_connection);
+          
             try
             {
                 _connection.Open();
 
-                var reader = readTransactionsCommand.ExecuteReader();
+                var atmReader = readATMTransactionsCommand.ExecuteReader();
 
-                while (reader.Read())
+                while (atmReader.Read())
                 {
-                    transactionsList.Add(new TransactionsDTO(reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetInt32(3), reader.GetString(4), reader.GetString(5)));
+                    atmTransactionsList.Add(new ATMTransactionsDTO(atmReader.GetString(0), atmReader.GetString(1),atmReader.GetInt32(2), atmReader.GetString(3)));
 
                 }
-                reader.Close();
+                atmReader.Close();
+                
+                var incomeReader = readIncomeTransactionsCommand.ExecuteReader();
 
-                return transactionsList;
+                while (incomeReader.Read())
+                {
+                    incomeTransactionsList.Add(new IncomeTransactionsDTO(incomeReader.GetString(0), incomeReader.GetString(1), incomeReader.GetString(2), incomeReader.GetInt32(3), incomeReader.GetString(4)));
+                }
+                incomeReader.Close();
+
+                var outcomeReader = readOutcomeTransactionsCommand.ExecuteReader();
+
+                while (outcomeReader.Read())
+                {
+                    outcomeTransactionsList.Add(new OutcomeTransactionsDTO(outcomeReader.GetString(0), outcomeReader.GetString(1), outcomeReader.GetString(2), outcomeReader.GetInt32(3), outcomeReader.GetString(4)));
+                }
+                outcomeReader.Close();
+
+                transactionsDTO = new TransactionsDTO(atmTransactionsList,incomeTransactionsList,outcomeTransactionsList);
+
+                return transactionsDTO;
 
             }
             catch (InvalidOperationException invalidEx)
             {
                 _logger.LogError(invalidEx.Message);
 
-                return transactionsList;
+                var emptyList = new TransactionsDTO(null,null,null);
+
+                return emptyList;
 
             }
             catch (Exception ex)

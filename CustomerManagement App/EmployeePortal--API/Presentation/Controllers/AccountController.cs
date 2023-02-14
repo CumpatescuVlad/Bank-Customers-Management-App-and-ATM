@@ -42,19 +42,13 @@ namespace EmployeePortal__API.Presentation.Controllers
 
         [HttpGet]
         [ServiceFilter(typeof(ModelValidationFilter))]
-        [Route("Portal/Accounts/Transactions/{accountOwnerName}/{order}")]
+        [Route("Portal/Accounts/Transactions/{customerName}")]
 
-        public IActionResult GetTransactions(string accountOwnerName,string order)
+        public IActionResult GetTransactions(string customerName)
         {
-            //If You Recive 404 Error encode account number.
+            //If You Recive 404 Error Encode account number.
 
-            var transactionModel = new TransactionModel()
-            {
-                AccountOwnerName = accountOwnerName,
-                Order = order
-            };
-
-            var  transactionsResult = _infoService.GetAccountTransactions(transactionModel);
+            var  transactionsResult = _infoService.GetAccountTransactions(customerName);
 
             if (transactionsResult is null) 
             {

@@ -1,13 +1,52 @@
 ﻿using EmployeePortal__API.BusinessLogic.Modeles;
+using System.Diagnostics;
 
 namespace EmployeePortal__API.Persistence
 {
     public class QuerryStrings
     {
-        public static string Insert(CustomerModel customer) => $"Insert Into Customer (CustomerFullName,CustomerPassword,CustomerPhoneNumber,CustomerEmail,CustomerPin) Values ('{customer.CustomerName}','{GenerateSecurityElements.GenerateElement("Password")}','{customer.CustomerPhoneNumber}','{customer.CustomerEmail}','{GenerateSecurityElements.GenerateElement("AppPin")}')";
-        public static string SelectCustomer(string customerName) => $"Select CustomerFullName From Customer Where CustomerFullName='{customerName}'";
-        public static string SelectCustomerData(string customerName) => $"Select CustomerFullName,CustomerPhoneNumber,CustomerEmail From Customer Where CustomerFullName='{customerName}'";
-        public static string SelectTransactions(TransactionModel transactionModel) => $"Select CustomerFullName , TypeOfTransaction ,AccountUsed,Amount,Recipient, TransactionDate From Transactions Where CustomerFullName='{transactionModel.AccountOwnerName}' Order By {transactionModel.Order}";
+        public static string Update(UpdateDataModel update) => $"Update Customer Set {update.ColumnName} ='{update.Value}'  Where CustomerName='{update.OldCustomerName}'";
+        public static string UpdatePinCode(string customerName) => $"Update CreditCard Set PinCode ='{GenerateSecurityElements.GenerateElement("CardPIN")}' Where CustomerName='{customerName}'";
+        public static string Delete(string customerName, string tableToDelete) => $"Delete {tableToDelete} Where CustomerName ='{customerName}'";
+        public static string Insert(CustomerModel customerModel,string tableToInsert)
+        {
+            string insertQuerry = tableToInsert switch
+            {
+                "Customers" => $"Insert Into Customers (CustomerName,CustomerPhoneNumber,CustomerEmail) Values ('{customerModel.CustomerName}','{customerModel.CustomerPhoneNumber}','{customerModel.CustomerEmail}')",
+                "PersonalAccounts" => $"Insert Into PersonalAccounts(CustomerName,AccountName,AccountNumber,AccountIBAN,Ballance) Values ('{customerModel.CustomerName}','{customerModel.AccountName}','{GenerateSecurityElements.GenerateElement("AccountNumber")}','{GenerateSecurityElements.GenerateElement("IBAN")}','{0}')",
+                "CreditCard" => $"Insert Into CreditCard (CustomerName,CardNumber,AccountInUse,SecurityCode,PinCode) Values ('{customerModel.CustomerName}','{GenerateSecurityElements.GenerateElement("CardNumber")}',Select AccountIBAN From PersonalAccounts Where CustomerName='{customerModel.CustomerName}','{GenerateSecurityElements.GenerateElement("SecurityCode")}','{GenerateSecurityElements.GenerateElement("CardPIN")}')",
+                "BankingApp" => $"Insert Into BankingApp (CustomerName,AppPinCode,AppPassword) Values ('{customerModel.CustomerName}','{GenerateSecurityElements.GenerateElement("Password")}','{GenerateSecurityElements.GenerateElement("AppPin")}')",
+                _ => "No Relevant Info Provided",
+            };
+            return insertQuerry;
+
+        }
+
+        public static string Select(string customerName,string itemsToSelect)
+        {
+            string selectQuerry = itemsToSelect switch
+            {
+                "CustomerName" => $"Select CustomerName From Customers Where CustomerName='{customerName}'",
+                "CustomerData" => $"Select CustomerName,CustomerPhoneNumber,CustomerEmail From Customers Where CustomerName='{customerName}'",
+                "AccountData" => $"Select CustomerName,AccountName,AccountNumber,AccountIBAN,Ballance From PersonalAccounts Where CustomerName='{customerName}'",
+                _ => "No Relevant Items Provded",
+            };
+            return selectQuerry;
+        }
+
+        public static string SelectTransactions(string customerName ,string tableToSelect)
+        {
+           string selectString = tableToSelect switch
+            {
+                "ATMTransactions" => $"Select TypeOfTransactions,AccountUsed,TransactionDate From ATMTransactions Where CustomerName='{customerName}'",
+                "IncomingTransfers" => $"Select AccountUsed,Sender,Amount,TransactionDate From IncomingTransfers Where CustomerName='{customerName}' AND TypeOfTransfer = 'Income'",
+                "OutcomingTransfer" => $"Select AccountUsed,Recipient,Amount,TransactionDate From OutcomingTransfers Where CustomerName='{customerName}' AND TypeOfTransfer = 'Outcome'",
+                _ => "No Relevant Info Was Provided",
+            };
+
+            return selectString;
+
+        }
 
         public static string InsertAccount(CreateAccountModel accountModel)
         {
@@ -15,11 +54,11 @@ namespace EmployeePortal__API.Persistence
 
             if (accountModel.TypeOfAccount == "PersonalAccount")
             {
-                querryString = $"Insert Into PersonalAccountsTable (CustomerName,AccountName,AccountNumber,AccountIBAN,Ballance) Values ('{accountModel.AccountOwnerName}','{accountModel.AccountName}','{accountModel.AccountNumber}','{accountModel.AccountIBAN}','{accountModel.Ballance}')";
+                querryString = $"Insert Into PersonalAccountsTable (CustomerName,AccountName,AccountNumber,AccountIBAN,Ballance) Values ('{accountModel.CustomerName}','{accountModel.AccountName}','{GenerateSecurityElements.GenerateElement("AccountNumber")}','{GenerateSecurityElements.GenerateElement("IBAN")}','{accountModel.Ballance}')";
             }
             else
             {
-                querryString = $"Insert Into BusinessAccountsTable (CustomerName,AccountName,AccountNumber,AccountIBAN,Amount) Values ('{accountModel.AccountOwnerName}','{accountModel.AccountName}','{accountModel.AccountNumber}','{accountModel.AccountIBAN}','{accountModel.Ballance}')";
+                querryString = $"Insert Into BusinessAccountsTable (CustomerName,AccountName,AccountNumber,AccountIBAN,Amount) Values ('{accountModel.CustomerName}','{accountModel.AccountName}','{GenerateSecurityElements.GenerateElement("AccountNumber")}','{GenerateSecurityElements.GenerateElement("IBAN")}','{0}')";
             }
             return querryString;
         }
@@ -30,38 +69,15 @@ namespace EmployeePortal__API.Persistence
 
             if (deleteAccountModel.TypeOfAccount == "PersonalAccount")
             {
-                querryString = $"Delete PersonalAccountsTable Where CustomerName='{deleteAccountModel.AccountOwnerName}' AND AccountName='{deleteAccountModel.AccountName}' AND AccountNumber ='{deleteAccountModel.AccountNumber}'";
+                querryString = $"Delete PersonalAccountsTable Where CustomerName='{deleteAccountModel.CustomerName}' AND AccountName='{deleteAccountModel.AccountName}'";
             }
             else
             {
-                querryString = $"Delete BusinessAccountsTable Where CustomerName='{deleteAccountModel.AccountOwnerName}' AND AccountName='{deleteAccountModel.AccountName}' AND AccountNumber ='{deleteAccountModel.AccountNumber}'";
+                querryString = $"Delete BusinessAccountsTable Where CustomerName='{deleteAccountModel.CustomerName}' AND AccountName='{deleteAccountModel.AccountName}'";
             }
 
             return querryString;
         }
-        public static string ReadAccount(string customerName) => $"Select CustomerFullName,AccountIBAN,AccountNumber,Amount,AccountName  From Accounts Where CustomerFullName='{customerName}'";
 
-        public static string DeleteTransactions(DeleteAccountModel deleteAccountModel) => $"Delete Transactions Where CustomerFullName='{deleteAccountModel.AccountOwnerName}'  AND AccountUsed ='{deleteAccountModel.AccountIBAN}'";
-
-        public static string Update(UpdateDataModel update) => $"Update Customer Set {update.ColumnName} ='{update.Value}'  Where CustomerFullName='{update.OldCustomerName}'";
-
-        public static string Delete(string customerName, string tableToDelete)
-        {
-            string querryString;
-
-            if (tableToDelete == "Customer")
-            {
-                querryString = $"Delete Customer Where  CustomerFullName ='{customerName}'";
-            }
-            else if (tableToDelete == "Accounts")
-            {
-                querryString = $"Delete  Accounts Where  CustomerFullName ='{customerName}'";
-            }
-            else
-            {
-                querryString = $"Delete Transactions  Where  CustomerFullName ='{customerName}'";
-            }
-            return querryString;
-        }
     }
 }

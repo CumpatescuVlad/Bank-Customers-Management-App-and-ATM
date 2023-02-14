@@ -5,7 +5,7 @@ namespace EmployeePortal__API.DataAcces.ReadData
 {
     public interface IReadAccountData
     {
-        AccountDTO ReadAccountInfo(string customerName);
-        List<TransactionsDTO> ReadTransactions(TransactionModel transactionModel);
+        List<AccountDTO> ReadAccountInfo(string customerName);
+        TransactionsDTO ReadTransactions(string customerName);
     }
 }

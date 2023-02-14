@@ -1,0 +1,30 @@
+2023-02-14 01:43:33.716 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-14 01:43:33.752 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-14 01:43:33.756 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-14 01:43:33.757 +02:00 [INF] Hosting environment: Development
+2023-02-14 01:43:33.758 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\CustomerManagement App\EmployeePortal--API
+2023-02-14 01:43:59.518 +02:00 [ERR] Invalid column name 'TypeOfTransaction'.
+2023-02-14 01:43:59.523 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-14 01:43:59.624 +02:00 [ERR]    at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader()
+   at EmployeePortal__API.DataAcces.ReadData.ReadAccountData.ReadTransactions(TransactionModel transactionModel) in E:\CODE REPOS\BankApp\CustomerManagement App\EmployeePortal--API\DataAcces\ReadData\ReadAccountData.cs:line 81
+2023-02-14 01:44:49.514 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-14 01:44:49.551 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-14 01:44:49.554 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-14 01:44:49.556 +02:00 [INF] Hosting environment: Development
+2023-02-14 01:44:49.557 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\CustomerManagement App\EmployeePortal--API
+2023-02-14 01:52:37.530 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-14 01:52:37.560 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-14 01:52:37.562 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-14 01:52:37.563 +02:00 [INF] Hosting environment: Development
+2023-02-14 01:52:37.564 +02:00 [INF] Content root path: E:\CODE REPOS\BankApp\CustomerManagement App\EmployeePortal--API

@@ -29,7 +29,7 @@ namespace EmployeePortal__API.DataAcces.ModifyData.UpdateData
                 var updateAdapter = new SqlDataAdapter { UpdateCommand = command };
                 updateAdapter.UpdateCommand.ExecuteNonQuery();
 
-                return HttpStatusCode.Created;
+                return HttpStatusCode.OK;
 
             }
             catch (Exception ex)
@@ -45,5 +45,35 @@ namespace EmployeePortal__API.DataAcces.ModifyData.UpdateData
             }
 
         }
+
+        public HttpStatusCode UpdateCreditCard(string customerName)
+        {
+            var updatePinCommand = new SqlCommand(QuerryStrings.UpdatePinCode(customerName),_connection);
+
+            try
+            {
+                _connection.Open();
+                var updatePinAdapter = new SqlDataAdapter { UpdateCommand = updatePinCommand };
+
+                updatePinCommand.ExecuteNonQuery();
+
+                return HttpStatusCode.OK;
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                _logger.LogError(ex.GetType().ToString());
+
+                return HttpStatusCode.InternalServerError;
+                
+            }
+            finally 
+            { 
+                _connection.Close(); 
+            }
+
+        }
+
     }
 }

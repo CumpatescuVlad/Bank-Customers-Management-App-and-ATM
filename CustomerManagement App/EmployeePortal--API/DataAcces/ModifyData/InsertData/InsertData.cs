@@ -22,15 +22,20 @@ namespace EmployeePortal__API.DataAcces.ModifyData.InsertData
 
         public HttpStatusCode InsertCustomer(CustomerModel customerModel)
         {
-            var insertCustomerCommand = new SqlCommand(QuerryStrings.Insert(customerModel), _connection);
+            var insertCustomerCommand = new SqlCommand(QuerryStrings.Insert(customerModel,"Customers"), _connection);
+            var insertAccountCommand = new SqlCommand(QuerryStrings.Insert(customerModel,"PersonalAccounts"),_connection);
+            var insertCreditCardCommand = new SqlCommand(QuerryStrings.Insert(customerModel,"CreditCard"),_connection);
+            var insertBankingAppCommand = new SqlCommand(QuerryStrings.Insert(customerModel, "BankingApp"),_connection);
 
             try
             {
                 _connection.Open();
                 var adapter = new SqlDataAdapter() { InsertCommand = insertCustomerCommand };
 
-                adapter.InsertCommand = insertCustomerCommand;
-                adapter.InsertCommand.ExecuteNonQuery();
+                adapter.InsertCommand = insertCustomerCommand; adapter.InsertCommand.ExecuteNonQuery();
+                adapter.InsertCommand = insertAccountCommand; adapter.InsertCommand.ExecuteNonQuery();
+                adapter.InsertCommand = insertCreditCardCommand; adapter.InsertCommand.ExecuteNonQuery();
+                adapter.InsertCommand = insertBankingAppCommand; adapter.InsertCommand.ExecuteNonQuery();
 
                 return HttpStatusCode.Created;
             }
@@ -45,6 +50,7 @@ namespace EmployeePortal__API.DataAcces.ModifyData.InsertData
             finally
             {
                 _connection.Close();
+                
             }
         }
 

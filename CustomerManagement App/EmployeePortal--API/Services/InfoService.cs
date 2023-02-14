@@ -32,38 +32,46 @@ namespace EmployeePortal__API.Services
 
         public string GetAccountInfo(string customerName)
         {
-            var accountInfoDTO = _readAccountData.ReadAccountInfo(customerName);
+            bool accountInfoNotFound = false;
+            var accountInfoList = _readAccountData.ReadAccountInfo(customerName);
 
-            if (accountInfoDTO is null)
+            if (accountInfoList is null)
             {
                 return null;
             }
-
-            bool accountInfoNotFound = accountInfoDTO.AccountOwnerName == "No Owner Was Found" || accountInfoDTO.AccountName == "No Account Name Was Found" ||
-                accountInfoDTO.AccountIBAN == "No IBAN Was Found" || accountInfoDTO.AccountBallance == 0 || accountInfoDTO.AccountNumber == "No Account Number Was Found";
-
+            
+            foreach (var account in accountInfoList)
+            {
+                accountInfoNotFound = account.AccountOwnerName == "No Owner Was Found";
+            }
             if (accountInfoNotFound)
             {
-                return JsonConvert.SerializeObject(accountInfoDTO);
+                return JsonConvert.SerializeObject(accountInfoList);
             }
 
-            return JsonConvert.SerializeObject(accountInfoDTO);
+            return JsonConvert.SerializeObject(accountInfoList);
         }
 
-        public string GetAccountTransactions(TransactionModel transactionModel)
+        public string GetAccountTransactions(string customerName)
         {
             bool transactionsNotFound = false;
-            var transactionsList = _readAccountData.ReadTransactions(transactionModel);
+            var transactionsList = _readAccountData.ReadTransactions(customerName);
 
             if (transactionsList is null)
             {
                 return null;
             }
-            foreach (var transaction in transactionsList)
+            foreach (var transaction in transactionsList.AtmTransactions)
             {
-               transactionsNotFound = transaction.AccountOwnerName == "No Owner Was Found" || transaction.Recipient == "No Account Name Was Found" ||
-                 transaction.AccountIBAN == "No IBAN Was Found" || transaction.Amount == 0 || transaction.TypeOfTransaction == "No Account Number Was Found" ||
-                 transaction.Date == "No Date Was Found";
+                transactionsNotFound = transaction is null;
+            }
+            foreach (var transaction in transactionsList.IncomeTransactions)
+            {
+                transactionsNotFound = transaction is null;
+            }
+            foreach (var transaction in transactionsList.OutcomeTransactions)
+            {
+                transactionsNotFound = transaction is null;
             }
 
             if (transactionsNotFound)

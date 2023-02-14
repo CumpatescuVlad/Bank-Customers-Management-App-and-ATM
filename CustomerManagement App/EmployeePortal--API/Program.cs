@@ -28,6 +28,7 @@ builder.Services.AddScoped<IDeleteData, DeleteData>();
 builder.Services.AddScoped<ICreateDataService, CreateDataService>();
 builder.Services.AddScoped<IDeleteDataService,DeleteDataService>();
 builder.Services.AddScoped<IUpdateDataService,UpdateDataService>();
+builder.Services.AddScoped<IMaintenanceService,MaintenanceService>();
 
 
 var app = builder.Build();
