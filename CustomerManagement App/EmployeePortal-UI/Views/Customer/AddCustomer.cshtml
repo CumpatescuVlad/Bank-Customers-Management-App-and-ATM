@@ -1,8 +1,30 @@
-﻿
+﻿@model AddCustomerModel
 @{
 
 }
+<br />
+<div id="window" class="text-center">
+    <br />
+    <h2 style="font-size:22px;color:red;">SEARCH CUSTOMER</h2>
+    <br />
+    <br />
+    <form method="post" asp-action="InsertCustomer">
+        <input id="textBox" asp-for="@Model.CustomerName" placeholder="Enter Customer Name"/>
+        <br />
+        <br />
+        <input id="textBox" asp-for="@Model.CustomerEmail" placeholder="Enter Customer Email"/>
+        <br />
+        <br />
+        <input id="textBox" asp-for="@Model.CustomerPhoneNumber" placeholder="Enter Customer Phone Number"/>
+        <br />
+        <br />
+        <input id="textBox" asp-for="@Model.AccountName" placeholder="Enter Account Name"/>
+        <br />
+        <br />
+        <input id="button" type="submit" placeholder="Add Customer" />
+    </form>
 
-<div style="text-align:center;border:solid;border-color:dodgerblue">
-
+    <br />
+    <br />
+    <br />
 </div>

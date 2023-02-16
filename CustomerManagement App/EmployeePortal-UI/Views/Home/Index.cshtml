@@ -1,13 +1,18 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    var dateTime = DateTime.UtcNow.ToString("yyyy-MM-dd");
+
 }
 
-<div class="text-center">
-   <br />
-   <br />
-   <br />
-    <a style="background-color:dodgerblue;color:aliceblue;font-size:20px;text-decoration:none;border:solid;border-color:black;" asp-controller="Customers" asp-action="AddCustomer">Add Customers</a>
+<br />
+<div class="text-center" id="window">
+    <h2 style="font-size:22px;color:red;">HOME</h2>
+    <br />
+    <br />
+    <a id="button" asp-controller="Customer" asp-action="CustomerManagementIndex">Customers</a>
+    <a id="button" asp-controller="Functions" asp-action="FunctionsIndex">Functions</a>
     <br />
     <br />
     <br />
+    <p style="text-align:right;font-size:16px;color:black;margin-right:5px;">Date:@dateTime</p>
 </div>

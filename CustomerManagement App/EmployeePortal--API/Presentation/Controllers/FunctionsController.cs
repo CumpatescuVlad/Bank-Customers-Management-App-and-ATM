@@ -21,8 +21,8 @@ namespace EmployeePortal__API.Presentation.Controllers
 
         [HttpPut]
         [ServiceFilter(typeof(ModelValidationFilter))]
-        [Route("Portal/CreditCard/RegeneratePinCode/{customerName}")]
-        public IActionResult RegenerateCreditCardPinCode([FromQuery]string customerName)
+        [Route("Portal/CreditCard/RegeneratePinCode")]
+        public IActionResult RegenerateCreditCardPinCode(string customerName)
         {
             var updateServiceResult = _updateService.UpdateCardPinCode(customerName);
 

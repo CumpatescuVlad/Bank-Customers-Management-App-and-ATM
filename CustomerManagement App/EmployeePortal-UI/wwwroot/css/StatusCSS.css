@@ -1,0 +1,18 @@
+﻿#succes{
+    background-color:lightgreen;
+    border:solid;
+    border-width:5px;
+    border-color:black;
+    text-align:center;
+    color:aliceblue;
+    font-size:28px;
+}
+#error {
+    background-color: aliceblue;
+    border: solid;
+    border-width:5px;
+    border-color: red;
+    text-align: center;
+    color: red;
+    font-size: 28px;
+}

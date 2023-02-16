@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\CODE REPOS\\BankApp\\CustomerManagement App\\EmployeePortal--API\\EmployeePortal__API.csproj": {}
+    "E:\\CODE REPOS\\Bank\\ServerSide&ATM\\CustomerManagement App\\EmployeePortal--API\\EmployeePortal__API.csproj": {}
   },
   "projects": {
-    "E:\\CODE REPOS\\BankApp\\CustomerManagement App\\EmployeePortal--API\\EmployeePortal__API.csproj": {
+    "E:\\CODE REPOS\\Bank\\ServerSide&ATM\\CustomerManagement App\\EmployeePortal--API\\EmployeePortal__API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\CODE REPOS\\BankApp\\CustomerManagement App\\EmployeePortal--API\\EmployeePortal__API.csproj",
+        "projectUniqueName": "E:\\CODE REPOS\\Bank\\ServerSide&ATM\\CustomerManagement App\\EmployeePortal--API\\EmployeePortal__API.csproj",
         "projectName": "EmployeePortal__API",
-        "projectPath": "E:\\CODE REPOS\\BankApp\\CustomerManagement App\\EmployeePortal--API\\EmployeePortal__API.csproj",
+        "projectPath": "E:\\CODE REPOS\\Bank\\ServerSide&ATM\\CustomerManagement App\\EmployeePortal--API\\EmployeePortal__API.csproj",
         "packagesPath": "C:\\Users\\VLAD\\.nuget\\packages\\",
-        "outputPath": "E:\\CODE REPOS\\BankApp\\CustomerManagement App\\EmployeePortal--API\\obj\\",
+        "outputPath": "E:\\CODE REPOS\\Bank\\ServerSide&ATM\\CustomerManagement App\\EmployeePortal--API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

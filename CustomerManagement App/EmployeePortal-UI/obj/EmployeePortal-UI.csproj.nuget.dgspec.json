@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\CODE REPOS\\BankApp\\CustomerManagement App\\EmployeePortal-UI\\EmployeePortal-UI.csproj": {}
+    "E:\\CODE REPOS\\Bank\\ServerSide&ATM\\CustomerManagement App\\EmployeePortal-UI\\EmployeePortal-UI.csproj": {}
   },
   "projects": {
-    "E:\\CODE REPOS\\BankApp\\CustomerManagement App\\EmployeePortal-UI\\EmployeePortal-UI.csproj": {
+    "E:\\CODE REPOS\\Bank\\ServerSide&ATM\\CustomerManagement App\\EmployeePortal-UI\\EmployeePortal-UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\CODE REPOS\\BankApp\\CustomerManagement App\\EmployeePortal-UI\\EmployeePortal-UI.csproj",
+        "projectUniqueName": "E:\\CODE REPOS\\Bank\\ServerSide&ATM\\CustomerManagement App\\EmployeePortal-UI\\EmployeePortal-UI.csproj",
         "projectName": "EmployeePortal-UI",
-        "projectPath": "E:\\CODE REPOS\\BankApp\\CustomerManagement App\\EmployeePortal-UI\\EmployeePortal-UI.csproj",
+        "projectPath": "E:\\CODE REPOS\\Bank\\ServerSide&ATM\\CustomerManagement App\\EmployeePortal-UI\\EmployeePortal-UI.csproj",
         "packagesPath": "C:\\Users\\VLAD\\.nuget\\packages\\",
-        "outputPath": "E:\\CODE REPOS\\BankApp\\CustomerManagement App\\EmployeePortal-UI\\obj\\",
+        "outputPath": "E:\\CODE REPOS\\Bank\\ServerSide&ATM\\CustomerManagement App\\EmployeePortal-UI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

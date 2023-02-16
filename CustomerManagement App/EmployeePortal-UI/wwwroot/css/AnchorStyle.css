@@ -1,0 +1,23 @@
+﻿#button {
+    background-color: dodgerblue;
+    color: aliceblue;
+    padding: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    border: solid;
+    border-color: black;
+   
+}
+#button:hover{
+    background-color:deepskyblue;
+ }
+#button:after {
+    background-color: aliceblue;
+}
+
+#window {
+    border: solid;
+    border-width: 8px;
+    border-color:deepskyblue;
+    background-color:aliceblue;
+}

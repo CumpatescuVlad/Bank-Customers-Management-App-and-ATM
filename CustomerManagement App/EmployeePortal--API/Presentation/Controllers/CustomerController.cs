@@ -51,7 +51,7 @@ namespace EmployeePortalAPI.Presentation.Controllers
 
         [HttpDelete]
         [ServiceFilter(typeof(ModelValidationFilter))]
-        [Route("Portal/Customer/DeleteCustomer")]
+        [Route("Portal/Customer/DeleteCustomer/{customerName}")]
 
         public IActionResult DeleteCustomer(string customerName)
         {

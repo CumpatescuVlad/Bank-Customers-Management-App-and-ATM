@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7F4ELCzOaJ8gbcSmidOXN7LDlzf0LyhZovdqx/lj1Fd32sAxzVbVHPk6MQQwOToAyCiueB91l7uQIz1gUpz8/w==",
+  "dgSpecHash": "XX2L9c2lu6PHwP7THdm0J3yDKoKcUURE1kUmV3HJJDKRc2nID1uMV92xxVMQiJR3rGIAiYhAaINw2I7/wYcb0A==",
   "success": true,
-  "projectFilePath": "E:\\CODE REPOS\\BankApp\\CustomerManagement App\\EmployeePortal--API\\EmployeePortal__API.csproj",
+  "projectFilePath": "E:\\CODE REPOS\\Bank\\ServerSide&ATM\\CustomerManagement App\\EmployeePortal--API\\EmployeePortal__API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VLAD\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\VLAD\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

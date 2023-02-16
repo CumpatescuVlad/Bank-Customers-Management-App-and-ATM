@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "XZpqAxCzYuDu5kvVIsoaKKIt5JOZU/L04hLNRLV/85Ad9WgW3bca1bdXKfwsdTo6VClnNShSfr1eEHkYivVw/w==",
+  "dgSpecHash": "egiU6rxR9V8Eqw58HM/rTaww8UzdT+Z6xBFPXF0h4EO/1V9ita+lKBUCxT9Lvg8lLZKrRev0qvyK4qGrb79l7g==",
   "success": true,
-  "projectFilePath": "E:\\CODE REPOS\\BankApp\\CustomerManagement App\\EmployeePortal-UI\\EmployeePortal-UI.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "E:\\CODE REPOS\\Bank\\ServerSide&ATM\\CustomerManagement App\\EmployeePortal-UI\\EmployeePortal-UI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\VLAD\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
   "logs": []
 }
