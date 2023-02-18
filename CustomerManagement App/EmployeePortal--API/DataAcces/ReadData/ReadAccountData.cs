@@ -1,6 +1,5 @@
 ﻿using EmployeePortal__API.BusinessLogic.DTOs;
 using EmployeePortal__API.BusinessLogic.DTOs.TransactionsDTOs;
-using EmployeePortal__API.BusinessLogic.Modeles;
 using EmployeePortal__API.Config;
 using EmployeePortal__API.Persistence;
 using Microsoft.Data.SqlClient;
@@ -25,13 +24,13 @@ namespace EmployeePortal__API.DataAcces.ReadData
         public List<AccountDTO> ReadAccountInfo(string customerName)
         {
             var accountsList = new List<AccountDTO>();
-            var readAccountInfoCommand = new SqlCommand(QuerryStrings.Select(customerName,"AccountData"), _connection);
+            var readAccountInfoCommand = new SqlCommand(QuerryStrings.Select(customerName, "AccountData"), _connection);
 
             try
             {
                 _connection.Open();
                 var reader = readAccountInfoCommand.ExecuteReader();
-             
+
                 while (reader.Read())
                 {
                     accountsList.Add(new AccountDTO(reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetInt32(3), reader.GetString(4)));
@@ -69,11 +68,11 @@ namespace EmployeePortal__API.DataAcces.ReadData
             var atmTransactionsList = new List<ATMTransactionsDTO>();
             var incomeTransactionsList = new List<IncomeTransactionsDTO>();
             var outcomeTransactionsList = new List<OutcomeTransactionsDTO>();
-            
-            var readATMTransactionsCommand = new SqlCommand(QuerryStrings.SelectTransactions(customerName,"ATMTransactions"), _connection);
-            var readIncomeTransactionsCommand = new SqlCommand(QuerryStrings.SelectTransactions(customerName, "IncomingTransfers"),_connection);
-            var readOutcomeTransactionsCommand = new SqlCommand(QuerryStrings.SelectTransactions(customerName, "OutcomingTransfer"),_connection);
-          
+
+            var readATMTransactionsCommand = new SqlCommand(QuerryStrings.SelectTransactions(customerName, "ATMTransactions"), _connection);
+            var readIncomeTransactionsCommand = new SqlCommand(QuerryStrings.SelectTransactions(customerName, "IncomingTransfers"), _connection);
+            var readOutcomeTransactionsCommand = new SqlCommand(QuerryStrings.SelectTransactions(customerName, "OutcomingTransfer"), _connection);
+
             try
             {
                 _connection.Open();
@@ -82,11 +81,11 @@ namespace EmployeePortal__API.DataAcces.ReadData
 
                 while (atmReader.Read())
                 {
-                    atmTransactionsList.Add(new ATMTransactionsDTO(atmReader.GetString(0), atmReader.GetString(1),atmReader.GetInt32(2), atmReader.GetString(3)));
+                    atmTransactionsList.Add(new ATMTransactionsDTO(atmReader.GetString(0), atmReader.GetString(1), atmReader.GetInt32(2), atmReader.GetString(3)));
 
                 }
                 atmReader.Close();
-                
+
                 var incomeReader = readIncomeTransactionsCommand.ExecuteReader();
 
                 while (incomeReader.Read())
@@ -103,7 +102,7 @@ namespace EmployeePortal__API.DataAcces.ReadData
                 }
                 outcomeReader.Close();
 
-                transactionsDTO = new TransactionsDTO(atmTransactionsList,incomeTransactionsList,outcomeTransactionsList);
+                transactionsDTO = new TransactionsDTO(atmTransactionsList, incomeTransactionsList, outcomeTransactionsList);
 
                 return transactionsDTO;
 
@@ -112,7 +111,7 @@ namespace EmployeePortal__API.DataAcces.ReadData
             {
                 _logger.LogError(invalidEx.Message);
 
-                var emptyList = new TransactionsDTO(null,null,null);
+                var emptyList = new TransactionsDTO(null, null, null);
 
                 return emptyList;
 

@@ -11,9 +11,9 @@ namespace EmployeePortal__API.BusinessLogic.DTOs
             OutcomeTransactions = outcomeTransactions;
         }
 
-       public List<ATMTransactionsDTO>? AtmTransactions { get;set; }
-       public List<IncomeTransactionsDTO>? IncomeTransactions { get;set; }
-       public List<OutcomeTransactionsDTO>? OutcomeTransactions { get;set; }
+        public List<ATMTransactionsDTO>? AtmTransactions { get; set; }
+        public List<IncomeTransactionsDTO>? IncomeTransactions { get; set; }
+        public List<OutcomeTransactionsDTO>? OutcomeTransactions { get; set; }
 
     }
 }

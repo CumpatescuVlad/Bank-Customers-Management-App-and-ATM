@@ -1,0 +1,432 @@
+2023-02-18 00:45:17.648 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 00:45:17.692 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 00:45:17.695 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 00:45:17.696 +02:00 [INF] Hosting environment: Development
+2023-02-18 00:45:17.697 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 00:46:36.818 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 00:46:36.855 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 00:46:36.857 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 00:46:36.858 +02:00 [INF] Hosting environment: Development
+2023-02-18 00:46:36.859 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 00:47:33.012 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 00:47:33.055 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 00:47:33.058 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 00:47:33.059 +02:00 [INF] Hosting environment: Development
+2023-02-18 00:47:33.060 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 00:48:16.033 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 00:48:16.080 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 00:48:16.084 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 00:48:16.085 +02:00 [INF] Hosting environment: Development
+2023-02-18 00:48:16.086 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 00:53:43.711 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 00:53:43.767 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 00:53:43.771 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 00:53:43.772 +02:00 [INF] Hosting environment: Development
+2023-02-18 00:53:43.774 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 00:54:05.438 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 00:54:05.474 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 00:54:05.477 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 00:54:05.478 +02:00 [INF] Hosting environment: Development
+2023-02-18 00:54:05.480 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 00:54:36.878 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 00:54:36.918 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 00:54:36.920 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 00:54:36.921 +02:00 [INF] Hosting environment: Development
+2023-02-18 00:54:36.922 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 01:00:27.342 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 01:00:27.387 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 01:00:27.391 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 01:00:27.392 +02:00 [INF] Hosting environment: Development
+2023-02-18 01:00:27.393 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 01:03:18.886 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 01:03:18.926 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 01:03:18.929 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 01:03:18.930 +02:00 [INF] Hosting environment: Development
+2023-02-18 01:03:18.931 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 01:07:28.558 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 01:07:28.610 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 01:07:28.616 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 01:07:28.617 +02:00 [INF] Hosting environment: Development
+2023-02-18 01:07:28.618 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 01:30:44.100 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 01:30:44.150 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 01:30:44.154 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 01:30:44.157 +02:00 [INF] Hosting environment: Development
+2023-02-18 01:30:44.158 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 01:32:01.669 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 01:32:01.767 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 01:32:01.772 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 01:32:01.774 +02:00 [INF] Hosting environment: Development
+2023-02-18 01:32:01.775 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 01:32:19.668 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 01:32:19.709 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 01:32:19.711 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 01:32:19.712 +02:00 [INF] Hosting environment: Development
+2023-02-18 01:32:19.713 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 01:32:43.055 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 01:32:43.089 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 01:32:43.092 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 01:32:43.093 +02:00 [INF] Hosting environment: Development
+2023-02-18 01:32:43.094 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 01:33:07.448 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 01:33:07.483 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 01:33:07.486 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 01:33:07.488 +02:00 [INF] Hosting environment: Development
+2023-02-18 01:33:07.489 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 01:33:39.898 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 01:33:40.053 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 01:33:40.062 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 01:33:40.066 +02:00 [INF] Hosting environment: Development
+2023-02-18 01:33:40.069 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 01:34:11.790 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 01:34:11.831 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 01:34:11.833 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 01:34:11.834 +02:00 [INF] Hosting environment: Development
+2023-02-18 01:34:11.835 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 01:34:38.926 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 01:34:38.965 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 01:34:38.967 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 01:34:38.968 +02:00 [INF] Hosting environment: Development
+2023-02-18 01:34:38.969 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 01:35:11.864 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 01:35:11.901 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 01:35:11.903 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 01:35:11.905 +02:00 [INF] Hosting environment: Development
+2023-02-18 01:35:11.906 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 01:36:37.091 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 01:36:37.122 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 01:36:37.124 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 01:36:37.125 +02:00 [INF] Hosting environment: Development
+2023-02-18 01:36:37.126 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 01:38:04.819 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 01:38:04.865 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 01:38:04.868 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 01:38:04.869 +02:00 [INF] Hosting environment: Development
+2023-02-18 01:38:04.870 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 01:42:40.186 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 01:42:40.222 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 01:42:40.224 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 01:42:40.225 +02:00 [INF] Hosting environment: Development
+2023-02-18 01:42:40.226 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 01:43:44.293 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 01:43:44.341 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 01:43:44.344 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 01:43:44.346 +02:00 [INF] Hosting environment: Development
+2023-02-18 01:43:44.347 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 01:44:04.798 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 01:44:04.835 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 01:44:04.838 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 01:44:04.839 +02:00 [INF] Hosting environment: Development
+2023-02-18 01:44:04.840 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 01:44:24.056 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 01:44:24.091 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 01:44:24.094 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 01:44:24.095 +02:00 [INF] Hosting environment: Development
+2023-02-18 01:44:24.096 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 01:45:58.034 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 01:45:58.083 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 01:45:58.087 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 01:45:58.088 +02:00 [INF] Hosting environment: Development
+2023-02-18 01:45:58.090 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 01:46:58.916 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 01:46:58.990 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 01:46:58.995 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 01:46:58.996 +02:00 [INF] Hosting environment: Development
+2023-02-18 01:46:58.997 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 01:47:51.233 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 01:47:51.283 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 01:47:51.286 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 01:47:51.287 +02:00 [INF] Hosting environment: Development
+2023-02-18 01:47:51.288 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 01:48:55.807 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 01:48:55.855 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 01:48:55.858 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 01:48:55.860 +02:00 [INF] Hosting environment: Development
+2023-02-18 01:48:55.860 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 02:01:59.242 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 02:01:59.297 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 02:01:59.300 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 02:01:59.301 +02:00 [INF] Hosting environment: Development
+2023-02-18 02:01:59.302 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 02:06:33.445 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 02:06:33.487 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 02:06:33.489 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 02:06:33.490 +02:00 [INF] Hosting environment: Development
+2023-02-18 02:06:33.491 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 02:07:22.968 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 02:07:23.012 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 02:07:23.015 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 02:07:23.016 +02:00 [INF] Hosting environment: Development
+2023-02-18 02:07:23.017 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 02:16:23.311 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 02:16:23.353 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 02:16:23.358 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 02:16:23.359 +02:00 [INF] Hosting environment: Development
+2023-02-18 02:16:23.360 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 02:17:55.624 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 02:17:55.662 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 02:17:55.665 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 02:17:55.666 +02:00 [INF] Hosting environment: Development
+2023-02-18 02:17:55.667 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 02:20:49.197 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 02:20:49.245 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 02:20:49.247 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 02:20:49.249 +02:00 [INF] Hosting environment: Development
+2023-02-18 02:20:49.249 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 02:22:31.688 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 02:22:31.738 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 02:22:31.742 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 02:22:31.743 +02:00 [INF] Hosting environment: Development
+2023-02-18 02:22:31.744 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 02:25:51.038 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 02:25:51.134 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 02:25:51.136 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 02:25:51.137 +02:00 [INF] Hosting environment: Development
+2023-02-18 02:25:51.138 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 02:26:28.112 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 02:26:28.157 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 02:26:28.160 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 02:26:28.161 +02:00 [INF] Hosting environment: Development
+2023-02-18 02:26:28.162 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 03:49:05.884 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 03:49:05.923 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 03:49:05.926 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 03:49:05.927 +02:00 [INF] Hosting environment: Development
+2023-02-18 03:49:05.928 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 03:49:45.380 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 03:49:45.427 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 03:49:45.431 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 03:49:45.432 +02:00 [INF] Hosting environment: Development
+2023-02-18 03:49:45.433 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 03:50:04.029 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 03:50:04.072 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 03:50:04.075 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 03:50:04.076 +02:00 [INF] Hosting environment: Development
+2023-02-18 03:50:04.077 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 03:52:16.075 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 03:52:16.124 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 03:52:16.127 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 03:52:16.128 +02:00 [INF] Hosting environment: Development
+2023-02-18 03:52:16.129 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 03:54:42.749 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 03:54:42.783 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 03:54:42.785 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 03:54:42.787 +02:00 [INF] Hosting environment: Development
+2023-02-18 03:54:42.788 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 03:57:40.777 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 03:57:40.810 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 03:57:40.813 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 03:57:40.815 +02:00 [INF] Hosting environment: Development
+2023-02-18 03:57:40.816 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 03:57:50.104 +02:00 [ERR] Invalid attempt to read when no data is present.
+2023-02-18 03:58:18.850 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 03:58:18.890 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 03:58:18.892 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 03:58:18.894 +02:00 [INF] Hosting environment: Development
+2023-02-18 03:58:18.895 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 03:58:23.972 +02:00 [ERR] Invalid attempt to read when no data is present.
+2023-02-18 03:58:33.633 +02:00 [ERR] Invalid attempt to read when no data is present.
+2023-02-18 03:59:54.971 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 03:59:55.025 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 03:59:55.028 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 03:59:55.029 +02:00 [INF] Hosting environment: Development
+2023-02-18 03:59:55.030 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 04:00:03.029 +02:00 [ERR] Incorrect syntax near '/'.
+2023-02-18 04:00:03.032 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-18 04:06:41.660 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 04:06:41.690 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 04:06:41.692 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 04:06:41.693 +02:00 [INF] Hosting environment: Development
+2023-02-18 04:06:41.694 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 04:07:15.361 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 04:07:15.401 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 04:07:15.403 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 04:07:15.404 +02:00 [INF] Hosting environment: Development
+2023-02-18 04:07:15.405 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 04:08:06.074 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 04:08:06.120 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 04:08:06.123 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 04:08:06.125 +02:00 [INF] Hosting environment: Development
+2023-02-18 04:08:06.126 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 04:08:15.343 +02:00 [ERR] Incorrect syntax near '/'.
+2023-02-18 04:08:15.346 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-18 04:10:41.506 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 04:10:41.554 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 04:10:41.560 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 04:10:41.561 +02:00 [INF] Hosting environment: Development
+2023-02-18 04:10:41.562 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 04:10:49.099 +02:00 [ERR] Incorrect syntax near '/'.
+2023-02-18 04:10:49.102 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-18 04:11:37.233 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 04:11:37.286 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 04:11:37.292 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 04:11:37.294 +02:00 [INF] Hosting environment: Development
+2023-02-18 04:11:37.295 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 04:11:44.469 +02:00 [ERR] Incorrect syntax near '/'.
+2023-02-18 04:11:44.472 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-18 04:13:59.415 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 04:13:59.450 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 04:13:59.453 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 04:13:59.455 +02:00 [INF] Hosting environment: Development
+2023-02-18 04:13:59.456 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 04:14:06.302 +02:00 [ERR] Incorrect syntax near '/'.
+2023-02-18 04:14:06.304 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-18 04:14:55.404 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 04:14:55.449 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 04:14:55.451 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 04:14:55.453 +02:00 [INF] Hosting environment: Development
+2023-02-18 04:14:55.454 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 04:15:03.374 +02:00 [ERR] Incorrect syntax near '/'.
+2023-02-18 04:15:03.377 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-18 04:15:13.686 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 04:15:13.735 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 04:15:13.738 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 04:15:13.739 +02:00 [INF] Hosting environment: Development
+2023-02-18 04:15:13.740 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 04:15:22.689 +02:00 [ERR] Incorrect syntax near '/'.
+2023-02-18 04:15:22.692 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-18 04:18:27.475 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 04:18:27.617 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 04:18:27.649 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 04:18:27.651 +02:00 [INF] Hosting environment: Development
+2023-02-18 04:18:27.652 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 04:18:35.889 +02:00 [ERR] Incorrect syntax near '/'.
+2023-02-18 04:18:35.892 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-18 04:22:33.942 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 04:22:33.990 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 04:22:33.992 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 04:22:33.995 +02:00 [INF] Hosting environment: Development
+2023-02-18 04:22:33.996 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 04:22:42.252 +02:00 [ERR] Incorrect syntax near '/'.
+2023-02-18 04:22:42.255 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-18 04:23:53.361 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 04:23:53.401 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 04:23:53.405 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 04:23:53.406 +02:00 [INF] Hosting environment: Development
+2023-02-18 04:23:53.407 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 04:24:00.096 +02:00 [ERR] Incorrect syntax near '/'.
+2023-02-18 04:24:00.098 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-18 04:25:03.912 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 04:25:03.960 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 04:25:03.963 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 04:25:03.964 +02:00 [INF] Hosting environment: Development
+2023-02-18 04:25:03.965 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 04:25:10.696 +02:00 [ERR] Incorrect syntax near '/'.
+2023-02-18 04:25:10.698 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-18 04:25:54.283 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 04:25:54.320 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 04:25:54.323 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 04:25:54.324 +02:00 [INF] Hosting environment: Development
+2023-02-18 04:25:54.325 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 04:26:01.319 +02:00 [ERR] Incorrect syntax near '/'.
+2023-02-18 04:26:01.321 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-18 04:27:04.314 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 04:27:04.429 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 04:27:04.440 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 04:27:04.441 +02:00 [INF] Hosting environment: Development
+2023-02-18 04:27:04.443 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 04:27:11.041 +02:00 [ERR] Incorrect syntax near '/'.
+2023-02-18 04:27:11.044 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-18 04:29:07.082 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 04:29:07.117 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 04:29:07.120 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 04:29:07.121 +02:00 [INF] Hosting environment: Development
+2023-02-18 04:29:07.122 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 04:29:14.131 +02:00 [ERR] Incorrect syntax near '/'.
+2023-02-18 04:29:14.133 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-18 04:29:51.680 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 04:29:51.717 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 04:29:51.720 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 04:29:51.721 +02:00 [INF] Hosting environment: Development
+2023-02-18 04:29:51.723 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 04:29:59.924 +02:00 [ERR] Incorrect syntax near '/'.
+2023-02-18 04:29:59.926 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-18 04:30:56.202 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 04:30:56.254 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 04:30:56.259 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 04:30:56.261 +02:00 [INF] Hosting environment: Development
+2023-02-18 04:30:56.262 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 04:31:07.665 +02:00 [ERR] Incorrect syntax near '/'.
+2023-02-18 04:31:07.667 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-18 04:31:18.201 +02:00 [ERR] Incorrect syntax near '/'.
+2023-02-18 04:31:18.204 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-18 04:32:13.317 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 04:32:13.350 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 04:32:13.353 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 04:32:13.354 +02:00 [INF] Hosting environment: Development
+2023-02-18 04:32:13.354 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 04:32:28.126 +02:00 [ERR] Incorrect syntax near '/'.
+2023-02-18 04:32:28.130 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-18 04:33:40.152 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 04:33:40.266 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 04:33:40.275 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 04:33:40.277 +02:00 [INF] Hosting environment: Development
+2023-02-18 04:33:40.278 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 04:33:49.879 +02:00 [ERR] Incorrect syntax near '/'.
+2023-02-18 04:33:49.882 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-18 04:34:26.769 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 04:34:26.813 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 04:34:26.817 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 04:34:26.819 +02:00 [INF] Hosting environment: Development
+2023-02-18 04:34:26.820 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 04:34:33.717 +02:00 [ERR] Incorrect syntax near '/'.
+2023-02-18 04:34:33.720 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-18 04:36:14.230 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 04:36:14.284 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 04:36:14.287 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 04:36:14.289 +02:00 [INF] Hosting environment: Development
+2023-02-18 04:36:14.290 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 04:36:22.515 +02:00 [ERR] Incorrect syntax near '/'.
+2023-02-18 04:36:22.518 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-18 04:37:51.496 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 04:37:51.543 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 04:37:51.547 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 04:37:51.549 +02:00 [INF] Hosting environment: Development
+2023-02-18 04:37:51.552 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 04:37:58.449 +02:00 [ERR] Incorrect syntax near '/'.
+2023-02-18 04:37:58.452 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-18 04:39:02.646 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 04:39:02.717 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 04:39:02.759 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 04:39:02.761 +02:00 [INF] Hosting environment: Development
+2023-02-18 04:39:02.764 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 04:39:09.919 +02:00 [ERR] Incorrect syntax near '/'.
+2023-02-18 04:39:09.921 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-18 04:43:38.758 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 04:43:38.798 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 04:43:38.801 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 04:43:38.803 +02:00 [INF] Hosting environment: Development
+2023-02-18 04:43:38.804 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 04:44:15.395 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 04:44:15.430 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 04:44:15.433 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 04:44:15.434 +02:00 [INF] Hosting environment: Development
+2023-02-18 04:44:15.435 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 04:44:23.996 +02:00 [ERR] Incorrect syntax near '/'.
+2023-02-18 04:44:23.999 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-18 04:45:49.046 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 04:45:49.083 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 04:45:49.085 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 04:45:49.087 +02:00 [INF] Hosting environment: Development
+2023-02-18 04:45:49.088 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 04:45:57.754 +02:00 [ERR] Incorrect syntax near '/'.
+2023-02-18 04:45:57.758 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-18 04:47:00.766 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 04:47:00.808 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 04:47:00.810 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 04:47:00.811 +02:00 [INF] Hosting environment: Development
+2023-02-18 04:47:00.812 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 04:47:10.371 +02:00 [ERR] Incorrect syntax near '/'.
+2023-02-18 04:47:10.375 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-18 05:00:38.922 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 05:00:38.953 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 05:00:38.955 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 05:00:38.957 +02:00 [INF] Hosting environment: Development
+2023-02-18 05:00:38.958 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-18 05:00:49.804 +02:00 [ERR] Invalid column name 'CumpatescuVlad'.
+2023-02-18 05:00:49.808 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-18 05:01:06.246 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-18 05:01:06.288 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-18 05:01:06.291 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-18 05:01:06.293 +02:00 [INF] Hosting environment: Development
+2023-02-18 05:01:06.294 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API

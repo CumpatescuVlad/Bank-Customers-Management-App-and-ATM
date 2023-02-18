@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BbTIw1A2jGxr0pCkf4ZpQt+2YxtPT5MKSzZ/hMKR8iQ=",
+  "Hash": "qoC1/wIxNwK/ec7EIrNp0QIddkoGXv9CNTZ/n2AwiK4=",
   "Source": "EmployeePortal-UI",
   "BasePath": "_content/EmployeePortal-UI",
   "Mode": "Default",
@@ -1120,6 +1120,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "E:\\CODE REPOS\\Bank\\ServerSide&ATM\\CustomerManagement App\\EmployeePortal-UI\\wwwroot\\operation-sucesfully.png",
+      "SourceId": "EmployeePortal-UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\CODE REPOS\\Bank\\ServerSide&ATM\\CustomerManagement App\\EmployeePortal-UI\\wwwroot\\",
+      "BasePath": "_content/EmployeePortal-UI",
+      "RelativePath": "operation-sucesfully.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\operation-sucesfully.png"
+    },
+    {
+      "Identity": "E:\\CODE REPOS\\Bank\\ServerSide&ATM\\CustomerManagement App\\EmployeePortal-UI\\wwwroot\\server-down.png",
+      "SourceId": "EmployeePortal-UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\CODE REPOS\\Bank\\ServerSide&ATM\\CustomerManagement App\\EmployeePortal-UI\\wwwroot\\",
+      "BasePath": "_content/EmployeePortal-UI",
+      "RelativePath": "server-down.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\server-down.png"
     }
   ]
 }

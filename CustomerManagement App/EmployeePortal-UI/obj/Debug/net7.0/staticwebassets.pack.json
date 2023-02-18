@@ -257,6 +257,14 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "E:\\CODE REPOS\\Bank\\ServerSide&ATM\\CustomerManagement App\\EmployeePortal-UI\\wwwroot\\operation-sucesfully.png",
+      "PackagePath": "staticwebassets\\operation-sucesfully.png"
+    },
+    {
+      "Id": "E:\\CODE REPOS\\Bank\\ServerSide&ATM\\CustomerManagement App\\EmployeePortal-UI\\wwwroot\\server-down.png",
+      "PackagePath": "staticwebassets\\server-down.png"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.EmployeePortal-UI.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

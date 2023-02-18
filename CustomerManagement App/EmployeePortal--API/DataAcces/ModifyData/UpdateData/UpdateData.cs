@@ -48,7 +48,7 @@ namespace EmployeePortal__API.DataAcces.ModifyData.UpdateData
 
         public HttpStatusCode UpdateCreditCard(string customerName)
         {
-            var updatePinCommand = new SqlCommand(QuerryStrings.UpdatePinCode(customerName),_connection);
+            var updatePinCommand = new SqlCommand(QuerryStrings.UpdatePinCode(customerName), _connection);
 
             try
             {
@@ -66,11 +66,11 @@ namespace EmployeePortal__API.DataAcces.ModifyData.UpdateData
                 _logger.LogError(ex.GetType().ToString());
 
                 return HttpStatusCode.InternalServerError;
-                
+
             }
-            finally 
-            { 
-                _connection.Close(); 
+            finally
+            {
+                _connection.Close();
             }
 
         }

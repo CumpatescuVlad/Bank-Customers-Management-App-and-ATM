@@ -12,12 +12,12 @@ namespace EmployeePortal__API.BusinessLogic.Modeles
         public string? CustomerEmail { get; set; }
 
         [Required(ErrorMessage = "Phone Number is required")]
-        
+
         public string? CustomerPhoneNumber { get; set; }
 
         [Required(ErrorMessage = "AccountName is  required for new customers.")]
 
-        public string? AccountName{ get; set; }
+        public string? AccountName { get; set; }
 
     }
 }

@@ -1,0 +1,34 @@
+﻿@model InsertCustomerModel
+@{
+
+}
+<br />
+<div id="window" class="text-center">
+    <br />
+    <h2 style="font-size:22px;color:red;">ADD NEW CUSTOMER</h2>
+    <br />
+    <br />
+    <form method="post"  asp-controller="CustomerPostActions" asp-action="InsertCustomer">
+        <input id="textBox" asp-for="@Model.CustomerName" placeholder="Enter Customer Name"/>
+        <br />
+        <b>@Html.ValidationMessageFor(model=>model.CustomerName,"" , new{ @class="text-danger"} ) </b>
+        <br />
+        <input id="textBox" asp-for="@Model.CustomerEmail" placeholder="Enter Customer Email"/>
+        <br />
+        <b>@Html.ValidationMessageFor(model=>model.CustomerEmail,"" , new{ @class="text-danger"} ) </b>
+        <br />
+        <input id="textBox" asp-for="@Model.CustomerPhoneNumber" placeholder="Enter Customer Phone Number"/>
+        <br />
+        <b>@Html.ValidationMessageFor(model=>model.CustomerPhoneNumber,"" , new{ @class="text-danger"} ) </b>
+        <br />
+        <input id="textBox" asp-for="@Model.AccountName" placeholder="Enter Account Name"/>
+        <br />
+        <b>@Html.ValidationMessageFor(model=>model.AccountName,"" , new{ @class="text-danger"} ) </b>
+        <br />
+        <input id="button" type="submit" placeholder="Add Customer" />
+    </form>
+
+    <br />
+    <br />
+    <br />
+</div>

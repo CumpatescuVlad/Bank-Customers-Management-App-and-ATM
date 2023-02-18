@@ -2,7 +2,7 @@
 {
     public class ATMTransactionsDTO
     {
-        public ATMTransactionsDTO(string? typeOfTransaction, string? accountUsed, int amount,string? transactionDate)
+        public ATMTransactionsDTO(string? typeOfTransaction, string? accountUsed, int amount, string? transactionDate)
         {
             TypeOfTransaction = typeOfTransaction;
             AccountUsed = accountUsed;

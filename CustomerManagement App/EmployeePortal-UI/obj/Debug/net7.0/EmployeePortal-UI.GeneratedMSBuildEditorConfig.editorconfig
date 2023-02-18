@@ -16,56 +16,56 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal-UI
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/Customer/AddCustomer.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQWRkQ3VzdG9tZXIuY3NodG1s
+[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/CustomerViews/AddCustomer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJWaWV3c1xBZGRDdXN0b21lci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/Customer/CustomerManagementIndex.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ3VzdG9tZXJNYW5hZ2VtZW50SW5kZXguY3NodG1s
+[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/CustomerViews/CustomerManagementIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJWaWV3c1xDdXN0b21lck1hbmFnZW1lbnRJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/Customer/DeleteCustomer.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRGVsZXRlQ3VzdG9tZXIuY3NodG1s
+[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/CustomerViews/DeleteCustomer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJWaWV3c1xEZWxldGVDdXN0b21lci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/Customer/DisplayCustomers.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRGlzcGxheUN1c3RvbWVycy5jc2h0bWw=
+[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/CustomerViews/DisplayCustomers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJWaWV3c1xEaXNwbGF5Q3VzdG9tZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/Customer/SearchCustomer.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcU2VhcmNoQ3VzdG9tZXIuY3NodG1s
+[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/CustomerViews/SearchCustomer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJWaWV3c1xTZWFyY2hDdXN0b21lci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/Customer/UpdateCustomer.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcVXBkYXRlQ3VzdG9tZXIuY3NodG1s
+[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/CustomerViews/UpdateCustomerEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJWaWV3c1xVcGRhdGVDdXN0b21lckVtYWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/Functions/AccountStatement.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY3Rpb25zXEFjY291bnRTdGF0ZW1lbnQuY3NodG1s
+[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/CustomerViews/UpdateCustomerIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJWaWV3c1xVcGRhdGVDdXN0b21lckluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/Functions/FunctionsIndex.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY3Rpb25zXEZ1bmN0aW9uc0luZGV4LmNzaHRtbA==
+[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/CustomerViews/UpdateCustomerName.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJWaWV3c1xVcGRhdGVDdXN0b21lck5hbWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/Functions/PinCodeRegeneration.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY3Rpb25zXFBpbkNvZGVSZWdlbmVyYXRpb24uY3NodG1s
+[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/CustomerViews/UpdateCustomerPhoneNumber.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJWaWV3c1xVcGRhdGVDdXN0b21lclBob25lTnVtYmVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/FunctionsView/AccountStatement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY3Rpb25zVmlld1xBY2NvdW50U3RhdGVtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/FunctionsView/FunctionsIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY3Rpb25zVmlld1xGdW5jdGlvbnNJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/FunctionsView/PinCodeRegeneration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY3Rpb25zVmlld1xQaW5Db2RlUmVnZW5lcmF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/Messages/ErrorTAB.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZXNcRXJyb3JUQUIuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/Messages/SuccesTAB.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZXNcU3VjY2VzVEFCLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/Shared/Error.cshtml]
@@ -74,6 +74,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/Status/ErrorTAB.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHVzXEVycm9yVEFCLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/Status/SuccesTAB.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHVzXFN1Y2Nlc1RBQi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/_ViewImports.cshtml]

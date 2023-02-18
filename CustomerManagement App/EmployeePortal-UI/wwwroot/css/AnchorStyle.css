@@ -21,3 +21,18 @@
     border-color:deepskyblue;
     background-color:aliceblue;
 }
+#boxCenter{
+    
+    text-align:center;
+}
+#boxRight {
+    
+    text-align: right;
+    
+}
+#errorText {
+    color: red;
+    font-size: 32px;
+    font-family:'Titillium Web';
+    
+}

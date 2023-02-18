@@ -1,6 +1,6 @@
-﻿using Syncfusion.DocIO;
+﻿using EmployeePortal__API.BusinessLogic.Modeles;
+using Syncfusion.DocIO;
 using Syncfusion.DocIO.DLS;
-using EmployeePortal__API.BusinessLogic.Modeles;
 using System.Net;
 
 namespace EmployeePortal__API.Persistence
@@ -83,7 +83,7 @@ namespace EmployeePortal__API.Persistence
 
         }
 
-       
+
 
         #region CommentedStatement
         //FileStream wordOutputFile = new(Path.GetFullPath(@$"{Environment.CurrentDirectory}\Statements\WordStatements\Statement.doc"), FileMode.Create, FileAccess.ReadWrite);

@@ -1,0 +1,30 @@
+﻿@model StatementModel
+@{
+    ViewData["Title"] = "Account Statement";
+}
+
+<br />
+<div id="window" class="text-center">
+    <br />
+    <h2 style="font-size:22px;color:red;">Pin Code Regeneration</h2>
+    <br />
+    <form method="post" asp-controller="FunctionsPostActions" asp-action="DownloadStatement">
+        <input id="textBox" asp-for="@Model.CustomerName" placeholder="Enter Customer Name" />
+        <br />
+        <b>@Html.ValidationMessageFor(model=>model.CustomerName,"",new{@class="text-danger"})</b>
+        <br />
+        <input  id="textBox" asp-for="@Model.AccountName" placeholder="Enter Account Name" />
+        <br />
+        <b>@Html.ValidationMessageFor(model=>model.AccountName,"",new{@class="text-danger"})</b>
+        <br />
+        <input  id="textBox" asp-for="@Model.AccountIBAN" placeholder="Enter Account IBAN" />
+        <br />
+        <b>@Html.ValidationMessageFor(model=>model.AccountIBAN,"",new{@class="text-danger"})</b>
+        <br />
+        <input  id="button" type="submit" placeholder="Regenerate Pin Code"/>
+    </form>
+
+    <br />
+    <br />
+    <br />
+</div>

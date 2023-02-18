@@ -59,7 +59,7 @@ namespace EmployeePortal__API.DataAcces.ReadData
         public string ReadCustomer(string customerName)
         {
             string customer;
-            var readCustomerCommand = new SqlCommand(QuerryStrings.Select(customerName,"CustomerName"), _connection);
+            var readCustomerCommand = new SqlCommand(QuerryStrings.Select(customerName, "CustomerName"), _connection);
 
             try
             {
@@ -92,7 +92,7 @@ namespace EmployeePortal__API.DataAcces.ReadData
             }
         }
 
-       
+
 
 
     }

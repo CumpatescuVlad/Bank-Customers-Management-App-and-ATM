@@ -1,5 +1,5 @@
-﻿using EmployeePortal__API.BusinessLogic.Modeles;
-using EmployeePortal__API.BusinessLogic.Filters;
+﻿using EmployeePortal__API.BusinessLogic.Filters;
+using EmployeePortal__API.BusinessLogic.Modeles;
 using EmployeePortal__API.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,7 +13,7 @@ namespace EmployeePortalAPI.Presentation.Controllers
         private readonly ICreateDataService _createDataService;
         private readonly IDeleteDataService _deleteDataService;
         private readonly IUpdateDataService _updateDataService;
-        public CustomerController(IInfoService infoService, ICreateDataService createDataService,IDeleteDataService deleteDataService,IUpdateDataService updateDataService)
+        public CustomerController(IInfoService infoService, ICreateDataService createDataService, IDeleteDataService deleteDataService, IUpdateDataService updateDataService)
         {
             _infoService = infoService;
             _createDataService = createDataService;
@@ -43,9 +43,9 @@ namespace EmployeePortalAPI.Presentation.Controllers
 
         public IActionResult AddCustomer(CustomerModel customerModel)
         {
-           var addCustomerStatus = _createDataService.AddNewCustomer(customerModel);
+            var addCustomerStatus = _createDataService.AddNewCustomer(customerModel);
 
-           return StatusCode(Convert.ToInt32(addCustomerStatus));
+            return StatusCode(Convert.ToInt32(addCustomerStatus));
 
         }
 

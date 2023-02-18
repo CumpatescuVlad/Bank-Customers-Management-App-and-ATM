@@ -1,6 +1,6 @@
-﻿using EmployeePortal__API.Services;
-using EmployeePortal__API.BusinessLogic.Filters;
+﻿using EmployeePortal__API.BusinessLogic.Filters;
 using EmployeePortal__API.BusinessLogic.Modeles;
+using EmployeePortal__API.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 
@@ -16,11 +16,11 @@ namespace EmployeePortal__API.Presentation.Controllers
 
         public AccountController(IInfoService infoService, ICreateDataService createDataService, IUpdateDataService updateDataService, IDeleteDataService deleteDataService)
         {
-            _infoService= infoService;
-            _createDataService= createDataService;
-            _updateDataService= updateDataService;
-            _deleteDataService= deleteDataService;
-            
+            _infoService = infoService;
+            _createDataService = createDataService;
+            _updateDataService = updateDataService;
+            _deleteDataService = deleteDataService;
+
         }
 
         [HttpGet]
@@ -35,7 +35,7 @@ namespace EmployeePortal__API.Presentation.Controllers
             {
                 return StatusCode(500);
             }
-          
+
             return Ok(accountResult);
 
         }
@@ -48,9 +48,9 @@ namespace EmployeePortal__API.Presentation.Controllers
         {
             //If You Recive 404 Error Encode account number.
 
-            var  transactionsResult = _infoService.GetAccountTransactions(customerName);
+            var transactionsResult = _infoService.GetAccountTransactions(customerName);
 
-            if (transactionsResult is null) 
+            if (transactionsResult is null)
             {
                 return StatusCode(500);
             }

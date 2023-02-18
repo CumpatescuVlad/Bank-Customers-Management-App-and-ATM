@@ -16,3 +16,9 @@
     color: red;
     font-size: 28px;
 }
+#succesText {
+    color: lightgreen;
+    font-size: 32px;
+    font-family: 'Titillium Web';
+    
+}

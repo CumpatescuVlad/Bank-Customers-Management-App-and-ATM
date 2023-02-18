@@ -1,23 +1,23 @@
 ﻿using EmployeePortal__API.BusinessLogic.Filters;
 using EmployeePortal__API.BusinessLogic.Modeles;
 using EmployeePortal__API.Services;
-using System.Net;
 using Microsoft.AspNetCore.Mvc;
+using System.Net;
 
 namespace EmployeePortal__API.Presentation.Controllers
 {
-    
+
     [ApiController]
     public class FunctionsController : ControllerBase
     {
         private readonly IUpdateDataService _updateService;
         private readonly IFunctionsService _functionsService;
 
-        public FunctionsController(IFunctionsService functionsService,IUpdateDataService updateData)
+        public FunctionsController(IFunctionsService functionsService, IUpdateDataService updateData)
         {
             _functionsService = functionsService;
             _updateService = updateData;
-        } 
+        }
 
         [HttpPut]
         [ServiceFilter(typeof(ModelValidationFilter))]
@@ -37,17 +37,17 @@ namespace EmployeePortal__API.Presentation.Controllers
         [HttpPost]
         [ServiceFilter(typeof(ModelValidationFilter))]
         [Route("Portal/Statements")]
-       
-        public IActionResult CreateStatement(StatementModel statementModel)
+
+        public byte[] CreateStatement(StatementModel statementModel)
         {
             var statementCreationResult = _functionsService.CreateStatement(statementModel);
 
             if (statementCreationResult is HttpStatusCode.Created)
             {
-                return File(_functionsService.GetStatement(), "word/doc", "Statement.doc");
+                return _functionsService.GetStatement();
             }
 
-            return StatusCode(500);
+            return null;
         }
 
 

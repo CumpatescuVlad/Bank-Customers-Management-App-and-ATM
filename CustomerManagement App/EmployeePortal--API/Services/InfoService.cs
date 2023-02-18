@@ -1,5 +1,4 @@
-﻿using EmployeePortal__API.BusinessLogic.Modeles;
-using EmployeePortal__API.DataAcces.ReadData;
+﻿using EmployeePortal__API.DataAcces.ReadData;
 using Newtonsoft.Json;
 
 namespace EmployeePortal__API.Services
@@ -39,7 +38,7 @@ namespace EmployeePortal__API.Services
             {
                 return null;
             }
-            
+
             foreach (var account in accountInfoList)
             {
                 accountInfoNotFound = account.AccountOwnerName == "No Owner Was Found";

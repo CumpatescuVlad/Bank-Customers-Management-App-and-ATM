@@ -1,0 +1,18 @@
+﻿@model StatusModel
+@{
+    ViewData["Title"] = "Succes";
+}
+
+<br />
+<br />
+<br />
+<p id="succesText">@Model.Status </p>
+<div id="boxRight">
+    <img src="~/@Model.Image" />
+</div>
+<br />
+<div id="boxCenter">
+    <a id="button" asp-controller="Functions" asp-action="FunctionsIndex">Home</a>
+</div>
+<br />
+<br />

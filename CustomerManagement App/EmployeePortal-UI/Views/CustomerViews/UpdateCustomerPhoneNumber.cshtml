@@ -1,0 +1,27 @@
+﻿@model UpdateCustomerPhoneNumberModel
+@{
+    ViewData["Title"] = "Update Customer Phone Number";
+}
+
+<br />
+<div id="window" class="text-center">
+    <br />
+    <h2 style="font-size:22px;color:red;">Update Phone Number</h2>
+    <br />
+    <br />
+    <form method="post" asp-controller="CustomerPostActions" asp-action="UpdateCustomerPhoneNumber">
+        <input id="updateBox" asp-for="@Model.CustomerName" placeholder="Enter Customer Name" />
+        <br />
+        <b>@Html.ValidationMessageFor(model=>model.CustomerName,"", new{@class="text-danger"})</b>
+        <br />
+        <input id="updateBox" asp-for="@Model.CustomerPhoneNumber" placeholder="Enter New Customer Phone Number" />
+        <br />
+        <b>@Html.ValidationMessageFor(model=>model.CustomerPhoneNumber,"", new{@class="text-danger"})</b>
+        <br />
+        <input id="button" type="submit" placeholder="Update Phone Number" />
+    </form>
+    <br />
+    <br />
+
+</div>
+<br />

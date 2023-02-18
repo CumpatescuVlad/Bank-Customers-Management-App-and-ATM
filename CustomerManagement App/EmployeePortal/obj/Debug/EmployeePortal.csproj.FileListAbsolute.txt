@@ -32,3 +32,21 @@ E:\CODE REPOS\BankApp\EmployeePortal\EmployeePortal\obj\Debug\EmployeePortal.pdb
 E:\CODE REPOS\BankApp\EmployeePortal\EmployeePortal\bin\Debug\AccountOperations.dll
 E:\CODE REPOS\BankApp\EmployeePortal\EmployeePortal\bin\Debug\AccountOperations.pdb
 E:\CODE REPOS\BankApp\EmployeePortal\EmployeePortal\obj\Debug\EmployeePortal.AddCompanyTab.resources
+E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal\obj\Debug\EmployeePortal.csproj.AssemblyReference.cache
+E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal\obj\Debug\EmployeePortal.csproj.SuggestedBindingRedirects.cache
+E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal\obj\Debug\EmployeePortal.AddCompanyTab.resources
+E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal\obj\Debug\EmployeePortal.DeleteAccount.resources
+E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal\obj\Debug\EmployeePortal.AddCustomerTab.resources
+E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal\obj\Debug\EmployeePortal.AuthentificationWindow.resources
+E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal\obj\Debug\EmployeePortal.CreateAccountTab.resources
+E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal\obj\Debug\EmployeePortal.DeleteCustomerTab.resources
+E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal\obj\Debug\EmployeePortal.DisplayAccounts.resources
+E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal\obj\Debug\EmployeePortal.Form1.resources
+E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal\obj\Debug\EmployeePortal.GenerateStatementTab.resources
+E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal\obj\Debug\EmployeePortal.ManageAccountsTab.resources
+E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal\obj\Debug\EmployeePortal.ManageCustomerData.resources
+E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal\obj\Debug\EmployeePortal.Properties.Resources.resources
+E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal\obj\Debug\EmployeePortal.TransactionsLog.resources
+E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal\obj\Debug\EmployeePortal.UpdateDataPanel.resources
+E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal\obj\Debug\EmployeePortal.csproj.GenerateResource.cache
+E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal\obj\Debug\EmployeePortal.csproj.CoreCompileInputs.cache

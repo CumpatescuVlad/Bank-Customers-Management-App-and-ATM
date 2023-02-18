@@ -57,9 +57,9 @@ namespace EmployeePortal__API.DataAcces.ModifyData.DeleteData
         public HttpStatusCode DeleAccount(DeleteAccountModel deleteAccountModel)
         {
             var deleteAccountCommand = new SqlCommand(QuerryStrings.DeleteAccount(deleteAccountModel), _connection);
-            var deleteATMTransactionsCommand = new SqlCommand(QuerryStrings.Delete(deleteAccountModel.CustomerName,"ATMTransactions"), _connection);
-            var deleteIncomingTransfersCommand = new SqlCommand(QuerryStrings.Delete(deleteAccountModel.CustomerName,"IncomingTransfers"), _connection);
-            var deleteOutcomingTransfersCommand = new SqlCommand(QuerryStrings.Delete(deleteAccountModel.CustomerName,"OutcomingTransfers"), _connection);
+            var deleteATMTransactionsCommand = new SqlCommand(QuerryStrings.Delete(deleteAccountModel.CustomerName, "ATMTransactions"), _connection);
+            var deleteIncomingTransfersCommand = new SqlCommand(QuerryStrings.Delete(deleteAccountModel.CustomerName, "IncomingTransfers"), _connection);
+            var deleteOutcomingTransfersCommand = new SqlCommand(QuerryStrings.Delete(deleteAccountModel.CustomerName, "OutcomingTransfers"), _connection);
 
             try
             {

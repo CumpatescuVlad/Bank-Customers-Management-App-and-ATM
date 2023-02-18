@@ -1,0 +1,20 @@
+﻿@model DeleteCustomerModel
+@{
+
+}
+<br />
+<div id="window" class="text-center">
+    <br />
+    <h2 style="font-size:22px;color:red;">Delete Customer</h2>
+    <br />
+    <br />
+    <form method="post" asp-controller="CustomerPostActions" asp-action="DeleteCustomerData">
+        <input  id="deleteBox" asp-for="@Model.CustomerName" placeholder="Enter Customer Name" />
+       <input  id="button" type="submit" placeholder="Search Customer" />
+    </form>
+    <br />
+    <b>@Html.ValidationMessageFor(model=>model.CustomerName,"",new{@class="text-danger"})</b>
+    <br />
+    <br />
+</div>
+<br />

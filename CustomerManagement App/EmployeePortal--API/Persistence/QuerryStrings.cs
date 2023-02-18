@@ -4,10 +4,10 @@ namespace EmployeePortal__API.Persistence
 {
     public class QuerryStrings
     {
-        public static string Update(UpdateDataModel update) => $"Update Customer Set {update.ColumnName} ='{update.Value}'  Where CustomerName='{update.OldCustomerName}'";
+        public static string Update(UpdateDataModel update) => $"Update Customers Set {update.ColumnName} ='{update.Value}'  Where CustomerName='{update.OldCustomerName}'";
         public static string UpdatePinCode(string customerName) => $"Update CreditCard Set PinCode ='{GenerateSecurityElements.GenerateElement("CardPIN")}' Where CustomerName='{customerName}'";
         public static string Delete(string customerName, string tableToDelete) => $"Delete {tableToDelete} Where CustomerName ='{customerName}'";
-        public static string Insert(CustomerModel customerModel,string tableToInsert)
+        public static string Insert(CustomerModel customerModel, string tableToInsert)
         {
             string insertQuerry = tableToInsert switch
             {
@@ -21,7 +21,7 @@ namespace EmployeePortal__API.Persistence
 
         }
 
-        public static string Select(string customerName,string itemsToSelect)
+        public static string Select(string customerName, string itemsToSelect)
         {
             string selectQuerry = itemsToSelect switch
             {
@@ -33,9 +33,9 @@ namespace EmployeePortal__API.Persistence
             return selectQuerry;
         }
 
-        public static string SelectTransactions(string customerName ,string tableToSelect)
+        public static string SelectTransactions(string customerName, string tableToSelect)
         {
-           string selectString = tableToSelect switch
+            string selectString = tableToSelect switch
             {
                 "ATMTransactions" => $"Select TypeOfTransactions,AccountUsed,TransactionDate From ATMTransactions Where CustomerName='{customerName}'",
                 "IncomingTransfers" => $"Select AccountUsed,Sender,Amount,TransactionDate From IncomingTransfers Where CustomerName='{customerName}' AND TypeOfTransfer = 'Income'",

@@ -1,12 +1,12 @@
+using EmployeePortal__API.BusinessLogic.Filters;
 using EmployeePortal__API.Config;
 using EmployeePortal__API.DataAcces.ModifyData.DeleteData;
 using EmployeePortal__API.DataAcces.ModifyData.InsertData;
 using EmployeePortal__API.DataAcces.ModifyData.UpdateData;
 using EmployeePortal__API.DataAcces.ReadData;
-using EmployeePortal__API.Services;
-using EmployeePortal__API.BusinessLogic.Filters;
-using Serilog;
 using EmployeePortal__API.Persistence;
+using EmployeePortal__API.Services;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,10 +27,10 @@ builder.Services.AddScoped<IUpdateData, UpdateData>();
 builder.Services.AddScoped<IInsertData, InsertData>();
 builder.Services.AddScoped<IDeleteData, DeleteData>();
 builder.Services.AddScoped<ICreateDataService, CreateDataService>();
-builder.Services.AddScoped<IDeleteDataService,DeleteDataService>();
-builder.Services.AddScoped<IUpdateDataService,UpdateDataService>();
-builder.Services.AddScoped<IFunctionsService,FunctionsService>();
-builder.Services.AddScoped<IGenerateStatement,GenerateStatement>();
+builder.Services.AddScoped<IDeleteDataService, DeleteDataService>();
+builder.Services.AddScoped<IUpdateDataService, UpdateDataService>();
+builder.Services.AddScoped<IFunctionsService, FunctionsService>();
+builder.Services.AddScoped<IGenerateStatement, GenerateStatement>();
 
 
 var app = builder.Build();

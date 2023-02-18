@@ -12,7 +12,7 @@ namespace EmployeePortal__API.Services
         private readonly IReadAccountData _readAccountData;
         private readonly IGenerateStatement _generateStatement;
 
-        public FunctionsService(IUpdateData updateData,IReadAccountData readAccountData,IGenerateStatement generateStatement)
+        public FunctionsService(IUpdateData updateData, IReadAccountData readAccountData, IGenerateStatement generateStatement)
         {
             _updateData = updateData;
             _readAccountData = readAccountData;
@@ -53,7 +53,7 @@ namespace EmployeePortal__API.Services
 
             transactions = $"{atmTransactions}{incomeTransactions}{outcomeTransactions}";
 
-            var statementGenerationResult = _generateStatement.GenerateWordStatement(statementModel,transactions);
+            var statementGenerationResult = _generateStatement.GenerateWordStatement(statementModel, transactions);
 
             return statementGenerationResult;
 
@@ -62,14 +62,14 @@ namespace EmployeePortal__API.Services
         public byte[] GetStatement()
         {
             string statementPath = @$"{Environment.CurrentDirectory}\Statements\WordStatements\Statement.doc";
-            
+
             if (System.IO.File.Exists(statementPath))
             {
                 return null;
             }
 
             return System.IO.File.ReadAllBytes(statementPath);
-            
+
         }
     }
 }

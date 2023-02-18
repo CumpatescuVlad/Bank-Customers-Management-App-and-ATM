@@ -4,7 +4,7 @@
     {
         public OutcomeTransactionsDTO(string? typeOfTransfer, string? accountUsed, string? recipient, int amount, string? transactionDate)
         {
-           
+
             TypeOfTransfer = typeOfTransfer;
             AccountUsed = accountUsed;
             Recipient = recipient;

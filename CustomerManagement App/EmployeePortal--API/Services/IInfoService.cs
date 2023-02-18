@@ -1,6 +1,4 @@
-﻿using EmployeePortal__API.BusinessLogic.Modeles;
-
-namespace EmployeePortal__API.Services
+﻿namespace EmployeePortal__API.Services
 {
     public interface IInfoService
     {
