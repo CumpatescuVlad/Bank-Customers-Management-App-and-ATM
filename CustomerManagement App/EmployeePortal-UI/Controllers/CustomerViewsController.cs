@@ -21,7 +21,7 @@ namespace EmployeePortal_UI.Controllers
 
         [HttpGet] public IActionResult DeleteCustomer() => View();
 
-        [HttpGet] public IActionResult DisplayCustomers(CustomerModel customer) => View(customer);
+        [HttpGet] public IActionResult DisplayCustomers(InsertCustomerModel customer) => View(customer);
 
     }
 }

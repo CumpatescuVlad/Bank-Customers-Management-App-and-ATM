@@ -21,13 +21,19 @@ namespace EmployeePortal__API.DataAcces.ModifyData.UpdateData
         }
         public HttpStatusCode UpdateCustomerData(UpdateDataModel updateModel)
         {
-            var command = new SqlCommand(QuerryStrings.Update(updateModel), _connection);
-
+            var updateNameCommand = new SqlCommand(QuerryStrings.Update(updateModel,"Customers"), _connection);
+            var updateAccountCommand = new SqlCommand(QuerryStrings.Update(updateModel,"PersonalAccounts"), _connection);
+            var updateCreditCardCommand = new SqlCommand(QuerryStrings.Update(updateModel,"CreditCard"), _connection);
+            var updateBankingAppCommand = new SqlCommand(QuerryStrings.Update(updateModel,"BankingApp"), _connection);
+            //update name everywhere
             try
             {
                 _connection.Open();
-                var updateAdapter = new SqlDataAdapter { UpdateCommand = command };
-                updateAdapter.UpdateCommand.ExecuteNonQuery();
+                var updateAdapter = new SqlDataAdapter();
+                updateAdapter.UpdateCommand = updateNameCommand; updateAdapter.UpdateCommand.ExecuteNonQuery();
+                updateAdapter.UpdateCommand = updateAccountCommand; updateAdapter.UpdateCommand.ExecuteNonQuery();
+                updateAdapter.UpdateCommand = updateCreditCardCommand; updateAdapter.UpdateCommand.ExecuteNonQuery();
+                updateAdapter.UpdateCommand = updateBankingAppCommand; updateAdapter.UpdateCommand.ExecuteNonQuery();
 
                 return HttpStatusCode.OK;
 

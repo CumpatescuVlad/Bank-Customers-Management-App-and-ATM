@@ -1,10 +1,22 @@
 ﻿using EmployeePortal__API.BusinessLogic.Modeles;
+using Syncfusion.DocIO.DLS;
 
 namespace EmployeePortal__API.Persistence
 {
     public class QuerryStrings
     {
-        public static string Update(UpdateDataModel update) => $"Update Customers Set {update.ColumnName} ='{update.Value}'  Where CustomerName='{update.OldCustomerName}'";
+        public static string Update(UpdateDataModel update,string tableToUpdate)
+        {
+            string querryString = tableToUpdate switch
+            {
+                "Customers" => $"Update Customers set {update.ColumnName}='{update.Value}' Where CustomerName='{update.OldCustomerName}'",
+                "PersonalAccounts" => $"Update PersonalAccounts set {update.ColumnName}='{update.Value}' Where CustomerName='{update.OldCustomerName}'",
+                "CreditCard" => $"Update CreditCard set {update.ColumnName}='{update.Value}' Where CustomerName='{update.OldCustomerName}'",
+                "BankingApp" => $"Update BankingApp set {update.ColumnName}='{update.Value}' Where CustomerName='{update.OldCustomerName}'",
+                _ => "No Table Name Provided.",
+            };
+            return querryString;
+        } 
         public static string UpdatePinCode(string customerName) => $"Update CreditCard Set PinCode ='{GenerateSecurityElements.GenerateElement("CardPIN")}' Where CustomerName='{customerName}'";
         public static string Delete(string customerName, string tableToDelete) => $"Delete {tableToDelete} Where CustomerName ='{customerName}'";
         public static string Insert(CustomerModel customerModel, string tableToInsert)
@@ -13,7 +25,7 @@ namespace EmployeePortal__API.Persistence
             {
                 "Customers" => $"Insert Into Customers (CustomerName,CustomerPhoneNumber,CustomerEmail) Values ('{customerModel.CustomerName}','{customerModel.CustomerPhoneNumber}','{customerModel.CustomerEmail}')",
                 "PersonalAccounts" => $"Insert Into PersonalAccounts(CustomerName,AccountName,AccountNumber,AccountIBAN,Ballance) Values ('{customerModel.CustomerName}','{customerModel.AccountName}','{GenerateSecurityElements.GenerateElement("AccountNumber")}','{GenerateSecurityElements.GenerateElement("IBAN")}','{0}')",
-                "CreditCard" => $"Insert Into CreditCard (CustomerName,CardNumber,AccountInUse,SecurityCode,PinCode) Values ('{customerModel.CustomerName}','{GenerateSecurityElements.GenerateElement("CardNumber")}',Select AccountIBAN From PersonalAccounts Where CustomerName='{customerModel.CustomerName}','{GenerateSecurityElements.GenerateElement("SecurityCode")}','{GenerateSecurityElements.GenerateElement("CardPIN")}')",
+                "CreditCard" => $"Insert Into CreditCard (CustomerName,CardNumber,AccountInUse,SecurityCode,PinCode) Values ('{customerModel.CustomerName}','{GenerateSecurityElements.GenerateElement("CardNumber")}',(Select AccountIBAN From PersonalAccounts Where CustomerName='{customerModel.CustomerName}'),'{GenerateSecurityElements.GenerateElement("SecurityCode")}','{GenerateSecurityElements.GenerateElement("CardPIN")}')",
                 "BankingApp" => $"Insert Into BankingApp (CustomerName,AppPinCode,AppPassword) Values ('{customerModel.CustomerName}','{GenerateSecurityElements.GenerateElement("Password")}','{GenerateSecurityElements.GenerateElement("AppPin")}')",
                 _ => "No Relevant Info Provided",
             };

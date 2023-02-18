@@ -35,14 +35,12 @@ namespace EmployeePortal_UI.Controllers
             {
                 var errorStatusMessage = HttpUtility.UrlEncode($"Pin Code Regeneration Failed For User {search.CustomerName}");
 
-                return Redirect($"Error/{errorStatusMessage}");
-
-
+                return Redirect($"/Error/{errorStatusMessage}");
 
             }
             var succesStatusMessage = HttpUtility.UrlEncode($"Pin Code Succesfully Regenerated For User {search.CustomerName}");
 
-            return Redirect($"Succes/{succesStatusMessage}");
+            return Redirect($"/Succes/{succesStatusMessage}");
         }
 
         [HttpPost]
@@ -63,14 +61,12 @@ namespace EmployeePortal_UI.Controllers
             {
                 var errorStatusMessage = HttpUtility.UrlEncode($"Statement Generation Failed , Reason:{statementgenrationResult.Result.StatusCode}");
 
-                return Redirect($"Error/{errorStatusMessage}");
-
-
+                return Redirect($"/Error/{errorStatusMessage}");
 
             }
-            Task<byte[]> bytes = statementgenrationResult.Result.Content.ReadAsByteArrayAsync();
+            Task<byte[]> bytes = System.IO.File.ReadAllBytesAsync(@$"E:\CODE REPOS\Bank\Statements\{statement.CustomerName}\{statement.CustomerName}Statement.doc");
 
-            return File(await bytes.ConfigureAwait(false), "word/doc", "Statement.doc");
+            return File(await bytes.ConfigureAwait(false), "word/doc", $"{statement.CustomerName}Statement.doc");
 
 
         }

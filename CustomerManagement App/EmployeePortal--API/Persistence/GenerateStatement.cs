@@ -16,7 +16,8 @@ namespace EmployeePortal__API.Persistence
 
         public HttpStatusCode GenerateWordStatement(StatementModel statementModel, string content)
         {
-            FileStream wordOutputFile = new(Path.GetFullPath(@$"{Environment.CurrentDirectory}\Statements\WordStatements\Statement.doc"), FileMode.Create, FileAccess.ReadWrite);
+            Directory.CreateDirectory(@$"E:\CODE REPOS\Bank\Statements\{statementModel.CustomerName}");
+            FileStream wordOutputFile = new(Path.GetFullPath(@$"E:\CODE REPOS\Bank\Statements\{statementModel.CustomerName}\{statementModel.CustomerName}Statement.doc"), FileMode.Create, FileAccess.ReadWrite);
             var statement = new WordDocument();
             IWSection contentParagraph = statement.AddSection();
             IWParagraph title = contentParagraph.AddParagraph();
@@ -60,7 +61,7 @@ namespace EmployeePortal__API.Persistence
         {
             Random _random = new();
             string header = "\n\n\n";
-            header += $"EXTRAS DE CONT NR.{_random.Next(1, 10)} din data de  {DateTime.Now}\n pe perioada: {DateTime.UtcNow} - {DateTime.Now.AddDays(3)}\n\n\n\n";
+            header += $"EXTRAS DE CONT NR.{_random.Next(1, 10)} din data de  {DateTime.UtcNow:yyyy-MM-dd}\n pe perioada: {DateTime.UtcNow:yyyy-MM-dd} - {DateTime.Now.AddDays(3)}\n\n\n\n";
             return header;
 
         }
@@ -69,7 +70,7 @@ namespace EmployeePortal__API.Persistence
         {
             string body = "\n";
             body += $"IBAN:{statementModel.AccountIBAN}\nProduse Valuta:RON\nTitular:{statementModel.CustomerName} \tCIC:{4563523}\tCNP/CUI:{3452353673}\nTip Produs:Cont curent {statementModel.AccountName}\n";
-            body += $"Total tranzactii finalizate pana la {DateTime.Now}";
+            body += $"Total tranzactii finalizate pana la {DateTime.UtcNow:yyyy-MM-dd}";
             body += "\n\n\n";
             return body;
         }

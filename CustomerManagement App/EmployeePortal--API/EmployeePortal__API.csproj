@@ -16,8 +16,4 @@
     <PackageReference Include="Syncfusion.DocIO.Net.Core" Version="20.4.0.50" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Statements\WordStatements\" />
-  </ItemGroup>
-
 </Project>

@@ -59,17 +59,5 @@ namespace EmployeePortal__API.Services
 
         }
 
-        public byte[] GetStatement()
-        {
-            string statementPath = @$"{Environment.CurrentDirectory}\Statements\WordStatements\Statement.doc";
-
-            if (System.IO.File.Exists(statementPath))
-            {
-                return null;
-            }
-
-            return System.IO.File.ReadAllBytes(statementPath);
-
-        }
     }
 }

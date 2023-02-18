@@ -38,16 +38,16 @@ namespace EmployeePortal__API.Presentation.Controllers
         [ServiceFilter(typeof(ModelValidationFilter))]
         [Route("Portal/Statements")]
 
-        public byte[] CreateStatement(StatementModel statementModel)
+        public HttpStatusCode CreateStatement(StatementModel statementModel)
         {
             var statementCreationResult = _functionsService.CreateStatement(statementModel);
 
             if (statementCreationResult is HttpStatusCode.Created)
             {
-                return _functionsService.GetStatement();
+                return HttpStatusCode.Created;
             }
 
-            return null;
+            return HttpStatusCode.InternalServerError;
         }
 
 

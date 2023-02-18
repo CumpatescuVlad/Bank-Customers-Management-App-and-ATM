@@ -1,11 +1,11 @@
 ﻿using EmployeePortal_UI.Models;
+using EmployeePortal_UI.DTOs;
 using EmployeePortal_UI.src;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Net;
 using System.Text;
 using System.Web;
-
 
 namespace EmployeePortal_UI.Controllers
 {
@@ -34,9 +34,9 @@ namespace EmployeePortal_UI.Controllers
 
                 return Redirect($"Error/{errorMessage}");
             }
-
-            var customerData = JsonConvert.DeserializeObject<CustomerModel>(customersResponse.Result);
-
+           
+            var customerData = JsonConvert.DeserializeObject<InsertCustomerModel>(customersResponse.Result);
+            
             return RedirectToAction("DisplayCustomers", "CustomerViews", customerData);
         }
 
@@ -68,11 +68,10 @@ namespace EmployeePortal_UI.Controllers
                 return Redirect($"/Error/{errorMessage}");
             }
 
-            var succesStatus = HttpUtility.UrlEncode("Customer Was Sucesfully Added.");
+            var succesStatus = HttpUtility.UrlEncode($"Customer Was Sucesfully Added.\n{addCustomerModel.CustomerName}\n{addCustomerModel.CustomerPhoneNumber}\n{addCustomerModel.CustomerEmail}");
 
             return Redirect($"/Succes/{succesStatus}");
         }
-
 
         [HttpPost]
 
@@ -83,7 +82,7 @@ namespace EmployeePortal_UI.Controllers
                 return View("~/Views/CustomerViews/UpdateCustomerEmail.cshtml");
             }
 
-            var customerUpdateModel = new UpdateCustomerModel(updateEmail.CustomerName, "CustomerEmail", updateEmail.CustomerEmail);
+            var customerUpdateModel = new CustomerDTO("CustomerEmail",updateEmail.CustomerName, updateEmail.CustomerEmail);
             var uri = "https://localhost:7214/Portal/Update/UpdateCustomerData";
             var newEmail = JsonConvert.SerializeObject(customerUpdateModel);
             var content = new StringContent(newEmail, Encoding.UTF8, "application/json");
@@ -101,7 +100,7 @@ namespace EmployeePortal_UI.Controllers
                 return Redirect($"/Error/{errorMessage}");
             }
 
-            var succesStatus = HttpUtility.UrlEncode("Customer Email Was Sucesfully Changed.");
+            var succesStatus = HttpUtility.UrlEncode($"Customer Email Was Sucesfully Changed To \"{updateEmail.CustomerEmail}\".");
 
             return Redirect($"/Succes/{succesStatus}");
 
@@ -116,7 +115,7 @@ namespace EmployeePortal_UI.Controllers
                 return View("~/Views/CustomerViews/UpdateCustomerName.cshtml");
             }
 
-            var customerUpdateModel = new UpdateCustomerModel(updateName.CustomerName, "CustomerName", updateName.NewCustomerName);
+            var customerUpdateModel = new CustomerDTO("CustomerName",updateName.CustomerName, updateName.NewCustomerName);
             var uri = "https://localhost:7214/Portal/Update/UpdateCustomerData";
             var newName = JsonConvert.SerializeObject(customerUpdateModel);
             var content = new StringContent(newName, Encoding.UTF8, "application/json");
@@ -134,7 +133,7 @@ namespace EmployeePortal_UI.Controllers
                 return Redirect($"/Error/{errorMessage}");
             }
 
-            var succesStatus = HttpUtility.UrlEncode("Customer Name Was Sucesfully Changed.");
+            var succesStatus = HttpUtility.UrlEncode($"Customer Name Was Sucesfully Changed to \"{updateName.NewCustomerName}\".");
             return Redirect($"/Succes/{succesStatus}");
 
         }
@@ -148,7 +147,7 @@ namespace EmployeePortal_UI.Controllers
                 return View("~/Views/CustomerViews/UpdateCustomerPhoneNumber.cshtml");
             }
 
-            var customerUpdateModel = new UpdateCustomerModel(phoneModel.CustomerName, "CustomerName", phoneModel.CustomerPhoneNumber);
+            var customerUpdateModel = new CustomerDTO("CustomerPhoneNumber",phoneModel.CustomerName,phoneModel.CustomerPhoneNumber);
             var uri = "https://localhost:7214/Portal/Update/UpdateCustomerData";
             var newPhone = JsonConvert.SerializeObject(customerUpdateModel);
             var content = new StringContent(newPhone, Encoding.UTF8, "application/json");
@@ -166,7 +165,7 @@ namespace EmployeePortal_UI.Controllers
                 return Redirect($"/Error/{errorMessage}");
             }
 
-            var succesStatus = HttpUtility.UrlEncode("Customer Name Was Sucesfully Changed.");
+            var succesStatus = HttpUtility.UrlEncode($"Customer Phone Number  Was Sucesfully Changed To \"{phoneModel.CustomerPhoneNumber}\".");
             return Redirect($"/Succes/{succesStatus}");
 
         }
@@ -193,7 +192,7 @@ namespace EmployeePortal_UI.Controllers
                 return Redirect($"/Error/{errorMessage}");
             }
 
-            var succesStatus = HttpUtility.UrlEncode("Customer Was Sucesfully Added.");
+            var succesStatus = HttpUtility.UrlEncode($"Customer \"{deleteModel.CustomerName}\" Was Sucesfully Deleted.");
 
             return Redirect($"/Succes/{succesStatus}");
         }
