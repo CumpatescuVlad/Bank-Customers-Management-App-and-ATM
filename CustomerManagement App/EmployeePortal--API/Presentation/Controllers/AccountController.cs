@@ -25,7 +25,7 @@ namespace EmployeePortal__API.Presentation.Controllers
 
         [HttpGet]
         [ServiceFilter(typeof(ModelValidationFilter))]
-        [Route("Portal/Accounts/AccountInfo")]
+        [Route("Portal/Accounts/AccountInfo/{customerName}")]
 
         public IActionResult GetAccountInfo(string customerName)
         {
@@ -71,7 +71,7 @@ namespace EmployeePortal__API.Presentation.Controllers
                 return StatusCode(500);
             }
 
-            return Created("Portal/Account/CreateAccount", createAccountModel);
+            return StatusCode(201);
         }
 
         [HttpDelete]

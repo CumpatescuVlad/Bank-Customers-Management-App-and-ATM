@@ -16,6 +16,30 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal-UI
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/AccountViews/AccountsIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFZpZXdzXEFjY291bnRzSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/AccountViews/CreateAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFZpZXdzXENyZWF0ZUFjY291bnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/AccountViews/DeleteAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFZpZXdzXERlbGV0ZUFjY291bnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/AccountViews/DisplayAccountInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFZpZXdzXERpc3BsYXlBY2NvdW50SW5mby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/AccountViews/SearchAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFZpZXdzXFNlYXJjaEFjY291bnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/AccountViews/SearchTransactions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFZpZXdzXFNlYXJjaFRyYW5zYWN0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/CustomerViews/AddCustomer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJWaWV3c1xBZGRDdXN0b21lci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
