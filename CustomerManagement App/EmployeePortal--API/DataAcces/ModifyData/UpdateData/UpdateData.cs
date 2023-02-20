@@ -25,18 +25,27 @@ namespace EmployeePortal__API.DataAcces.ModifyData.UpdateData
             var updateAccountCommand = new SqlCommand(QuerryStrings.Update(updateModel, "PersonalAccounts"), _connection);
             var updateCreditCardCommand = new SqlCommand(QuerryStrings.Update(updateModel, "CreditCard"), _connection);
             var updateBankingAppCommand = new SqlCommand(QuerryStrings.Update(updateModel, "BankingApp"), _connection);
-            //update name everywhere
+            
             try
             {
                 _connection.Open();
                 var updateAdapter = new SqlDataAdapter();
-                updateAdapter.UpdateCommand = updateNameCommand; updateAdapter.UpdateCommand.ExecuteNonQuery();
-                updateAdapter.UpdateCommand = updateAccountCommand; updateAdapter.UpdateCommand.ExecuteNonQuery();
-                updateAdapter.UpdateCommand = updateCreditCardCommand; updateAdapter.UpdateCommand.ExecuteNonQuery();
-                updateAdapter.UpdateCommand = updateBankingAppCommand; updateAdapter.UpdateCommand.ExecuteNonQuery();
+                if (updateModel.ColumnName is "CustomerName")
+                {
+                    updateAdapter.UpdateCommand = updateNameCommand; updateAdapter.UpdateCommand.ExecuteNonQuery();
+                    updateAdapter.UpdateCommand = updateAccountCommand; updateAdapter.UpdateCommand.ExecuteNonQuery();
+                    updateAdapter.UpdateCommand = updateCreditCardCommand; updateAdapter.UpdateCommand.ExecuteNonQuery();
+                    updateAdapter.UpdateCommand = updateBankingAppCommand; updateAdapter.UpdateCommand.ExecuteNonQuery();
 
-                return HttpStatusCode.OK;
+                    return HttpStatusCode.OK;
+                }
+                else
+                {
+                    updateAdapter.UpdateCommand = updateNameCommand; updateAdapter.UpdateCommand.ExecuteNonQuery();
 
+                    return HttpStatusCode.OK;
+                }
+                
             }
             catch (Exception ex)
             {

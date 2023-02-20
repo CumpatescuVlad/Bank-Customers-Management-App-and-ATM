@@ -8,16 +8,16 @@
   <br />
   <table style="border:solid;border-color:dodgerblue;margin-left:auto;margin-right:auto">
     <thead>
-      <tr style="background-color:black;color:aliceblue;text-align:center;font-size:24px;">
-        <td style="border:solid;border-color:dodgerblue;padding:10px"> Customer Name </td>
-        <td style="border:solid;border-color:dodgerblue;padding:10px;"> Customer Email </td>
-        <td style="border:solid;border-color:dodgerblue;padding:10px"> Customer Phone Number </td>
+      <tr id="tableHead">
+                <td id="tableCell"> Customer Name </td>
+                <td id="tableCell"> Customer Email </td>
+                <td id="tableCell"> Customer Phone Number </td>
       </tr>
     </thead>
     <tr style="color:red;text-align:center;font-size:24px">
-      <td style="border:solid;border-color:dodgerblue;padding:10px"> @Model.CustomerName </td>
-      <td style="border:solid;border-color:dodgerblue;padding:10px"> @Model.CustomerEmail </td>
-      <td style="border:solid;border-color:dodgerblue;padding:10px"> @Model.CustomerPhoneNumber </td>
+            <td id="tableCell"> @Model.CustomerName </td>
+            <td id="tableCell"> @Model.CustomerEmail </td>
+            <td id="tableCell"> @Model.CustomerPhoneNumber </td>
     </tr>
   </table>
   <br />
@@ -25,6 +25,8 @@
   <br />
   <br />
   <a id="button" asp-action="CustomerManagementIndex" asp-controller="CustomerViews"> Customer Management </a>
+  <br />
+  <br />
   <br />
 </div>
 <br />

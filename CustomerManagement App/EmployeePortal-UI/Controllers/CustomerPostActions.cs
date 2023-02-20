@@ -20,22 +20,23 @@ namespace EmployeePortal_UI.Controllers
 
         [HttpPost]
 
-        public IActionResult GetCustomers(SearchModel search)
+        public async Task<IActionResult> GetCustomers(SearchModel search)
         {
             if (!ModelState.IsValid)
             {
                 return View("~/Views/CustomerViews/SearchCustomer.cshtml");
             }
 
-            var customersResponse = _httpClient.GetStringAsync($"https://localhost:7214/Portal/Customer/Info/{search.CustomerName}");
-            if (customersResponse.Status is (TaskStatus)HttpStatusCode.InternalServerError)
+            var customersResult = _httpClient.GetAsync($"https://localhost:7214/Portal/Customer/Info/{search.CustomerName}").Result;
+            var customersResponse = await customersResult.Content.ReadAsStringAsync().ConfigureAwait(false);
+            if (customersResult.StatusCode is HttpStatusCode.InternalServerError)
             {
-                var errorMessage = HttpUtility.UrlEncode($"Your Request Cannot Be Processed,Reason:\"{customersResponse.Status}\" Please Try Again Later.");
+                var errorMessage = HttpUtility.UrlEncode($"Your Request Cannot Be Processed,Reason:\"{customersResult.StatusCode}\" Please Try Again Later.");
 
                 return Redirect($"Error/{errorMessage}");
             }
 
-            var customerData = JsonConvert.DeserializeObject<InsertCustomerModel>(customersResponse.Result);
+            var customerData = JsonConvert.DeserializeObject<InsertCustomerModel>(customersResponse);
 
             return RedirectToAction("DisplayCustomers", "CustomerViews", customerData);
         }

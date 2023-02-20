@@ -25,6 +25,7 @@ namespace EmployeePortal_UI.Controllers
                 return View("~/Views/AccountViews/SearchAccount.cshtml");
             }
             var accountResult = _httpClient.GetAsync($"https://localhost:7214/Portal/Accounts/AccountInfo/{search.CustomerName}").Result;
+            var accountResponse = await accountResult.Content.ReadAsStringAsync().ConfigureAwait(false);
 
             if (accountResult.StatusCode is HttpStatusCode.InternalServerError)
             {
@@ -33,7 +34,6 @@ namespace EmployeePortal_UI.Controllers
                 return Redirect($"/Error/{errorMessage}");
 
             }
-            var accountResponse = await accountResult.Content.ReadAsStringAsync().ConfigureAwait(false);
             var accountInfo = JsonConvert.DeserializeObject<List<AccountModel>>(accountResponse);
 
             return View("~/Views/AccountViews/DisplayAccountInfo.cshtml", accountInfo);

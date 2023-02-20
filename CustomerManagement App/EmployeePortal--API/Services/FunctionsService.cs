@@ -34,26 +34,26 @@ namespace EmployeePortal__API.Services
         public HttpStatusCode CreateStatement(StatementModel statementModel)
         {
             var transactionsDTO = _readAccountData.ReadTransactions(statementModel.CustomerName);
-            string atmTransactions = "No Content";
-            string incomeTransactions = "No Content";
-            string outcomeTransactions = "No Content";
-            string transactions = "No Content";
-            foreach (var transaction in transactionsDTO.AtmTransactions)
-            {
-                atmTransactions += $"{transaction.TypeOfTransaction} {transaction.AccountUsed} {transaction.Amount} {transaction.TransactionDate}\n";
-            }
-            foreach (var transaction in transactionsDTO.IncomeTransactions)
-            {
-                incomeTransactions += $"{transaction.TypeOfTransfer} {transaction.AccountUsed} {transaction.Sender} {transaction.Amount} {transaction.TransactionDate}\n";
-            }
-            foreach (var transaction in transactionsDTO.OutcomeTransactions)
-            {
-                outcomeTransactions += $"{transaction.TypeOfTransfer} {transaction.AccountUsed} {transaction.Recipient} {transaction.Amount} {transaction.TransactionDate}\n";
-            }
+            //string atmTransactions = "No Content";
+            //string incomeTransactions = "No Content";
+            //string outcomeTransactions = "No Content";
+            //string transactions = "No Content";
+            //foreach (var transaction in transactionsDTO.AtmTransactions)
+            //{
+            //    atmTransactions += $"{transaction.TypeOfTransaction} {transaction.AccountUsed} {transaction.Amount} {transaction.TransactionDate}\n";
+            //}
+            //foreach (var transaction in transactionsDTO.IncomeTransactions)
+            //{
+            //    incomeTransactions += $"{transaction.TypeOfTransfer} {transaction.AccountUsed} {transaction.Sender} {transaction.Amount} {transaction.TransactionDate}\n";
+            //}
+            //foreach (var transaction in transactionsDTO.OutcomeTransactions)
+            //{
+            //    outcomeTransactions += $"{transaction.TypeOfTransfer} {transaction.AccountUsed} {transaction.Recipient} {transaction.Amount} {transaction.TransactionDate}\n";
+            //}
 
-            transactions = $"{atmTransactions}{incomeTransactions}{outcomeTransactions}";
+            //transactions = $"{atmTransactions}{incomeTransactions}{outcomeTransactions}";
 
-            var statementGenerationResult = _generateStatement.GenerateWordStatement(statementModel, transactions);
+            var statementGenerationResult = _generateStatement.GenerateWordStatement(statementModel,transactionsDTO);
 
             return statementGenerationResult;
 

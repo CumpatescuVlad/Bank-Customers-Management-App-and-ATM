@@ -1,4 +1,5 @@
-﻿using EmployeePortal__API.BusinessLogic.Modeles;
+﻿using EmployeePortal__API.BusinessLogic.DTOs;
+using EmployeePortal__API.BusinessLogic.Modeles;
 using Syncfusion.DocIO;
 using Syncfusion.DocIO.DLS;
 using System.Net;
@@ -14,7 +15,7 @@ namespace EmployeePortal__API.Persistence
             _logger = logger;
         }
 
-        public HttpStatusCode GenerateWordStatement(StatementModel statementModel, string content)
+        public HttpStatusCode GenerateWordStatement(StatementModel statementModel,TransactionsDTO transactions)
         {
             Directory.CreateDirectory(@$"E:\CODE REPOS\Bank\Statements\{statementModel.CustomerName}");
             FileStream wordOutputFile = new(Path.GetFullPath(@$"E:\CODE REPOS\Bank\Statements\{statementModel.CustomerName}\{statementModel.CustomerName}Statement.doc"), FileMode.Create, FileAccess.ReadWrite);
@@ -33,7 +34,118 @@ namespace EmployeePortal__API.Persistence
 
             title.AppendText(StatementHeader());
             leftColum.AppendText(StatementBody(statementModel));
-            leftColum.AppendText(content);
+            
+            int count = 0;
+            //IWSection tableSection  = statement.AddSection();
+            IWTextRange textRange = contentParagraph.AddParagraph().AppendText("ATM Transactions");
+            textRange.CharacterFormat.FontName = "Arial";
+            textRange.CharacterFormat.FontSize = 12;
+            textRange.CharacterFormat.Bold = true;
+            IWTable atmTable = contentParagraph.AddTable();
+            atmTable.ResetCells(transactions.AtmTransactions.Count,3);
+
+            foreach (var transaction in transactions.AtmTransactions)
+            {
+                textRange = atmTable[count, 0].AddParagraph().AppendText(transaction.TypeOfTransaction);
+                textRange.CharacterFormat.FontName = "Arial";
+                textRange.CharacterFormat.FontSize = 12;
+                textRange.CharacterFormat.Bold = true;
+
+                textRange = atmTable[count, 1].AddParagraph().AppendText(transaction.AccountUsed);
+                textRange.CharacterFormat.FontName = "Arial";
+                textRange.CharacterFormat.FontSize = 12;
+                textRange.CharacterFormat.Bold = true;
+
+                textRange = atmTable[count, 1].AddParagraph().AppendText($"{transaction.Amount}");
+                textRange.CharacterFormat.FontName = "Arial";
+                textRange.CharacterFormat.FontSize = 12;
+                textRange.CharacterFormat.Bold = true;
+
+                textRange = atmTable[count, 1].AddParagraph().AppendText(transaction.TransactionDate);
+                textRange.CharacterFormat.FontName = "Arial";
+                textRange.CharacterFormat.FontSize = 12;
+                textRange.CharacterFormat.Bold = true;
+
+                count++;
+
+            }
+            count = 0;
+            _ = contentParagraph.AddParagraph().AppendText("Income Transactions");
+            textRange.CharacterFormat.FontName = "Arial";
+            textRange.CharacterFormat.FontSize = 12;
+            textRange.CharacterFormat.Bold = true;
+            IWTable incomeTable = contentParagraph.AddTable();
+            atmTable.ResetCells(transactions.IncomeTransactions.Count, 4);
+
+            foreach (var transaction in transactions.IncomeTransactions)
+            {
+                textRange = atmTable[count, 0].AddParagraph().AppendText(transaction.TypeOfTransfer);
+                textRange.CharacterFormat.FontName = "Arial";
+                textRange.CharacterFormat.FontSize = 12;
+                textRange.CharacterFormat.Bold = true;
+
+                textRange = atmTable[count, 1].AddParagraph().AppendText(transaction.AccountUsed);
+                textRange.CharacterFormat.FontName = "Arial";
+                textRange.CharacterFormat.FontSize = 12;
+                textRange.CharacterFormat.Bold = true;
+
+                textRange = atmTable[count, 1].AddParagraph().AppendText(transaction.Sender);
+                textRange.CharacterFormat.FontName = "Arial";
+                textRange.CharacterFormat.FontSize = 12;
+                textRange.CharacterFormat.Bold = true;
+
+                textRange = atmTable[count, 1].AddParagraph().AppendText($"{transaction.Amount}");
+                textRange.CharacterFormat.FontName = "Arial";
+                textRange.CharacterFormat.FontSize = 12;
+                textRange.CharacterFormat.Bold = true;
+
+                textRange = atmTable[count, 1].AddParagraph().AppendText($"{transaction.TransactionDate}");
+                textRange.CharacterFormat.FontName = "Arial";
+                textRange.CharacterFormat.FontSize = 12;
+                textRange.CharacterFormat.Bold = true;
+
+                count++;
+
+            }
+
+            count = 0;
+            _ = contentParagraph.AddParagraph().AppendText("Outcome Transactions");
+            textRange.CharacterFormat.FontName = "Arial";
+            textRange.CharacterFormat.FontSize = 12;
+            textRange.CharacterFormat.Bold = true;
+            IWTable outcomeTable = contentParagraph.AddTable();
+            atmTable.ResetCells(transactions.OutcomeTransactions.Count, 4);
+
+            foreach (var transaction in transactions.OutcomeTransactions)
+            {
+                textRange = atmTable[count, 0].AddParagraph().AppendText(transaction.TypeOfTransfer);
+                textRange.CharacterFormat.FontName = "Arial";
+                textRange.CharacterFormat.FontSize = 12;
+                textRange.CharacterFormat.Bold = true;
+
+                textRange = atmTable[count, 1].AddParagraph().AppendText(transaction.AccountUsed);
+                textRange.CharacterFormat.FontName = "Arial";
+                textRange.CharacterFormat.FontSize = 12;
+                textRange.CharacterFormat.Bold = true;
+
+                textRange = atmTable[count, 1].AddParagraph().AppendText(transaction.Recipient);
+                textRange.CharacterFormat.FontName = "Arial";
+                textRange.CharacterFormat.FontSize = 12;
+                textRange.CharacterFormat.Bold = true;
+
+                textRange = atmTable[count, 1].AddParagraph().AppendText($"{transaction.Amount}");
+                textRange.CharacterFormat.FontName = "Arial";
+                textRange.CharacterFormat.FontSize = 12;
+                textRange.CharacterFormat.Bold = true;
+
+                textRange = atmTable[count, 1].AddParagraph().AppendText($"{transaction.TransactionDate}");
+                textRange.CharacterFormat.FontName = "Arial";
+                textRange.CharacterFormat.FontSize = 12;
+                textRange.CharacterFormat.Bold = true;
+
+                count++;
+
+            }
             footerParaghraph.AppendText(StatementFooter());
 
             try

@@ -8,20 +8,20 @@
     <table style="border:solid;border-color:dodgerblue;margin-left:auto;margin-right:auto">
         <thead>
             <tr style="background-color:black;color:aliceblue;text-align:center;font-size:24px;">
-                <td style="border:solid;border-color:dodgerblue;padding:10px"> Account Owner Name </td>
-                <td style="border:solid;border-color:dodgerblue;padding:10px;"> Account Name </td>
-                <td style="border:solid;border-color:dodgerblue;padding:10px"> Account Number </td>
-                <td style="border:solid;border-color:dodgerblue;padding:10px"> Account IBAN </td>
-                <td style="border:solid;border-color:dodgerblue;padding:10px"> Account Ballance </td>
+                <td id="tableCell"> Account Owner Name </td>
+                <td id="tableCell"> Account Name </td>
+                <td id="tableCell"> Account Number </td>
+                <td id="tableCell"> Account IBAN </td>
+                <td id="tableCell"> Account Ballance </td>
             </tr>
         </thead> @foreach (var item in Model)
         {
             <tr style="color:red;text-align:center;font-size:24px">
-                <td style="border:solid;border-color:dodgerblue;padding:10px"> @item.AccountOwnerName </td>
-                <td style="border:solid;border-color:dodgerblue;padding:10px;"> @item.AccountName </td>
-                <td style="border:solid;border-color:dodgerblue;padding:10px;"> @item.AccountNumber </td>
-                <td style="border:solid;border-color:dodgerblue;padding:10px;"> @item.AccountIBAN </td>
-                <td style="border:solid;border-color:dodgerblue;padding:10px;"> @item.AccountBallance </td>
+                <td id="tableCell"> @item.AccountOwnerName </td>
+                <td id="tableCell"> @item.AccountName </td>
+                <td id="tableCell"> @item.AccountNumber </td>
+                <td id="tableCell"> @item.AccountIBAN </td>
+                <td id="tableCell"> @item.AccountBallance </td>
             </tr>
         }
     </table>

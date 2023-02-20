@@ -271,3 +271,42 @@ The statement has been terminated.
 2023-02-20 03:03:54.606 +02:00 [INF] Application started. Press Ctrl+C to shut down.
 2023-02-20 03:03:54.612 +02:00 [INF] Hosting environment: Development
 2023-02-20 03:03:54.623 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-20 20:47:16.327 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-20 20:47:16.833 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-20 20:47:16.836 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-20 20:47:16.838 +02:00 [INF] Hosting environment: Development
+2023-02-20 20:47:16.839 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-20 20:48:23.967 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-20 20:48:24.003 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-20 20:48:24.006 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-20 20:48:24.007 +02:00 [INF] Hosting environment: Development
+2023-02-20 20:48:24.008 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-20 20:48:56.201 +02:00 [ERR] Invalid attempt to read when no data is present.
+2023-02-20 20:54:51.111 +02:00 [ERR] Invalid column name 'CustomerPhoneNumber'.
+2023-02-20 20:54:51.114 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-20 20:55:28.178 +02:00 [ERR] Invalid column name 'CustomerEmail'.
+2023-02-20 20:55:28.181 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-20 21:39:36.588 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-20 21:39:36.624 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-20 21:39:36.627 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-20 21:39:36.628 +02:00 [INF] Hosting environment: Development
+2023-02-20 21:39:36.629 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-20 21:40:02.027 +02:00 [ERR] Invalid column name 'CustomerName'.
+Invalid column name 'AccountName'.
+Invalid column name 'Amount'.
+2023-02-20 21:40:02.030 +02:00 [ERR] Microsoft.Data.SqlClient.SqlException
+2023-02-20 21:41:38.813 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-20 21:41:38.845 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-20 21:41:38.848 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-20 21:41:38.849 +02:00 [INF] Hosting environment: Development
+2023-02-20 21:41:38.850 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-20 21:42:24.615 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-20 21:42:24.647 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-20 21:42:24.650 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-20 21:42:24.651 +02:00 [INF] Hosting environment: Development
+2023-02-20 21:42:24.652 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-20 21:54:11.197 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-20 21:54:11.245 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-20 21:54:11.249 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-20 21:54:11.250 +02:00 [INF] Hosting environment: Development
+2023-02-20 21:54:11.251 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API

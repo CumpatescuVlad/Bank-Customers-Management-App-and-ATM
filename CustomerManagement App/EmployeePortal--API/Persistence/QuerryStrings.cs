@@ -68,7 +68,7 @@ namespace EmployeePortal__API.Persistence
             }
             else
             {
-                querryString = $"Insert Into BusinessAccounts (CustomerName,AccountName,AccountNumber,AccountIBAN,Amount) Values ('{accountModel.CustomerName}','{accountModel.AccountName}','{GenerateSecurityElements.GenerateElement("AccountNumber")}','{GenerateSecurityElements.GenerateElement("IBAN")}','{0}')";
+                querryString = $"Insert Into BusinessAccounts (CompanyName,AccountNumber,AccountIBAN,AvailabbleAmount) Values ('{accountModel.CustomerName}','{GenerateSecurityElements.GenerateElement("AccountNumber")}','{GenerateSecurityElements.GenerateElement("IBAN")}','{0}')";
             }
             return querryString;
         }
