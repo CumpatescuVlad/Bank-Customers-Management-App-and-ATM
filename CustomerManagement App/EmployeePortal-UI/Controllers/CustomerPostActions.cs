@@ -1,5 +1,5 @@
-﻿using EmployeePortal_UI.Models;
-using EmployeePortal_UI.DTOs;
+﻿using EmployeePortal_UI.DTOs;
+using EmployeePortal_UI.Models;
 using EmployeePortal_UI.src;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -34,9 +34,9 @@ namespace EmployeePortal_UI.Controllers
 
                 return Redirect($"Error/{errorMessage}");
             }
-           
+
             var customerData = JsonConvert.DeserializeObject<InsertCustomerModel>(customersResponse.Result);
-            
+
             return RedirectToAction("DisplayCustomers", "CustomerViews", customerData);
         }
 
@@ -82,7 +82,7 @@ namespace EmployeePortal_UI.Controllers
                 return View("~/Views/CustomerViews/UpdateCustomerEmail.cshtml");
             }
 
-            var customerUpdateModel = new CustomerDTO("CustomerEmail",updateEmail.CustomerName, updateEmail.CustomerEmail);
+            var customerUpdateModel = new CustomerDTO("CustomerEmail", updateEmail.CustomerName, updateEmail.CustomerEmail);
             var uri = "https://localhost:7214/Portal/Update/UpdateCustomerData";
             var newEmail = JsonConvert.SerializeObject(customerUpdateModel);
             var content = new StringContent(newEmail, Encoding.UTF8, "application/json");
@@ -115,7 +115,7 @@ namespace EmployeePortal_UI.Controllers
                 return View("~/Views/CustomerViews/UpdateCustomerName.cshtml");
             }
 
-            var customerUpdateModel = new CustomerDTO("CustomerName",updateName.CustomerName, updateName.NewCustomerName);
+            var customerUpdateModel = new CustomerDTO("CustomerName", updateName.CustomerName, updateName.NewCustomerName);
             var uri = "https://localhost:7214/Portal/Update/UpdateCustomerData";
             var newName = JsonConvert.SerializeObject(customerUpdateModel);
             var content = new StringContent(newName, Encoding.UTF8, "application/json");
@@ -147,7 +147,7 @@ namespace EmployeePortal_UI.Controllers
                 return View("~/Views/CustomerViews/UpdateCustomerPhoneNumber.cshtml");
             }
 
-            var customerUpdateModel = new CustomerDTO("CustomerPhoneNumber",phoneModel.CustomerName,phoneModel.CustomerPhoneNumber);
+            var customerUpdateModel = new CustomerDTO("CustomerPhoneNumber", phoneModel.CustomerName, phoneModel.CustomerPhoneNumber);
             var uri = "https://localhost:7214/Portal/Update/UpdateCustomerData";
             var newPhone = JsonConvert.SerializeObject(customerUpdateModel);
             var content = new StringContent(newPhone, Encoding.UTF8, "application/json");

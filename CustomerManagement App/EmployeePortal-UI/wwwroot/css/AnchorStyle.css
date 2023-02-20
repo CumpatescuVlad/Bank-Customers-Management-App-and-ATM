@@ -20,6 +20,8 @@
     border-width: 8px;
     border-color:deepskyblue;
     background-color:aliceblue;
+    text-align:center;
+    
 }
 #boxCenter{
     
@@ -35,4 +37,26 @@
     font-size: 32px;
     font-family:'Titillium Web';
     
+}
+#tableStyle {
+    border: solid;
+    border-color: dodgerblue;
+    margin-left: auto;
+    margin-right: auto;
+}
+#tableCellRed {
+    color: red;
+    text-align: center;
+    font-size: 24px;
+}
+#tableHead {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    font-size: 24px;
+}
+#tableCell {
+    border: solid;
+    border-color: dodgerblue;
+    padding: 10px;
 }

@@ -2,7 +2,7 @@
 
 namespace EmployeePortal_UI.Models
 {
-    public class UpdateCustomerNameModel :SearchModel
+    public class UpdateCustomerNameModel : SearchModel
     {
         [Required(ErrorMessage = "Please enter the new Customer Name.")]
         public string? NewCustomerName { get; set; }

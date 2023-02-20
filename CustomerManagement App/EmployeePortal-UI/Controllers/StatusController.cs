@@ -12,7 +12,7 @@ namespace EmployeePortal_UI.Controllers
         {
             var statusDecoded = HttpUtility.UrlDecode(status);
             var succesImagePath = "operation-sucesfully.png";
-            return View(new StatusModel() { Status = statusDecoded ,Image=succesImagePath});
+            return View(new StatusModel() { Status = statusDecoded, Image = succesImagePath });
         }
 
         [HttpGet]
@@ -21,7 +21,7 @@ namespace EmployeePortal_UI.Controllers
         {
             var statusDecoded = HttpUtility.UrlDecode(status);
             var serverDownImagePath = "server-down.png";
-            return View(new StatusModel() { Status = statusDecoded ,Image = serverDownImagePath});
+            return View(new StatusModel() { Status = statusDecoded, Image = serverDownImagePath });
         }
 
     }

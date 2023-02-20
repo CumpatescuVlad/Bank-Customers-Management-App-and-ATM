@@ -1,11 +1,10 @@
 ﻿using EmployeePortal__API.BusinessLogic.Modeles;
-using Syncfusion.DocIO.DLS;
 
 namespace EmployeePortal__API.Persistence
 {
     public class QuerryStrings
     {
-        public static string Update(UpdateDataModel update,string tableToUpdate)
+        public static string Update(UpdateDataModel update, string tableToUpdate)
         {
             string querryString = tableToUpdate switch
             {
@@ -16,7 +15,7 @@ namespace EmployeePortal__API.Persistence
                 _ => "No Table Name Provided.",
             };
             return querryString;
-        } 
+        }
         public static string UpdatePinCode(string customerName) => $"Update CreditCard Set PinCode ='{GenerateSecurityElements.GenerateElement("CardPIN")}' Where CustomerName='{customerName}'";
         public static string Delete(string customerName, string tableToDelete) => $"Delete {tableToDelete} Where CustomerName ='{customerName}'";
         public static string Insert(CustomerModel customerModel, string tableToInsert)
@@ -39,7 +38,7 @@ namespace EmployeePortal__API.Persistence
             {
                 "CustomerName" => $"Select CustomerName From Customers Where CustomerName='{customerName}'",
                 "CustomerData" => $"Select CustomerName,CustomerPhoneNumber,CustomerEmail From Customers Where CustomerName='{customerName}'",
-                "AccountData" => $"Select CustomerName,AccountName,AccountNumber,AccountIBAN,Ballance From PersonalAccounts Where CustomerName='{customerName}'",
+                "AccountData" => $"Select CustomerName,AccountNumber,AccountIBAN,Ballance,AccountName From PersonalAccounts Where CustomerName='{customerName}'",
                 _ => "No Relevant Items Provded",
             };
             return selectQuerry;
@@ -49,9 +48,9 @@ namespace EmployeePortal__API.Persistence
         {
             string selectString = tableToSelect switch
             {
-                "ATMTransactions" => $"Select TypeOfTransactions,AccountUsed,TransactionDate From ATMTransactions Where CustomerName='{customerName}'",
-                "IncomingTransfers" => $"Select AccountUsed,Sender,Amount,TransactionDate From IncomingTransfers Where CustomerName='{customerName}' AND TypeOfTransfer = 'Income'",
-                "OutcomingTransfer" => $"Select AccountUsed,Recipient,Amount,TransactionDate From OutcomingTransfers Where CustomerName='{customerName}' AND TypeOfTransfer = 'Outcome'",
+                "ATMTransactions" => $"Select TypeOfTransactions,AccountUsed,Amount,TransactionDate From ATMTransactions Where CustomerName='{customerName}'",
+                "IncomingTransfers" => $"Select TypeOfTransfer,AccountUsed,Sender,Amount,TransactionDate From IncomingTransfers Where CustomerName='{customerName}' AND TypeOfTransfer = 'Income'",
+                "OutcomingTransfer" => $"Select TypeOfTransfer,AccountUsed,Recipient,Amount,TransactionDate From OutcomingTransfers Where CustomerName='{customerName}' AND TypeOfTransfer = 'Outcome'",
                 _ => "No Relevant Info Was Provided",
             };
 
@@ -65,11 +64,11 @@ namespace EmployeePortal__API.Persistence
 
             if (accountModel.TypeOfAccount == "PersonalAccount")
             {
-                querryString = $"Insert Into PersonalAccountsTable (CustomerName,AccountName,AccountNumber,AccountIBAN,Ballance) Values ('{accountModel.CustomerName}','{accountModel.AccountName}','{GenerateSecurityElements.GenerateElement("AccountNumber")}','{GenerateSecurityElements.GenerateElement("IBAN")}','{accountModel.Ballance}')";
+                querryString = $"Insert Into PersonalAccounts (CustomerName,AccountName,AccountNumber,AccountIBAN,Ballance) Values ('{accountModel.CustomerName}','{accountModel.AccountName}','{GenerateSecurityElements.GenerateElement("AccountNumber")}','{GenerateSecurityElements.GenerateElement("IBAN")}','{accountModel.Ballance}')";
             }
             else
             {
-                querryString = $"Insert Into BusinessAccountsTable (CustomerName,AccountName,AccountNumber,AccountIBAN,Amount) Values ('{accountModel.CustomerName}','{accountModel.AccountName}','{GenerateSecurityElements.GenerateElement("AccountNumber")}','{GenerateSecurityElements.GenerateElement("IBAN")}','{0}')";
+                querryString = $"Insert Into BusinessAccounts (CustomerName,AccountName,AccountNumber,AccountIBAN,Amount) Values ('{accountModel.CustomerName}','{accountModel.AccountName}','{GenerateSecurityElements.GenerateElement("AccountNumber")}','{GenerateSecurityElements.GenerateElement("IBAN")}','{0}')";
             }
             return querryString;
         }
@@ -80,11 +79,11 @@ namespace EmployeePortal__API.Persistence
 
             if (deleteAccountModel.TypeOfAccount == "PersonalAccount")
             {
-                querryString = $"Delete PersonalAccountsTable Where CustomerName='{deleteAccountModel.CustomerName}' AND AccountName='{deleteAccountModel.AccountName}'";
+                querryString = $"Delete PersonalAccounts Where CustomerName='{deleteAccountModel.CustomerName}' AND AccountName='{deleteAccountModel.AccountName}'";
             }
             else
             {
-                querryString = $"Delete BusinessAccountsTable Where CustomerName='{deleteAccountModel.CustomerName}' AND AccountName='{deleteAccountModel.AccountName}'";
+                querryString = $"Delete BusinessAccounts Where CustomerName='{deleteAccountModel.CustomerName}' AND AccountName='{deleteAccountModel.AccountName}'";
             }
 
             return querryString;

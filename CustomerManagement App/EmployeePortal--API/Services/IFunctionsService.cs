@@ -8,6 +8,6 @@ namespace EmployeePortal__API.Services
         HttpStatusCode RegenerateCardPinCode(string customerName);
 
         HttpStatusCode CreateStatement(StatementModel statementModel);
-        
+
     }
 }

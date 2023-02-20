@@ -2,10 +2,10 @@
 {
     public class AccountModel
     {
-        public string? AccountOwnerName { get; private set; }
-        public string? AccountNumber { get; private set; }
+        public string? AccountOwnerName { get; set; }
+        public string? AccountNumber { get; set; }
         public string? AccountName { get; set; }
-        public string? AccountIBAN { get; private set; }
-        public int AccountBallance { get; private set; }
+        public string? AccountIBAN { get; set; }
+        public int AccountBallance { get; set; }
     }
 }

@@ -21,10 +21,10 @@ namespace EmployeePortal__API.DataAcces.ModifyData.UpdateData
         }
         public HttpStatusCode UpdateCustomerData(UpdateDataModel updateModel)
         {
-            var updateNameCommand = new SqlCommand(QuerryStrings.Update(updateModel,"Customers"), _connection);
-            var updateAccountCommand = new SqlCommand(QuerryStrings.Update(updateModel,"PersonalAccounts"), _connection);
-            var updateCreditCardCommand = new SqlCommand(QuerryStrings.Update(updateModel,"CreditCard"), _connection);
-            var updateBankingAppCommand = new SqlCommand(QuerryStrings.Update(updateModel,"BankingApp"), _connection);
+            var updateNameCommand = new SqlCommand(QuerryStrings.Update(updateModel, "Customers"), _connection);
+            var updateAccountCommand = new SqlCommand(QuerryStrings.Update(updateModel, "PersonalAccounts"), _connection);
+            var updateCreditCardCommand = new SqlCommand(QuerryStrings.Update(updateModel, "CreditCard"), _connection);
+            var updateBankingAppCommand = new SqlCommand(QuerryStrings.Update(updateModel, "BankingApp"), _connection);
             //update name everywhere
             try
             {

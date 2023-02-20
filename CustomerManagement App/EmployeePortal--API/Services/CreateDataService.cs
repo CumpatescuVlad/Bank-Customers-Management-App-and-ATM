@@ -1,5 +1,4 @@
 ﻿using EmployeePortal__API.BusinessLogic.Modeles;
-using EmployeePortal__API.Config;
 using EmployeePortal__API.DataAcces.ModifyData.InsertData;
 using EmployeePortal__API.DataAcces.ReadData;
 using System.Net;
@@ -10,12 +9,12 @@ namespace EmployeePortal__API.Services
     {
         private readonly IReadCustomerData _readCustomerData;
         private readonly IInsertData _insertData;
-        
+
         public CreateDataService(IReadCustomerData readCustomerData, IInsertData insertData)
         {
             _readCustomerData = readCustomerData;
             _insertData = insertData;
-            
+
         }
 
         public HttpStatusCode AddNewCustomer(CustomerModel customerModel)

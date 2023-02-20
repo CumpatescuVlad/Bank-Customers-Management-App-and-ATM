@@ -14,51 +14,52 @@ namespace EmployeePortal_UI.Controllers
 
         public AccountPostActionsController()
         {
-            _httpClient= new HttpClient();
+            _httpClient = new HttpClient();
         }
 
         [HttpPost]
-        public IActionResult SearchAccount(SearchModel search)
+        public async Task<IActionResult> SearchAccount(SearchModel search)
         {
             if (!ModelState.IsValid)
             {
                 return View("~/Views/AccountViews/SearchAccount.cshtml");
             }
-            var accountResult = _httpClient.GetStringAsync($"https://localhost:7214/Portal/Accounts/AccountInfo/{search.CustomerName}");
+            var accountResult = _httpClient.GetAsync($"https://localhost:7214/Portal/Accounts/AccountInfo/{search.CustomerName}").Result;
 
-            if (accountResult.Status is (TaskStatus)HttpStatusCode.InternalServerError)
+            if (accountResult.StatusCode is HttpStatusCode.InternalServerError)
             {
-                var errorMessage = HttpUtility.UrlEncode($"Your Request Cannot Be Processed,Reason:\"{accountResult.Status}\" Please Try Again Later.");
+                var errorMessage = HttpUtility.UrlEncode($"Your Request Cannot Be Processed,Reason:\"{accountResult.StatusCode}\" Please Try Again Later.");
 
-                return Redirect($"Error/{errorMessage}");
-                
+                return Redirect($"/Error/{errorMessage}");
+
             }
+            var accountResponse = await accountResult.Content.ReadAsStringAsync().ConfigureAwait(false);
+            var accountInfo = JsonConvert.DeserializeObject<List<AccountModel>>(accountResponse);
 
-            var accountInfo = JsonConvert.DeserializeObject<AccountModel>(accountResult.Result);
-
-            return View("~/Views/AccountViews/DisplayAccountInfo.cshtml",accountInfo);
+            return View("~/Views/AccountViews/DisplayAccountInfo.cshtml", accountInfo);
         }
 
         [HttpPost]
-        public IActionResult SearchTransactions(SearchModel search)
+        public async Task<IActionResult> SearchTransactions(SearchModel search)
         {
+            ViewData["Name"] = search.CustomerName;
             if (!ModelState.IsValid)
             {
                 return View("~/Views/AccountViews/SearchTransactions.cshtml");
             }
-            var accountResult = _httpClient.GetStringAsync($"https://localhost:7214/Portal/Accounts/Transactions/{search.CustomerName}");
+            var transactionsResult = _httpClient.GetAsync($"https://localhost:7214/Portal/Accounts/Transactions/{search.CustomerName}").Result;
 
-            if (accountResult.Status is (TaskStatus)HttpStatusCode.InternalServerError)
+            if (transactionsResult.StatusCode is HttpStatusCode.InternalServerError)
             {
-                var errorMessage = HttpUtility.UrlEncode($"Your Request Cannot Be Processed,Reason:\"{accountResult.Status}\" Please Try Again Later.");
+                var errorMessage = HttpUtility.UrlEncode($"Your Request Cannot Be Processed,Reason:\"{transactionsResult.StatusCode}\" Please Try Again Later.");
 
-                return Redirect($"Error/{errorMessage}");
+                return Redirect($"/Error/{errorMessage}");
 
             }
+            var transactionResponse = await transactionsResult.Content.ReadAsStringAsync().ConfigureAwait(false);
+            var transactions = JsonConvert.DeserializeObject<TransactionsModel>(transactionResponse);
 
-            var accountInfo = JsonConvert.DeserializeObject<AccountModel>(accountResult.Result);
-
-            return View("~/Views/AccountViews/DisplayAccountInfo.cshtml", accountInfo);
+            return View("~/Views/AccountViews/DisplayTransactions.cshtml", transactions);
         }
 
         [HttpPost]
@@ -70,21 +71,21 @@ namespace EmployeePortal_UI.Controllers
             }
             var uri = "https://localhost:7214/Portal/Account/CreateAccount";
             var accountData = JsonConvert.SerializeObject(insertAccount);
-            var content = new StringContent(accountData,Encoding.UTF8,"application/json");
-            var accountResult = _httpClient.PostAsync(uri,content);
+            var content = new StringContent(accountData, Encoding.UTF8, "application/json");
+            var accountResult = _httpClient.PostAsync(uri, content);
 
             if (Errors.InternalServerErrorFor(accountResult))
             {
                 var errorMessage = HttpUtility.UrlEncode($"Your Request Cannot Be Processed,Reason:\"{accountResult.Status}\" Please Try Again Later.");
 
-                return Redirect($"Error/{errorMessage}");
+                return Redirect($"/Error/{errorMessage}");
 
             }
 
             var succesStatus = HttpUtility.UrlEncode($"Account Was Sucesfully Added.\n{insertAccount.CustomerName}\n{insertAccount.AccountName}\n{insertAccount.TypeOfAccount}");
 
             return Redirect($"/Succes/{succesStatus}");
-            
+
         }
 
         [HttpPost]
@@ -100,7 +101,9 @@ namespace EmployeePortal_UI.Controllers
 
             var request = new HttpRequestMessage
             {
-                Content = deleteContent, Method = HttpMethod.Delete, RequestUri = new Uri(uri),
+                Content = deleteContent,
+                Method = HttpMethod.Delete,
+                RequestUri = new Uri(uri),
             };
 
             var accountResult = _httpClient.SendAsync(request);
@@ -109,7 +112,7 @@ namespace EmployeePortal_UI.Controllers
             {
                 var errorMessage = HttpUtility.UrlEncode($"Your Request Cannot Be Processed,Reason:\"{accountResult.Status}\" Please Try Again Later.");
 
-                return Redirect($"Error/{errorMessage}");
+                return Redirect($"/Error/{errorMessage}");
 
             }
 

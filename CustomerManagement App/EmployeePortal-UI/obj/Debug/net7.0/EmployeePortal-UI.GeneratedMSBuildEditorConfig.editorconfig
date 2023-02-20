@@ -32,6 +32,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFZpZXdzXERpc3BsYXlBY2NvdW50SW5mby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/AccountViews/DisplayTransactions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFZpZXdzXERpc3BsYXlUcmFuc2FjdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/CODE REPOS/Bank/ServerSide&ATM/CustomerManagement App/EmployeePortal-UI/Views/AccountViews/SearchAccount.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFZpZXdzXFNlYXJjaEFjY291bnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

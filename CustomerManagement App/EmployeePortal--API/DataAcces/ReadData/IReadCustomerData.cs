@@ -1,5 +1,4 @@
 ﻿using EmployeePortal__API.BusinessLogic.DTOs;
-using Microsoft.Data.SqlClient;
 
 namespace EmployeePortal__API.DataAcces.ReadData
 {

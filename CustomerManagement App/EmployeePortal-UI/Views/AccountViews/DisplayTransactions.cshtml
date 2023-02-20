@@ -1,0 +1,83 @@
+﻿@model TransactionsModel
+@{
+    var customer = ViewData["Name"];
+
+    ViewData["Title"] = $"{customer} - Display Transactions";
+
+}
+
+<br />
+<div id="window">
+    <br />
+    <p style="font-size:26px;color:red;text-align:center">ATM Transactions</p>
+    <table style="border:solid;border-color:dodgerblue;margin-left:auto;margin-right:auto">
+        <thead>
+            <tr id="tableHead">
+                <td id="tableCell"> Type Of Transaction </td>
+                <td id="tableCell"> Account Used </td>
+                <td id="tableCell"> Amount </td>
+                <td id="tableCell"> Transactions Date </td>
+            </tr>
+        </thead> @foreach (var atmTransaction in Model.AtmTransactions)
+        {
+            <tr id="tableCellRed">
+                <td id="tableCell"> @atmTransaction.TypeOfTransaction </td>
+                <td id="tableCell"> @atmTransaction.AccountUsed </td>
+                <td id="tableCell"> @atmTransaction.Amount </td>
+                <td id="tableCell"> @atmTransaction.TransactionDate </td>
+            </tr>
+        }
+    </table>
+    <br />
+    <p style="font-size:26px;color:red;text-align:center">Income Transactions</p>
+    <table style="border:solid;border-color:dodgerblue;margin-left:auto;margin-right:auto">
+        <thead>
+            <tr id="tableHead">
+                <td id="tableCell"> Type Of Transfer </td>
+                <td id="tableCell"> Account Used </td>
+                <td id="tableCell"> Sender </td>
+                <td id="tableCell"> Amount </td>
+                <td id="tableCell"> Transactions Date </td>
+            </tr>
+        </thead> @foreach (var incomeTransaction in Model.IncomeTransactions)
+        {
+            <tr id="tableCellRed">
+                <td id="tableCell"> @incomeTransaction.TypeOfTransfer </td>
+                <td id="tableCell"> @incomeTransaction.AccountUsed </td>
+                <td id="tableCell"> @incomeTransaction.Sender </td>
+                <td id="tableCell"> @incomeTransaction.Amount </td>
+                <td id="tableCell"> @incomeTransaction.TransactionDate </td>
+            </tr>
+        }
+    </table>
+    <br />
+    <p style="font-size:26px;color:red;text-align:center">Outcome Transactions</p>
+    <table style="border:solid;border-color:dodgerblue;margin-left:auto;margin-right:auto">
+        <thead>
+            <tr id="tableHead">
+                <td id="tableCell"> Type Of Transfer </td>
+                <td id="tableCell"> Account Used </td>
+                <td id="tableCell"> Recipient </td>
+                <td id="tableCell"> Amount </td>
+                <td id="tableCell"> Transactions Date </td>
+            </tr>
+        </thead> @foreach (var outcomeTransaction in Model.OutcomeTransactions)
+        {
+            <tr id="tableCellRed">
+                <td id="tableCell"> @outcomeTransaction.TypeOfTransfer </td>
+                <td id="tableCell"> @outcomeTransaction.AccountUsed </td>
+                <td id="tableCell"> @outcomeTransaction.Recipient </td>
+                <td id="tableCell"> @outcomeTransaction.Amount </td>
+                <td id="tableCell"> @outcomeTransaction.TransactionDate </td>
+            </tr>
+        }
+    </table>
+    <br />
+    <br />
+    <br />
+    <br />
+    <a id="button" asp-action="AccountsIndex" asp-controller="AccountViews"> Accounts Index </a>
+    <br />
+    <br />
+</div>
+<br />

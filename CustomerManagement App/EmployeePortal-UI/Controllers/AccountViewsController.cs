@@ -9,7 +9,7 @@ namespace EmployeePortal_UI.Controllers
 
         [HttpGet] public IActionResult SearchAccount() => View();
 
-        [HttpGet] public IActionResult DisplayAccountInfo(AccountModel accountModel) => View(accountModel);
+        [HttpGet] public IActionResult DisplayAccountInfo(List<AccountModel> accountModel) => View(accountModel);
 
         [HttpGet] public IActionResult CreateAccount() => View();
 
@@ -17,7 +17,7 @@ namespace EmployeePortal_UI.Controllers
 
         [HttpGet] public IActionResult SearchTransactions() => View();
 
-        [HttpGet] public IActionResult DisplayTransactions() => View();
+        [HttpGet] public IActionResult DisplayTransactions(TransactionsModel transactions) => View(transactions);
 
     }
 }

@@ -1,55 +1,37 @@
-﻿@model AccountModel
+﻿@model List<AccountModel>
 @{
     ViewData["Title"] = "Account Info";
 }
 <br />
-    <div id="window">
-        <br />
-        <table style="border:solid;border-color:dodgerblue;margin-left:auto;margin-right:auto">
-            <thead>
-                <tr style="background-color:black;color:aliceblue;text-align:center;font-size:24px;">
-                    <td style="border:solid;border-color:dodgerblue;padding:10px">
-                        Account Owner Name
-                    </td>
-                    <td style="border:solid;border-color:dodgerblue;padding:10px;">
-                        Account Name
-                    </td>
-                    <td style="border:solid;border-color:dodgerblue;padding:10px">
-                        Account Number
-                    </td>
-                     <td style="border:solid;border-color:dodgerblue;padding:10px">
-                        Account IBAN
-                    </td>
-                     <td style="border:solid;border-color:dodgerblue;padding:10px">
-                        Account Ballance
-                    </td>
-                </tr>
-            </thead>
-            <tr style="color:red;text-align:center;font-size:24px">
-                <td style="border:solid;border-color:dodgerblue;padding:10px">
-                    @Model.AccountOwnerName
-                </td>
-                <td style="border:solid;border-color:dodgerblue;padding:10px">
-                    @Model.AccountName
-                </td>
-                <td style="border:solid;border-color:dodgerblue;padding:10px">
-                    @Model.AccountNumber
-                </td>
-                <td style="border:solid;border-color:dodgerblue;padding:10px">
-                    @Model.AccountIBAN
-                </td>
-                <td style="border:solid;border-color:dodgerblue;padding:10px">
-                    @Model.AccountBallance
-                </td>
-                 
-            </tr>
-        </table>
-        <br />
-        <br />
-        <br />
-        <br />
-        <a id="button" asp-action="CustomerManagementIndex" asp-controller="CustomerViews"> Customer Management </a>
-        <br />
-    </div>
+<div id="window">
     <br />
+    <table style="border:solid;border-color:dodgerblue;margin-left:auto;margin-right:auto">
+        <thead>
+            <tr style="background-color:black;color:aliceblue;text-align:center;font-size:24px;">
+                <td style="border:solid;border-color:dodgerblue;padding:10px"> Account Owner Name </td>
+                <td style="border:solid;border-color:dodgerblue;padding:10px;"> Account Name </td>
+                <td style="border:solid;border-color:dodgerblue;padding:10px"> Account Number </td>
+                <td style="border:solid;border-color:dodgerblue;padding:10px"> Account IBAN </td>
+                <td style="border:solid;border-color:dodgerblue;padding:10px"> Account Ballance </td>
+            </tr>
+        </thead> @foreach (var item in Model)
+        {
+            <tr style="color:red;text-align:center;font-size:24px">
+                <td style="border:solid;border-color:dodgerblue;padding:10px"> @item.AccountOwnerName </td>
+                <td style="border:solid;border-color:dodgerblue;padding:10px;"> @item.AccountName </td>
+                <td style="border:solid;border-color:dodgerblue;padding:10px;"> @item.AccountNumber </td>
+                <td style="border:solid;border-color:dodgerblue;padding:10px;"> @item.AccountIBAN </td>
+                <td style="border:solid;border-color:dodgerblue;padding:10px;"> @item.AccountBallance </td>
+            </tr>
+        }
+    </table>
+    <br />
+    <br />
+    <br />
+    <br />
+    <a id="button" asp-action="AccountsIndex" asp-controller="AccountViews"> Accounts Index </a>
+    <br />
+    <br />
+</div>
+<br />
 
