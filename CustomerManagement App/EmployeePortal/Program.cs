@@ -17,7 +17,7 @@ namespace EmployeePortal
             Application.SetCompatibleTextRenderingDefault(false);
             Directory.CreateDirectory(Temp.FolderPath);
             Application.Run(new AuthentificationWindow());
-            Application.Run(new Form1());
+            Application.Run(new MainWindow());
         }
     }
 }

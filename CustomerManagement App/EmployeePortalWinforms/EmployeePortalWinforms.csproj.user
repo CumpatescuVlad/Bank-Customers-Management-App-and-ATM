@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="AccountsUI\AccountsIndex.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="AccountsUI\CreateAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="AccountsUI\DeleteAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="AccountsUI\DisplayAccounts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="AccountsUI\DisplayTransactions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="AccountsUI\SearchAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="AccountsUI\SearchTransactions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="CustomersUI\AddCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="CustomersUI\CustomersIndex.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="CustomersUI\DeleteCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="CustomersUI\SearchCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="CustomersUI\UpdateCustomerEmail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="CustomersUI\UpdateCustomerIndex.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="CustomersUI\UpdateCustomerName.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="CustomersUI\UpdateCustomerPhoneNumber.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="FunctionsUI\FunctionsIndex.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="FunctionsUI\GenerateStatement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="FunctionsUI\PinCodeRegeneration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

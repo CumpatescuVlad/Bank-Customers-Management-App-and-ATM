@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeePortal", "EmployeePortal\EmployeePortal.csproj", "{ADEF436F-D289-42E1-BF63-6402368C116C}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeePortal-UI", "EmployeePortal-UI\EmployeePortal-UI.csproj", "{DCB49B09-F8F6-4E62-B617-696932EA004B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeePortal__API", "EmployeePortal--API\EmployeePortal__API.csproj", "{722BF7DB-D776-4242-9332-7B0FC51F4D59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeePortal__API", "EmployeePortal--API\EmployeePortal__API.csproj", "{722BF7DB-D776-4242-9332-7B0FC51F4D59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeePortalWinforms", "EmployeePortalWinforms\EmployeePortalWinforms.csproj", "{C15F3040-ECD3-4D76-85F7-426221083689}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{ADEF436F-D289-42E1-BF63-6402368C116C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ADEF436F-D289-42E1-BF63-6402368C116C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ADEF436F-D289-42E1-BF63-6402368C116C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ADEF436F-D289-42E1-BF63-6402368C116C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DCB49B09-F8F6-4E62-B617-696932EA004B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DCB49B09-F8F6-4E62-B617-696932EA004B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCB49B09-F8F6-4E62-B617-696932EA004B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +23,10 @@ Global
 		{722BF7DB-D776-4242-9332-7B0FC51F4D59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{722BF7DB-D776-4242-9332-7B0FC51F4D59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{722BF7DB-D776-4242-9332-7B0FC51F4D59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C15F3040-ECD3-4D76-85F7-426221083689}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C15F3040-ECD3-4D76-85F7-426221083689}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C15F3040-ECD3-4D76-85F7-426221083689}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C15F3040-ECD3-4D76-85F7-426221083689}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
