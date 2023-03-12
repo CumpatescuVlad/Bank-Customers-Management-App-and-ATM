@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\CODE REPOS\\BankApp\\ATM\\ATM UI\\ATM UI.csproj": {}
+    "E:\\CODE REPOS\\Bank\\ServerSide&ATM\\ATM\\ATM UI\\ATM UI.csproj": {}
   },
   "projects": {
-    "E:\\CODE REPOS\\BankApp\\ATM\\ATM UI\\ATM UI.csproj": {
+    "E:\\CODE REPOS\\Bank\\ServerSide&ATM\\ATM\\ATM UI\\ATM UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\CODE REPOS\\BankApp\\ATM\\ATM UI\\ATM UI.csproj",
+        "projectUniqueName": "E:\\CODE REPOS\\Bank\\ServerSide&ATM\\ATM\\ATM UI\\ATM UI.csproj",
         "projectName": "ATM UI",
-        "projectPath": "E:\\CODE REPOS\\BankApp\\ATM\\ATM UI\\ATM UI.csproj",
+        "projectPath": "E:\\CODE REPOS\\Bank\\ServerSide&ATM\\ATM\\ATM UI\\ATM UI.csproj",
         "packagesPath": "C:\\Users\\VLAD\\.nuget\\packages\\",
-        "outputPath": "E:\\CODE REPOS\\BankApp\\ATM\\ATM UI\\obj\\",
+        "outputPath": "E:\\CODE REPOS\\Bank\\ServerSide&ATM\\ATM\\ATM UI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -76,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

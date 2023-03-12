@@ -53,7 +53,7 @@ namespace EmployeePortal__API.Services
 
             //transactions = $"{atmTransactions}{incomeTransactions}{outcomeTransactions}";
 
-            var statementGenerationResult = _generateStatement.GenerateWordStatement(statementModel,transactionsDTO);
+            var statementGenerationResult = _generateStatement.GenerateWordStatement(statementModel, transactionsDTO);
 
             return statementGenerationResult;
 

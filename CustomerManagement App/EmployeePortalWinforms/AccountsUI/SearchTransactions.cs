@@ -1,5 +1,4 @@
-﻿using System;
-using EmployeePortalWinforms.Persistence;
+﻿using EmployeePortalWinforms.Persistence;
 
 namespace EmployeePortalWinforms.AccountsUI
 {
@@ -18,7 +17,7 @@ namespace EmployeePortalWinforms.AccountsUI
 
         private void searchTransactionsBTN_Click(object sender, EventArgs e)
         {
-            Imput.NullImput(textBox1,nullNameLbl,"Customer Name cannot Be Null!");
+            Imput.NullImput(textBox1, nullNameLbl, "Customer Name cannot Be Null!");
             if (String.IsNullOrEmpty(textBox1.Text))
             {
                 return;

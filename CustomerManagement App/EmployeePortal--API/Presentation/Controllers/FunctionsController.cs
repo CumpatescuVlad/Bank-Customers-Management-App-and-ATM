@@ -22,7 +22,7 @@ namespace EmployeePortal__API.Presentation.Controllers
         [HttpPut]
         [ServiceFilter(typeof(ModelValidationFilter))]
         [Route("Portal/CreditCard/RegeneratePinCode")]
-        public IActionResult RegenerateCreditCardPinCode([FromBody]string customerName)
+        public IActionResult RegenerateCreditCardPinCode([FromBody] string customerName)
         {
             var updateServiceResult = _updateService.UpdateCardPinCode(customerName);
 

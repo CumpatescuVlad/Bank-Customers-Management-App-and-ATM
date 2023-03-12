@@ -9,61 +9,61 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ATM_UI
 build_property.RootNamespace = ATM_UI
-build_property.ProjectDir = E:\CODE REPOS\BankApp\ATM\ATM UI\
+build_property.ProjectDir = E:\CODE REPOS\Bank\ServerSide&ATM\ATM\ATM UI\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\CODE REPOS\BankApp\ATM\ATM UI
+build_property.MSBuildProjectDirectory = E:\CODE REPOS\Bank\ServerSide&ATM\ATM\ATM UI
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/CODE REPOS/BankApp/ATM/ATM UI/Views/Home/Index.cshtml]
+[E:/CODE REPOS/Bank/ServerSide&ATM/ATM/ATM UI/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/CODE REPOS/BankApp/ATM/ATM UI/Views/Login/Forbidden.cshtml]
+[E:/CODE REPOS/Bank/ServerSide&ATM/ATM/ATM UI/Views/Login/Forbidden.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cRm9yYmlkZGVuLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/CODE REPOS/BankApp/ATM/ATM UI/Views/Login/LoginPage.cshtml]
+[E:/CODE REPOS/Bank/ServerSide&ATM/ATM/ATM UI/Views/Login/LoginPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW5QYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/CODE REPOS/BankApp/ATM/ATM UI/Views/Operations/Deposit.cshtml]
+[E:/CODE REPOS/Bank/ServerSide&ATM/ATM/ATM UI/Views/Operations/Deposit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmF0aW9uc1xEZXBvc2l0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/CODE REPOS/BankApp/ATM/ATM UI/Views/Operations/Operations.cshtml]
+[E:/CODE REPOS/Bank/ServerSide&ATM/ATM/ATM UI/Views/Operations/Operations.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmF0aW9uc1xPcGVyYXRpb25zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/CODE REPOS/BankApp/ATM/ATM UI/Views/Operations/Sold.cshtml]
+[E:/CODE REPOS/Bank/ServerSide&ATM/ATM/ATM UI/Views/Operations/Sold.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmF0aW9uc1xTb2xkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/CODE REPOS/BankApp/ATM/ATM UI/Views/Operations/Withdraw.cshtml]
+[E:/CODE REPOS/Bank/ServerSide&ATM/ATM/ATM UI/Views/Operations/Withdraw.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmF0aW9uc1xXaXRoZHJhdy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/CODE REPOS/BankApp/ATM/ATM UI/Views/Shared/Error.cshtml]
+[E:/CODE REPOS/Bank/ServerSide&ATM/ATM/ATM UI/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/CODE REPOS/BankApp/ATM/ATM UI/Views/Shared/_LoginLayout.cshtml]
+[E:/CODE REPOS/Bank/ServerSide&ATM/ATM/ATM UI/Views/Shared/_LoginLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/CODE REPOS/BankApp/ATM/ATM UI/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/CODE REPOS/Bank/ServerSide&ATM/ATM/ATM UI/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/CODE REPOS/BankApp/ATM/ATM UI/Views/_ViewImports.cshtml]
+[E:/CODE REPOS/Bank/ServerSide&ATM/ATM/ATM UI/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/CODE REPOS/BankApp/ATM/ATM UI/Views/_ViewStart.cshtml]
+[E:/CODE REPOS/Bank/ServerSide&ATM/ATM/ATM UI/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/CODE REPOS/BankApp/ATM/ATM UI/Views/Shared/_Layout.cshtml]
+[E:/CODE REPOS/Bank/ServerSide&ATM/ATM/ATM UI/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-g97i4r4k5w

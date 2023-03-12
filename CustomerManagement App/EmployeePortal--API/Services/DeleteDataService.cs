@@ -1,5 +1,6 @@
 ﻿using EmployeePortal__API.BusinessLogic.Modeles;
 using EmployeePortal__API.DataAcces.ModifyData.DeleteData;
+using EmployeePortal__API.DataAcces.ReadData;
 using System.Net;
 
 namespace EmployeePortal__API.Services
@@ -7,7 +8,7 @@ namespace EmployeePortal__API.Services
     public class DeleteDataService : IDeleteDataService
     {
         private readonly IDeleteData _deleteData;
-
+        
         public DeleteDataService(IDeleteData deleteData)
         {
             _deleteData = deleteData;

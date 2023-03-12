@@ -34,3 +34,5 @@ E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortalWinforms\
 E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortalWinforms\obj\Debug\net7.0-windows\EmployeePortalWinforms.AccountsUI.DisplayTransactions.resources
 E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortalWinforms\obj\Debug\net7.0-windows\EmployeePortalWinforms.AccountsUI.SearchAccount.resources
 E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortalWinforms\obj\Debug\net7.0-windows\EmployeePortalWinforms.AccountsUI.SearchTransactions.resources
+E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortalWinforms\bin\Debug\net7.0-windows\Newtonsoft.Json.dll
+E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortalWinforms\obj\Debug\net7.0-windows\EmployeePortalWinforms.csproj.CopyComplete

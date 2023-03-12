@@ -104,8 +104,9 @@
             this.succesNameUpdatedLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.succesNameUpdatedLbl.Location = new System.Drawing.Point(333, 174);
             this.succesNameUpdatedLbl.Name = "succesNameUpdatedLbl";
-            this.succesNameUpdatedLbl.Size = new System.Drawing.Size(0, 15);
+            this.succesNameUpdatedLbl.Size = new System.Drawing.Size(10, 15);
             this.succesNameUpdatedLbl.TabIndex = 6;
+            this.succesNameUpdatedLbl.Text = ".";
             // 
             // nullNameLbl
             // 

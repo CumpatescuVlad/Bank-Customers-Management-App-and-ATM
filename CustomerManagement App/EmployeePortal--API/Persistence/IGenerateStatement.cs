@@ -6,7 +6,7 @@ namespace EmployeePortal__API.Persistence
 {
     public interface IGenerateStatement
     {
-        HttpStatusCode GenerateWordStatement(StatementModel statementModel,TransactionsDTO transactions);
+        HttpStatusCode GenerateWordStatement(StatementModel statementModel, TransactionsDTO transactions);
 
     }
 }

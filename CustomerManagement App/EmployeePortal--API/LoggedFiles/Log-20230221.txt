@@ -35,3 +35,25 @@
 2023-02-21 13:53:42.838 +02:00 [INF] Application started. Press Ctrl+C to shut down.
 2023-02-21 13:53:42.840 +02:00 [INF] Hosting environment: Development
 2023-02-21 13:53:42.840 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-21 23:43:33.518 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-21 23:43:33.567 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-21 23:43:33.571 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-21 23:43:33.573 +02:00 [INF] Hosting environment: Development
+2023-02-21 23:43:33.574 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-21 23:44:28.329 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-21 23:44:28.371 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-21 23:44:28.373 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-21 23:44:28.374 +02:00 [INF] Hosting environment: Development
+2023-02-21 23:44:28.375 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-21 23:45:17.631 +02:00 [ERR] Invalid attempt to read when no data is present.
+2023-02-21 23:52:01.105 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-21 23:52:01.136 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-21 23:52:01.139 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-21 23:52:01.141 +02:00 [INF] Hosting environment: Development
+2023-02-21 23:52:01.142 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-21 23:57:36.605 +02:00 [INF] Now listening on: https://localhost:7214
+2023-02-21 23:57:36.636 +02:00 [INF] Now listening on: http://localhost:5299
+2023-02-21 23:57:36.638 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-21 23:57:36.639 +02:00 [INF] Hosting environment: Development
+2023-02-21 23:57:36.640 +02:00 [INF] Content root path: E:\CODE REPOS\Bank\ServerSide&ATM\CustomerManagement App\EmployeePortal--API
+2023-02-21 23:58:04.583 +02:00 [ERR] Invalid attempt to read when no data is present.

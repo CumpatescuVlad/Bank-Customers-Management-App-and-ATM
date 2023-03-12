@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WTUGhkc9oQTdLioyYSquZl9baj5xgqU42nsr6Nj2qv+jxFv1Q/DRzYKAxQKBy1g7nWR2UVoGZ6FOWIrSPLb3eQ==",
+  "dgSpecHash": "9wBmrNv4yMA8PHuHD+ElRzLTY9kRqOHiVJ2QZDAyDz7wzwEQwaZ87T7qRKrM/vB0SvV4T+yNE13sis7SML44Pw==",
   "success": true,
-  "projectFilePath": "E:\\CODE REPOS\\BankApp\\ATM\\ATM UI\\ATM UI.csproj",
+  "projectFilePath": "E:\\CODE REPOS\\Bank\\ServerSide&ATM\\ATM\\ATM UI\\ATM UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VLAD\\.nuget\\packages\\microsoft.extensions.configuration\\2.0.0\\microsoft.extensions.configuration.2.0.0.nupkg.sha512",
     "C:\\Users\\VLAD\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.8\\microsoft.extensions.configuration.abstractions.3.1.8.nupkg.sha512",

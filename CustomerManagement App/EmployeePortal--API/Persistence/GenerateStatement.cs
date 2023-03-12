@@ -15,7 +15,7 @@ namespace EmployeePortal__API.Persistence
             _logger = logger;
         }
 
-        public HttpStatusCode GenerateWordStatement(StatementModel statementModel,TransactionsDTO transactions)
+        public HttpStatusCode GenerateWordStatement(StatementModel statementModel, TransactionsDTO transactions)
         {
             Directory.CreateDirectory(@$"E:\CODE REPOS\Bank\Statements\{statementModel.CustomerName}");
             FileStream wordOutputFile = new(Path.GetFullPath(@$"E:\CODE REPOS\Bank\Statements\{statementModel.CustomerName}\{statementModel.CustomerName}Statement.doc"), FileMode.Create, FileAccess.ReadWrite);
@@ -34,7 +34,7 @@ namespace EmployeePortal__API.Persistence
 
             title.AppendText(StatementHeader());
             leftColum.AppendText(StatementBody(statementModel));
-            
+
             int count = 0;
             //IWSection tableSection  = statement.AddSection();
             IWTextRange textRange = contentParagraph.AddParagraph().AppendText("ATM Transactions");
@@ -42,7 +42,7 @@ namespace EmployeePortal__API.Persistence
             textRange.CharacterFormat.FontSize = 12;
             textRange.CharacterFormat.Bold = true;
             IWTable atmTable = contentParagraph.AddTable();
-            atmTable.ResetCells(transactions.AtmTransactions.Count,3);
+            atmTable.ResetCells(transactions.AtmTransactions.Count, 3);
 
             foreach (var transaction in transactions.AtmTransactions)
             {

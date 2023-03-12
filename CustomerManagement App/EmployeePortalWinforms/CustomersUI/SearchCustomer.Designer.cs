@@ -33,6 +33,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.nullNameLbl = new System.Windows.Forms.Label();
+            this.customerInfoDisplay = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label2
@@ -60,7 +61,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.ForeColor = System.Drawing.Color.White;
+            this.textBox1.ForeColor = System.Drawing.Color.Black;
             this.textBox1.Location = new System.Drawing.Point(242, 65);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(262, 29);
@@ -86,10 +87,21 @@
             this.nullNameLbl.Size = new System.Drawing.Size(0, 15);
             this.nullNameLbl.TabIndex = 8;
             // 
+            // customerInfoDisplay
+            // 
+            this.customerInfoDisplay.AutoSize = true;
+            this.customerInfoDisplay.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.customerInfoDisplay.Location = new System.Drawing.Point(147, 122);
+            this.customerInfoDisplay.Name = "customerInfoDisplay";
+            this.customerInfoDisplay.Size = new System.Drawing.Size(13, 21);
+            this.customerInfoDisplay.TabIndex = 9;
+            this.customerInfoDisplay.Text = ".";
+            // 
             // SearchCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.customerInfoDisplay);
             this.Controls.Add(this.nullNameLbl);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.searchCutomerBTN);
@@ -109,5 +121,6 @@
         private TextBox textBox1;
         private Label label1;
         private Label nullNameLbl;
+        private Label customerInfoDisplay;
     }
 }

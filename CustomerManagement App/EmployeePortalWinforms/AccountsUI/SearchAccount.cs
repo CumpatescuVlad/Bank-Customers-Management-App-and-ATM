@@ -17,7 +17,7 @@ namespace EmployeePortalWinforms.AccountsUI
 
         private void searchAccountBTN_Click(object sender, EventArgs e)
         {
-            Imput.NullImput(textBox1,nullNameLbl,"Customer Name Cannot Be Null!");
+            Imput.NullImput(textBox1, nullNameLbl, "Customer Name Cannot Be Null!");
             if (String.IsNullOrEmpty(textBox1.Text))
             {
                 return;

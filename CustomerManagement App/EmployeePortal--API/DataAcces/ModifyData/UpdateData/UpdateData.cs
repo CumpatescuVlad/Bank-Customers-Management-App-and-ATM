@@ -25,7 +25,7 @@ namespace EmployeePortal__API.DataAcces.ModifyData.UpdateData
             var updateAccountCommand = new SqlCommand(QuerryStrings.Update(updateModel, "PersonalAccounts"), _connection);
             var updateCreditCardCommand = new SqlCommand(QuerryStrings.Update(updateModel, "CreditCard"), _connection);
             var updateBankingAppCommand = new SqlCommand(QuerryStrings.Update(updateModel, "BankingApp"), _connection);
-            
+
             try
             {
                 _connection.Open();
@@ -45,7 +45,7 @@ namespace EmployeePortal__API.DataAcces.ModifyData.UpdateData
 
                     return HttpStatusCode.OK;
                 }
-                
+
             }
             catch (Exception ex)
             {

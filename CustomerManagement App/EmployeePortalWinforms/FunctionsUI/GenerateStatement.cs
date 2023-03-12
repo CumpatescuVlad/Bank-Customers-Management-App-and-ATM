@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using EmployeePortalWinforms.Persistence;
+﻿using EmployeePortalWinforms.Persistence;
 
 namespace EmployeePortalWinforms.FunctionsUI
 {
@@ -40,11 +34,11 @@ namespace EmployeePortalWinforms.FunctionsUI
 
         private void generateStatementBTN_Click(object sender, EventArgs e)
         {
-            Imput.NullImput(textBox1,nullNameLbl,"Customer Name Cannot Be Null!");
-            Imput.NullImput(textBox2,nullAccountNameLbl,"Customer Name Cannot Be Null!");
-            Imput.NullImput(textBox3,nullAccountIBANLbl,"Customer Name Cannot Be Null!");
+            Imput.NullImput(textBox1, nullNameLbl, "Customer Name Cannot Be Null!");
+            Imput.NullImput(textBox2, nullAccountNameLbl, "Customer Name Cannot Be Null!");
+            Imput.NullImput(textBox3, nullAccountIBANLbl, "Customer Name Cannot Be Null!");
 
-            if (String.IsNullOrEmpty(textBox1.Text)|| String.IsNullOrEmpty(textBox2.Text)|| String.IsNullOrEmpty(textBox3.Text))
+            if (String.IsNullOrEmpty(textBox1.Text) || String.IsNullOrEmpty(textBox2.Text) || String.IsNullOrEmpty(textBox3.Text))
             {
                 return;
             }

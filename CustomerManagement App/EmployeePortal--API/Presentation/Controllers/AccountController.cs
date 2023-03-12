@@ -78,7 +78,7 @@ namespace EmployeePortal__API.Presentation.Controllers
         [ServiceFilter(typeof(ModelValidationFilter))]
         [Route("Portal/Account/DeleteAccount")]
 
-        public IActionResult DeleteAccount(DeleteAccountModel deleteAccountModel)
+        public IActionResult DeleteAccount([FromBody]DeleteAccountModel deleteAccountModel)
         {
             var deleteAccountResult = _deleteDataService.DeleteAccount(deleteAccountModel);
 

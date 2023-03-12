@@ -28,90 +28,147 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label2 = new System.Windows.Forms.Label();
-            this.deleteAccountBTN = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.accountSucesfullyDeleted = new System.Windows.Forms.Label();
-            this.nullNameLbl = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            label2 = new Label();
+            deleteAccountBTN = new Button();
+            textBox1 = new TextBox();
+            label1 = new Label();
+            accountSucesfullyDeleted = new Label();
+            nullNameLbl = new Label();
+            nullAccountLbl = new Label();
+            label4 = new Label();
+            textBox2 = new TextBox();
+            label6 = new Label();
+            comboBox1 = new ComboBox();
+            SuspendLayout();
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(257, 49);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(164, 21);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Enter Customer Name";
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(261, 26);
+            label2.Name = "label2";
+            label2.Size = new Size(164, 21);
+            label2.TabIndex = 7;
+            label2.Text = "Enter Customer Name";
             // 
             // deleteAccountBTN
             // 
-            this.deleteAccountBTN.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.deleteAccountBTN.ForeColor = System.Drawing.Color.Red;
-            this.deleteAccountBTN.Location = new System.Drawing.Point(327, 153);
-            this.deleteAccountBTN.Name = "deleteAccountBTN";
-            this.deleteAccountBTN.Size = new System.Drawing.Size(134, 31);
-            this.deleteAccountBTN.TabIndex = 6;
-            this.deleteAccountBTN.Text = "Delete Account";
-            this.deleteAccountBTN.UseVisualStyleBackColor = true;
-            this.deleteAccountBTN.Click += new System.EventHandler(this.deleteAccountBTN_Click);
+            deleteAccountBTN.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            deleteAccountBTN.ForeColor = Color.Red;
+            deleteAccountBTN.Location = new Point(321, 243);
+            deleteAccountBTN.Name = "deleteAccountBTN";
+            deleteAccountBTN.Size = new Size(134, 31);
+            deleteAccountBTN.TabIndex = 6;
+            deleteAccountBTN.Text = "Delete Account";
+            deleteAccountBTN.UseVisualStyleBackColor = true;
+            deleteAccountBTN.Click += deleteAccountBTN_Click;
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(257, 73);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(262, 29);
-            this.textBox1.TabIndex = 5;
+            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.ForeColor = Color.Black;
+            textBox1.Location = new Point(261, 50);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(262, 29);
+            textBox1.TabIndex = 5;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 20.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(197, 37);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Delete Account";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 20.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = Color.Red;
+            label1.Location = new Point(3, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(197, 37);
+            label1.TabIndex = 4;
+            label1.Text = "Delete Account";
             // 
             // accountSucesfullyDeleted
             // 
-            this.accountSucesfullyDeleted.AutoSize = true;
-            this.accountSucesfullyDeleted.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.accountSucesfullyDeleted.Location = new System.Drawing.Point(310, 121);
-            this.accountSucesfullyDeleted.Name = "accountSucesfullyDeleted";
-            this.accountSucesfullyDeleted.Size = new System.Drawing.Size(0, 15);
-            this.accountSucesfullyDeleted.TabIndex = 8;
+            accountSucesfullyDeleted.AutoSize = true;
+            accountSucesfullyDeleted.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            accountSucesfullyDeleted.ForeColor = Color.FromArgb(0, 192, 0);
+            accountSucesfullyDeleted.Location = new Point(321, 225);
+            accountSucesfullyDeleted.Name = "accountSucesfullyDeleted";
+            accountSucesfullyDeleted.Size = new Size(0, 21);
+            accountSucesfullyDeleted.TabIndex = 8;
             // 
             // nullNameLbl
             // 
-            this.nullNameLbl.AutoSize = true;
-            this.nullNameLbl.ForeColor = System.Drawing.Color.Red;
-            this.nullNameLbl.Location = new System.Drawing.Point(531, 80);
-            this.nullNameLbl.Name = "nullNameLbl";
-            this.nullNameLbl.Size = new System.Drawing.Size(0, 15);
-            this.nullNameLbl.TabIndex = 9;
+            nullNameLbl.AutoSize = true;
+            nullNameLbl.ForeColor = Color.Red;
+            nullNameLbl.Location = new Point(529, 58);
+            nullNameLbl.Name = "nullNameLbl";
+            nullNameLbl.Size = new Size(0, 15);
+            nullNameLbl.TabIndex = 9;
+            // 
+            // nullAccountLbl
+            // 
+            nullAccountLbl.AutoSize = true;
+            nullAccountLbl.ForeColor = Color.Red;
+            nullAccountLbl.Location = new Point(529, 123);
+            nullAccountLbl.Name = "nullAccountLbl";
+            nullAccountLbl.Size = new Size(0, 15);
+            nullAccountLbl.TabIndex = 12;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(261, 91);
+            label4.Name = "label4";
+            label4.Size = new Size(152, 21);
+            label4.TabIndex = 11;
+            label4.Text = "Enter Account Name";
+            // 
+            // textBox2
+            // 
+            textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox2.ForeColor = Color.Black;
+            textBox2.Location = new Point(261, 115);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(262, 29);
+            textBox2.TabIndex = 10;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Location = new Point(261, 156);
+            label6.Name = "label6";
+            label6.Size = new Size(123, 21);
+            label6.TabIndex = 14;
+            label6.Text = "Type Of Account";
+            // 
+            // comboBox1
+            // 
+            comboBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(261, 180);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(262, 29);
+            comboBox1.TabIndex = 15;
             // 
             // DeleteAccount
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.nullNameLbl);
-            this.Controls.Add(this.accountSucesfullyDeleted);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.deleteAccountBTN);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
-            this.Name = "DeleteAccount";
-            this.Size = new System.Drawing.Size(733, 286);
-            this.Load += new System.EventHandler(this.DeleteAccount_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(comboBox1);
+            Controls.Add(label6);
+            Controls.Add(nullAccountLbl);
+            Controls.Add(label4);
+            Controls.Add(textBox2);
+            Controls.Add(nullNameLbl);
+            Controls.Add(accountSucesfullyDeleted);
+            Controls.Add(label2);
+            Controls.Add(deleteAccountBTN);
+            Controls.Add(textBox1);
+            Controls.Add(label1);
+            Name = "DeleteAccount";
+            Size = new Size(733, 286);
+            Load += DeleteAccount_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -122,5 +179,10 @@
         private Label label1;
         private Label accountSucesfullyDeleted;
         private Label nullNameLbl;
+        private Label nullAccountLbl;
+        private Label label4;
+        private TextBox textBox2;
+        private Label label6;
+        private ComboBox comboBox1;
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7SP6sUPL+J4aZPh84Nb1wEb5VuwooYmDxhU7WP9n7j+YvKFr5cWImODlfC1EZKjxy2RpoGdmj+fnfgbr39mMPQ==",
+  "dgSpecHash": "sLNLqHDVOXI9EGw/ld6l3x1l4ehoKD5YBxO684qJZjXUckOxDrj7TRzmaV62pA3KJWH6EXmGlL5e1A8nVnlZUA==",
   "success": true,
-  "projectFilePath": "E:\\CODE REPOS\\BankApp\\ATM\\ATMapi\\ATMapi.csproj",
+  "projectFilePath": "E:\\CODE REPOS\\Bank\\ServerSide&ATM\\ATM\\ATMapi\\ATMapi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VLAD\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\VLAD\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

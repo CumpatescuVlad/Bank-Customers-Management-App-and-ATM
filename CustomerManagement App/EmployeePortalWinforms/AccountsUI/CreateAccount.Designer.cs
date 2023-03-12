@@ -28,193 +28,192 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.createAccountBTN = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.accountSuccesfullyAdded = new System.Windows.Forms.Label();
-            this.nullNameLbl = new System.Windows.Forms.Label();
-            this.nullAccountNameLbl = new System.Windows.Forms.Label();
-            this.nullTypeOfAccountLbl = new System.Windows.Forms.Label();
-            this.nullBallanceLbl = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            label5 = new Label();
+            textBox4 = new TextBox();
+            label4 = new Label();
+            label3 = new Label();
+            textBox2 = new TextBox();
+            label2 = new Label();
+            createAccountBTN = new Button();
+            textBox1 = new TextBox();
+            label1 = new Label();
+            accountSuccesfullyAdded = new Label();
+            nullNameLbl = new Label();
+            nullAccountNameLbl = new Label();
+            nullTypeOfAccountLbl = new Label();
+            nullBallanceLbl = new Label();
+            comboBox1 = new ComboBox();
+            SuspendLayout();
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(253, 251);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 19);
-            this.label5.TabIndex = 27;
-            this.label5.Text = "Ballance";
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(253, 251);
+            label5.Name = "label5";
+            label5.Size = new Size(58, 19);
+            label5.TabIndex = 27;
+            label5.Text = "Ballance";
             // 
             // textBox4
             // 
-            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.ForeColor = System.Drawing.Color.Black;
-            this.textBox4.Location = new System.Drawing.Point(253, 275);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(244, 29);
-            this.textBox4.TabIndex = 26;
+            textBox4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox4.ForeColor = Color.Black;
+            textBox4.Location = new Point(253, 275);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(244, 29);
+            textBox4.TabIndex = 26;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(253, 178);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(146, 19);
-            this.label4.TabIndex = 25;
-            this.label4.Text = "Enter Type Of Account";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.ForeColor = System.Drawing.Color.Black;
-            this.textBox3.Location = new System.Drawing.Point(253, 202);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(244, 29);
-            this.textBox3.TabIndex = 24;
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(253, 178);
+            label4.Name = "label4";
+            label4.Size = new Size(146, 19);
+            label4.TabIndex = 25;
+            label4.Text = "Enter Type Of Account";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(253, 108);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(135, 19);
-            this.label3.TabIndex = 23;
-            this.label3.Text = "Enter Account Name";
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(253, 108);
+            label3.Name = "label3";
+            label3.Size = new Size(135, 19);
+            label3.TabIndex = 23;
+            label3.Text = "Enter Account Name";
             // 
             // textBox2
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.ForeColor = System.Drawing.Color.Black;
-            this.textBox2.Location = new System.Drawing.Point(253, 132);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(244, 29);
-            this.textBox2.TabIndex = 22;
+            textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox2.ForeColor = Color.Black;
+            textBox2.Location = new Point(253, 132);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(244, 29);
+            textBox2.TabIndex = 22;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(253, 32);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 19);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "Enter Customer Name";
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(253, 32);
+            label2.Name = "label2";
+            label2.Size = new Size(145, 19);
+            label2.TabIndex = 21;
+            label2.Text = "Enter Customer Name";
             // 
             // createAccountBTN
             // 
-            this.createAccountBTN.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.createAccountBTN.ForeColor = System.Drawing.Color.Black;
-            this.createAccountBTN.Location = new System.Drawing.Point(309, 338);
-            this.createAccountBTN.Name = "createAccountBTN";
-            this.createAccountBTN.Size = new System.Drawing.Size(134, 31);
-            this.createAccountBTN.TabIndex = 20;
-            this.createAccountBTN.Text = "Create Account";
-            this.createAccountBTN.UseVisualStyleBackColor = true;
-            this.createAccountBTN.Click += new System.EventHandler(this.createAccountBTN_Click);
+            createAccountBTN.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            createAccountBTN.ForeColor = Color.Black;
+            createAccountBTN.Location = new Point(309, 338);
+            createAccountBTN.Name = "createAccountBTN";
+            createAccountBTN.Size = new Size(134, 31);
+            createAccountBTN.TabIndex = 20;
+            createAccountBTN.Text = "Create Account";
+            createAccountBTN.UseVisualStyleBackColor = true;
+            createAccountBTN.Click += createAccountBTN_Click;
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(253, 56);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(244, 29);
-            this.textBox1.TabIndex = 19;
+            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.ForeColor = Color.Black;
+            textBox1.Location = new Point(253, 56);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(244, 29);
+            textBox1.TabIndex = 19;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 20.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(197, 37);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Create Account";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 20.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = Color.Red;
+            label1.Location = new Point(3, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(197, 37);
+            label1.TabIndex = 18;
+            label1.Text = "Create Account";
             // 
             // accountSuccesfullyAdded
             // 
-            this.accountSuccesfullyAdded.AutoSize = true;
-            this.accountSuccesfullyAdded.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.accountSuccesfullyAdded.ForeColor = System.Drawing.Color.LimeGreen;
-            this.accountSuccesfullyAdded.Location = new System.Drawing.Point(266, 316);
-            this.accountSuccesfullyAdded.Name = "accountSuccesfullyAdded";
-            this.accountSuccesfullyAdded.Size = new System.Drawing.Size(0, 19);
-            this.accountSuccesfullyAdded.TabIndex = 28;
+            accountSuccesfullyAdded.AutoSize = true;
+            accountSuccesfullyAdded.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            accountSuccesfullyAdded.ForeColor = Color.LimeGreen;
+            accountSuccesfullyAdded.Location = new Point(266, 316);
+            accountSuccesfullyAdded.Name = "accountSuccesfullyAdded";
+            accountSuccesfullyAdded.Size = new Size(0, 19);
+            accountSuccesfullyAdded.TabIndex = 28;
             // 
             // nullNameLbl
             // 
-            this.nullNameLbl.AutoSize = true;
-            this.nullNameLbl.ForeColor = System.Drawing.Color.Red;
-            this.nullNameLbl.Location = new System.Drawing.Point(523, 64);
-            this.nullNameLbl.Name = "nullNameLbl";
-            this.nullNameLbl.Size = new System.Drawing.Size(0, 15);
-            this.nullNameLbl.TabIndex = 29;
+            nullNameLbl.AutoSize = true;
+            nullNameLbl.ForeColor = Color.Red;
+            nullNameLbl.Location = new Point(523, 64);
+            nullNameLbl.Name = "nullNameLbl";
+            nullNameLbl.Size = new Size(0, 15);
+            nullNameLbl.TabIndex = 29;
             // 
             // nullAccountNameLbl
             // 
-            this.nullAccountNameLbl.AutoSize = true;
-            this.nullAccountNameLbl.ForeColor = System.Drawing.Color.Red;
-            this.nullAccountNameLbl.Location = new System.Drawing.Point(523, 140);
-            this.nullAccountNameLbl.Name = "nullAccountNameLbl";
-            this.nullAccountNameLbl.Size = new System.Drawing.Size(0, 15);
-            this.nullAccountNameLbl.TabIndex = 30;
+            nullAccountNameLbl.AutoSize = true;
+            nullAccountNameLbl.ForeColor = Color.Red;
+            nullAccountNameLbl.Location = new Point(523, 140);
+            nullAccountNameLbl.Name = "nullAccountNameLbl";
+            nullAccountNameLbl.Size = new Size(0, 15);
+            nullAccountNameLbl.TabIndex = 30;
             // 
             // nullTypeOfAccountLbl
             // 
-            this.nullTypeOfAccountLbl.AutoSize = true;
-            this.nullTypeOfAccountLbl.ForeColor = System.Drawing.Color.Red;
-            this.nullTypeOfAccountLbl.Location = new System.Drawing.Point(523, 210);
-            this.nullTypeOfAccountLbl.Name = "nullTypeOfAccountLbl";
-            this.nullTypeOfAccountLbl.Size = new System.Drawing.Size(0, 15);
-            this.nullTypeOfAccountLbl.TabIndex = 31;
+            nullTypeOfAccountLbl.AutoSize = true;
+            nullTypeOfAccountLbl.ForeColor = Color.Red;
+            nullTypeOfAccountLbl.Location = new Point(523, 210);
+            nullTypeOfAccountLbl.Name = "nullTypeOfAccountLbl";
+            nullTypeOfAccountLbl.Size = new Size(0, 15);
+            nullTypeOfAccountLbl.TabIndex = 31;
             // 
             // nullBallanceLbl
             // 
-            this.nullBallanceLbl.AutoSize = true;
-            this.nullBallanceLbl.ForeColor = System.Drawing.Color.Red;
-            this.nullBallanceLbl.Location = new System.Drawing.Point(523, 283);
-            this.nullBallanceLbl.Name = "nullBallanceLbl";
-            this.nullBallanceLbl.Size = new System.Drawing.Size(0, 15);
-            this.nullBallanceLbl.TabIndex = 32;
+            nullBallanceLbl.AutoSize = true;
+            nullBallanceLbl.ForeColor = Color.Red;
+            nullBallanceLbl.Location = new Point(523, 283);
+            nullBallanceLbl.Name = "nullBallanceLbl";
+            nullBallanceLbl.Size = new Size(0, 15);
+            nullBallanceLbl.TabIndex = 32;
+            // 
+            // comboBox1
+            // 
+            comboBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(253, 210);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(244, 29);
+            comboBox1.TabIndex = 33;
             // 
             // CreateAccount
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.nullBallanceLbl);
-            this.Controls.Add(this.nullTypeOfAccountLbl);
-            this.Controls.Add(this.nullAccountNameLbl);
-            this.Controls.Add(this.nullNameLbl);
-            this.Controls.Add(this.accountSuccesfullyAdded);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.createAccountBTN);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
-            this.Name = "CreateAccount";
-            this.Size = new System.Drawing.Size(733, 400);
-            this.Load += new System.EventHandler(this.CreateAccount_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(comboBox1);
+            Controls.Add(nullBallanceLbl);
+            Controls.Add(nullTypeOfAccountLbl);
+            Controls.Add(nullAccountNameLbl);
+            Controls.Add(nullNameLbl);
+            Controls.Add(accountSuccesfullyAdded);
+            Controls.Add(label5);
+            Controls.Add(textBox4);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(textBox2);
+            Controls.Add(label2);
+            Controls.Add(createAccountBTN);
+            Controls.Add(textBox1);
+            Controls.Add(label1);
+            Name = "CreateAccount";
+            Size = new Size(733, 400);
+            Load += CreateAccount_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -222,7 +221,6 @@
         private Label label5;
         private TextBox textBox4;
         private Label label4;
-        private TextBox textBox3;
         private Label label3;
         private TextBox textBox2;
         private Label label2;
@@ -234,5 +232,6 @@
         private Label nullAccountNameLbl;
         private Label nullTypeOfAccountLbl;
         private Label nullBallanceLbl;
+        private ComboBox comboBox1;
     }
 }
